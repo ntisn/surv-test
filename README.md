@@ -36,7 +36,7 @@ In the src column, R = rekeyed; O = original source files
 | surv   |     25 | v25        |   R | 1988 | EPUB files added |
 | surv   |     26 |            |   R | 1988 |  |
 | surv   |     27 |            |   R | 1988 | EPUB files added |
-| surv   |     28 |            |   R | 1988 |  |
+| surv   |     28 |            |   R | 1988 | EPUB files added |
 | surv   |     29 | v29        |   R | 1988 |  |
 | surv   |     30 |            |   R | 1989 | EPUB files added |
 | surv   |     31 |            |   R | 1989 |  |
