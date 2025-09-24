@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE monograph PUBLIC "-//AMS//DTD GENTAG 2.00//en" "gentag2.dtd">
+
+<monograph>
+    <title>
+        <tex>Symmetric Inverse Semigroups</tex>
+        <html>Symmetric Inverse Semigroups</html>
+        <ascii>Symmetric Inverse Semigroups</ascii>
+    </title>
+    <author>
+        <name>
+            <surname>
+                <tex>Lipscomb</tex>
+                <html>Lipscomb</html>
+                <ascii>Lipscomb</ascii>
+            </surname>
+            <given>
+                <tex>Stephen</tex>
+                <html>Stephen</html>
+                <ascii>Stephen</ascii>
+            </given>
+        </name>
+        <affiliation>Mary Washington College, Fredericksburg,
+        VA</affiliation>
+    </author>
+    <copyright bookvol_category="AMS">
+        <year>1997</year>
+        <owner>American Mathematical Society</owner>
+    </copyright>
+    <publication>
+        <publ_key>surv</publ_key>
+        <full_title>Mathematical Surveys and Monographs</full_title>
+        <abbrev_title>Math. Surveys Monogr.</abbrev_title>
+        <issn type="print">0076-5376</issn>
+        <issn type="electronic">2331-7159</issn>
+    </publication>
+    <publisher pcode="AMS">American Mathematical Society</publisher>
+    <volume_id>lipscomb</volume_id>
+    <itemcode>SURV/46</itemcode>
+    <numpages>192</numpages>
+    <isbn type="print">978-0-8218-0627-2</isbn>
+    <isbn type="electronic">978-1-4704-1277-7</isbn>
+    <lccn>96-26968</lccn>
+    <lccall/>
+    <doi>10.1090/surv/046</doi>
+    <uri scheme="https">
+        <host>www.ams.org</host>
+        <path>/surv/046</path>
+    </uri>
+    <msc source="msn" schema="1991">
+        <primary>20M18</primary>
+        <secondary>20M20</secondary>
+    </msc>
+    <mr>MR1413301</mr>
+    <volume>46</volume>
+    <pubdate>
+        <year>1996</year>
+        <month>October</month>
+        <day>1</day>
+    </pubdate>
+    <language>English</language>
+    <contents>
+        <unnumbered type="chapter" manid="01"/>
+        <unnumbered type="chapter" manid="02"/>
+        <unnumbered type="chapter" manid="03"/>
+        <unnumbered type="chapter" manid="04"/>
+        <unnumbered type="chapter" manid="05"/>
+        <unnumbered type="chapter" manid="06"/>
+        <unnumbered type="chapter" manid="07"/>
+        <unnumbered type="chapter" manid="08"/>
+        <unnumbered type="chapter" manid="09"/>
+        <unnumbered type="chapter" manid="10"/>
+        <unnumbered type="chapter" manid="11"/>
+        <unnumbered type="chapter" manid="12"/>
+        <unnumbered type="chapter" manid="13"/>
+    </contents>
+</monograph>
