@@ -36,7 +36,7 @@ In the src column, R = rekeyed; O = original source files
 | surv   |     25 | v25        |   R | 1988 | EPUB files added |
 | surv   |     26 |            |   R | 1988 |  |
 | surv   |     27 |            |   R | 1988 | EPUB files added |
-| surv   |     28 |            |   R | 1988 | EPUB files added |
+| surv   |     28 |            |   R | 1988 |  |
 | surv   |     29 | v29        |   R | 1988 |  |
 | surv   |     30 |            |   R | 1989 | EPUB files added |
 | surv   |     31 |            |   R | 1989 |  |
@@ -44,8 +44,8 @@ In the src column, R = rekeyed; O = original source files
 | surv   |     33 | berkovich  |   R | 1990 | EPUB files added |
 | surv   |     34 | isakov     |   R | 1990 | EPUB files added |
 | surv   |     35 | abhyankar  |   R | 1990 | EPUB files added |
-| surv   |     36 | conway     |   R | 1991 |  |
-| surv   |     37 | lewin      |   R | 1991 |  |
+| surv   |     36 | conway     |   R | 1991 | EPUB files added |
+| surv   |     37 | lewin      |   R | 1991 | EPUB files added |
 | surv   |     38 | david      |   R | 1993 |  |
 | surv   |     39 | helgason3  |   R | 2008 |  |
 | surv   |   40.1 | v40-1      |   R | 1994 |  |
