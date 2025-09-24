@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE monograph PUBLIC "-//AMS//DTD GENTAG 2.00//en" "gentag2.dtd">
+
+<monograph>
+    <title>
+        <tex>Discontinuous Groups and Automorphic Functions</tex>
+        <html>Discontinuous Groups and Automorphic Functions</html>
+        <ascii>Discontinuous Groups and Automorphic Functions</ascii>
+    </title>
+    <author>
+        <name>
+            <surname>
+                <tex>Lehner</tex>
+                <html>Lehner</html>
+                <ascii>Lehner</ascii>
+            </surname>
+            <given>
+                <tex>Joseph</tex>
+                <html>Joseph</html>
+                <ascii>Joseph</ascii>
+            </given>
+        </name>
+    </author>
+    <copyright>
+        <year>1964</year>
+        <owner>American Mathematical Society</owner>
+    </copyright>
+    <publication>
+        <publ_key>surv</publ_key>
+        <full_title>Mathematical Surveys and Monographs</full_title>
+        <abbrev_title>Math. Surveys Monogr.</abbrev_title>
+        <issn type="print">0076-5376</issn>
+        <issn type="electronic">2331-7159</issn>
+    </publication>
+    <publisher pcode="AMS">American Mathematical Society</publisher>
+    <volume_id>v8</volume_id>
+    <itemcode>SURV/8</itemcode>
+    <numpages>438</numpages>
+    <isbn type="print">978-0-8218-1508-3</isbn>
+    <isbn type="google">978-0-8218-7390-8</isbn>
+    <isbn type="electronic">978-1-4704-1236-4</isbn>
+    <lccn>63-11987</lccn>
+    <lccall/>
+    <doi>10.1090/surv/008</doi>
+    <uri scheme="https">
+        <host>www.ams.org</host>
+        <path>/surv/008</path>
+    </uri>
+    <volume>8</volume>
+    <pubdate>
+        <year>1964</year>
+        <month>December</month>
+        <day>31</day>
+    </pubdate>
+    <language>English</language>
+    <contents>
+        <unnumbered type="chapter" manid="01"/>
+        <unnumbered type="chapter" manid="02"/>
+        <unnumbered type="chapter" manid="03"/>
+        <unnumbered type="chapter" manid="04"/>
+        <unnumbered type="chapter" manid="05"/>
+        <unnumbered type="chapter" manid="06"/>
+        <unnumbered type="chapter" manid="07"/>
+        <unnumbered type="chapter" manid="08"/>
+        <unnumbered type="chapter" manid="09"/>
+        <unnumbered type="chapter" manid="10"/>
+        <unnumbered type="chapter" manid="11"/>
+        <unnumbered type="chapter" manid="12"/>
+    </contents>
+</monograph>
