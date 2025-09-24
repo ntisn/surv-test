@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE monograph PUBLIC "-//AMS//DTD GENTAG 2.00//en" "gentag2.dtd">
+
+<monograph>
+    <title>
+        <tex>Direct and Inverse Scattering on the Line</tex>
+        <html>Direct and Inverse Scattering on the Line</html>
+        <ascii>Direct and Inverse Scattering on the Line</ascii>
+    </title>
+    <author>
+        <name>
+            <surname>
+                <tex>Beals</tex>
+                <html>Beals</html>
+                <ascii>Beals</ascii>
+            </surname>
+            <given>
+                <tex>Richard</tex>
+                <html>Richard</html>
+                <ascii>Richard</ascii>
+            </given>
+        </name>
+    </author>
+    <author>
+        <name>
+            <surname>
+                <tex>Deift</tex>
+                <html>Deift</html>
+                <ascii>Deift</ascii>
+            </surname>
+            <given>
+                <tex>Percy</tex>
+                <html>Percy</html>
+                <ascii>Percy</ascii>
+            </given>
+        </name>
+    </author>
+    <author>
+        <name>
+            <surname>
+                <tex>Tomei</tex>
+                <html>Tomei</html>
+                <ascii>Tomei</ascii>
+            </surname>
+            <given>
+                <tex>Carlos</tex>
+                <html>Carlos</html>
+                <ascii>Carlos</ascii>
+            </given>
+        </name>
+    </author>
+    <copyright>
+        <year>1988</year>
+        <owner>American Mathematical Society</owner>
+    </copyright>
+    <publication>
+        <publ_key>surv</publ_key>
+        <full_title>Mathematical Surveys and Monographs</full_title>
+        <abbrev_title>Math. Surveys Monogr.</abbrev_title>
+        <issn type="print">0076-5376</issn>
+        <issn type="electronic">2331-7159</issn>
+    </publication>
+    <publisher pcode="AMS">American Mathematical Society</publisher>
+    <itemcode>SURV/28.S</itemcode>
+    <isbn type="print">978-1-4704-2054-3</isbn>
+    <isbn type="electronic">978-1-4704-1255-5</isbn>
+    <lccn>88-14487</lccn>
+    <lccall/>
+    <doi>10.1090/surv/028</doi>
+    <uri scheme="https">
+        <host>www.ams.org</host>
+        <path>/surv/028</path>
+    </uri>
+    <msc source="msn" schema="1988">
+        <primary>58F07</primary>
+        <secondary>34A55</secondary>
+        <secondary>34B25</secondary>
+        <secondary>35Q20</secondary>
+        <secondary>47E05</secondary>
+        <secondary>81C12</secondary>
+    </msc>
+    <mr>MR954382</mr>
+    <volume>28</volume>
+    <pubdate>
+        <year>1988</year>
+    </pubdate>
+    <language>English</language>
+    <contents>
+        <unnumbered type="chapter" manid="01"/>
+        <unnumbered type="chapter" manid="02"/>
+        <unnumbered type="chapter" manid="03"/>
+        <unnumbered type="chapter" manid="04"/>
+    </contents>
+</monograph>
