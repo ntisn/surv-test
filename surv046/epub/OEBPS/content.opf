@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package version="3.0" unique-identifier="pub-identifier" xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:schema="http://schema.org/" xml:lang="en">
+  <metadata>
+    <dc:identifier id="pub-identifier">urn:doi:10.1090/surv/046</dc:identifier>
+    <meta id="meta-identifier" property="dcterms:identifier">urn:doi:10.1090/surv/046</meta>
+    <dc:title id="pub-title">Symmetric Inverse Semigroups</dc:title>
+    <meta id="meta-title" property="dcterms:title">Symmetric Inverse Semigroups</meta>
+    <dc:language id="pub-language">en</dc:language>
+    <meta id="meta-language" property="dcterms:language">en</meta>
+    <meta id="dcmodified" property="dcterms:modified">2025-09-25T05:25:10Z</meta>
+    <meta name="cover" content="Images/cover.jpg" />
+    <meta property="schema:accessMode">textual</meta>
+    <meta property="schema:accessMode">visual</meta>
+    <meta property="schema:accessibilityFeature">displayTransformability</meta>
+    <meta property="schema:accessibilityFeature">readingOrder</meta>
+    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    <meta property="schema:accessibilityFeature">alternativeText</meta>
+    <meta property="schema:accessibilityHazard">noFlashingHazard</meta>
+    <meta property="schema:accessibilityHazard">noSoundHazard</meta>
+    <meta property="schema:accessibilityHazard">noMotionSimulationHazard</meta>
+    <meta property="schema:accessModeSufficient">textual,visual</meta>
+    <meta property="schema:accessModeSufficient">textual</meta>
+    <meta property="schema:accessibilitySummary">Equations are provided as ARIA Tree Views using inline SVG with MathSpeak and Nemeth Braille descriptions. Other graphics are described by surrounding text content.</meta>
+    <meta property="schema:accessibilityAPI">ARIA</meta>
+    <meta property="dcterms:conformsTo" id="conf">EPUB Accessibility 1.1 - WCAG 2.1 Level AA</meta>
+    <meta property="a11y:certifiedBy" refines="#conf">American Mathematical Society</meta>
+  <dc:creator id="authors-0">Stephen&#160;Lipscomb</dc:creator>
+<meta scheme="marc:relators" property="role" refines="#authors-0">aut</meta>
+<dc:publisher id="publisher-0">American Mathematical Society</dc:publisher>
+<meta scheme="marc:relators" property="role" refines="#publisher-0">pbl</meta>
+</metadata>
+  <manifest>
+    <item id="index.xhtml" href="Text/index.xhtml" media-type="application/xhtml+xml" />
+    <item id="cip.xhtml" href="Text/cip.xhtml" media-type="application/xhtml+xml" />
+    <item id="toc01.xhtml" href="Text/toc01.xhtml" media-type="application/xhtml+xml" properties="nav svg" />
+    <item id="epub.css" href="Styles/epub.css" media-type="text/css" />
+    <item id="STIXTwoText" href="Styles/fonts/STIXTwoText-variable.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="STIXTwoText-Italic" href="Styles/fonts/STIXTwoText-Italic-variable.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="SourceSans3-Upright" href="Styles/fonts/SourceSans3VF-Upright.otf.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="SourceSans3-Italic" href="Styles/fonts/SourceSans3VF-Italic.otf.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="SourceCodePro-Upright" href="Styles/fonts/SourceCodeVF-Upright.otf.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="SourceCodePro-Italic" href="Styles/fonts/SourceCodeVF-Italic.otf.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="cover.jpg" href="Images/cover.jpg" media-type="image/jpeg" properties="cover-image" />
+    <item id="cover.xhtml" href="Text/cover.xhtml" media-type="application/xhtml+xml" />
+  <item media-type="application/xhtml+xml" href="Text/Part-0001.xhtml" id="AMSPart-0001.xhtml" />
+<item media-type="application/xhtml+xml" href="Text/Part-0003.xhtml" id="AMSPart-0003.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0004.xhtml" id="AMSPart-0004.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0005.xhtml" id="AMSPart-0005.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0006.xhtml" id="AMSPart-0006.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0007.xhtml" id="AMSPart-0007.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0008.xhtml" id="AMSPart-0008.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0009.xhtml" id="AMSPart-0009.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0010.xhtml" id="AMSPart-0010.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0011.xhtml" id="AMSPart-0011.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0012.xhtml" id="AMSPart-0012.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0013.xhtml" id="AMSPart-0013.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0014.xhtml" id="AMSPart-0014.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0015.xhtml" id="AMSPart-0015.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0016.xhtml" id="AMSPart-0016.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0017.xhtml" id="AMSPart-0017.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0018.xhtml" id="AMSPart-0018.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0019.xhtml" id="AMSPart-0019.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0020.xhtml" id="AMSPart-0020.xhtml" />
+<item media-type="image/png" href="Images/ams-logo.png" id="AMSams-logo.png" />
+<item media-type="image/png" href="Images/img01858a134964ec7b4c977b5eee7e28ca.png" id="AMSimg01858a134964ec7b4c977b5eee7e28ca.png" />
+<item media-type="image/png" href="Images/img01a0670e7622c90e963b6f09c2b6a733.png" id="AMSimg01a0670e7622c90e963b6f09c2b6a733.png" />
+<item media-type="image/png" href="Images/img11b5b6bb37d961a4e96b3b82060b9a75.png" id="AMSimg11b5b6bb37d961a4e96b3b82060b9a75.png" />
+<item media-type="image/png" href="Images/img1a977275cc0016731ff6f58415d02ff1.png" id="AMSimg1a977275cc0016731ff6f58415d02ff1.png" />
+<item media-type="image/png" href="Images/img1cd37a05aef4782f596dfcaa7d7bb436.png" id="AMSimg1cd37a05aef4782f596dfcaa7d7bb436.png" />
+<item media-type="image/png" href="Images/img1e675c910b9d1b9dab0dac442f5b22b6.png" id="AMSimg1e675c910b9d1b9dab0dac442f5b22b6.png" />
+<item media-type="image/png" href="Images/img279626fecf70148a2e9f0b1f92733fbb.png" id="AMSimg279626fecf70148a2e9f0b1f92733fbb.png" />
+<item media-type="image/png" href="Images/img2d73d1ee1773c549bd4c695d9de51291.png" id="AMSimg2d73d1ee1773c549bd4c695d9de51291.png" />
+<item media-type="image/png" href="Images/img33b28073d05dc36245af710e702053fd.png" id="AMSimg33b28073d05dc36245af710e702053fd.png" />
+<item media-type="image/png" href="Images/img38b16c2ed5babb0746ff286748700ff1.png" id="AMSimg38b16c2ed5babb0746ff286748700ff1.png" />
+<item media-type="image/png" href="Images/img3bb1038f6ec308db43330ce19fd25dac.png" id="AMSimg3bb1038f6ec308db43330ce19fd25dac.png" />
+<item media-type="image/png" href="Images/img40fedf897eabf34cdf94d5f8db64c091.png" id="AMSimg40fedf897eabf34cdf94d5f8db64c091.png" />
+<item media-type="image/png" href="Images/img4494b3a8e38070961e38e49927a0c6eb.png" id="AMSimg4494b3a8e38070961e38e49927a0c6eb.png" />
+<item media-type="image/png" href="Images/img45212018e860be7e1b6f4b8fd916f7e0.png" id="AMSimg45212018e860be7e1b6f4b8fd916f7e0.png" />
+<item media-type="image/png" href="Images/img457b3c81906c72cdfcdc3fa0b29efda7.png" id="AMSimg457b3c81906c72cdfcdc3fa0b29efda7.png" />
+<item media-type="image/png" href="Images/img4c70b9044a57bad1e0f4839b1a132e5c.png" id="AMSimg4c70b9044a57bad1e0f4839b1a132e5c.png" />
+<item media-type="image/png" href="Images/img4ebe0045ef1d93d67c89b45a142d13a4.png" id="AMSimg4ebe0045ef1d93d67c89b45a142d13a4.png" />
+<item media-type="image/png" href="Images/img50ee1853def5c0b035c738f90cbc8dbe.png" id="AMSimg50ee1853def5c0b035c738f90cbc8dbe.png" />
+<item media-type="image/png" href="Images/img51595326a10c979b783e9aa99288d2c3.png" id="AMSimg51595326a10c979b783e9aa99288d2c3.png" />
+<item media-type="image/png" href="Images/img64280b8d3241b408ea6e93ffbe9ce142.png" id="AMSimg64280b8d3241b408ea6e93ffbe9ce142.png" />
+<item media-type="image/png" href="Images/img6ae338167acb10f6d4b3f681977fc6a2.png" id="AMSimg6ae338167acb10f6d4b3f681977fc6a2.png" />
+<item media-type="image/png" href="Images/img6c18b94a2a3728f973142a9a6c7115a9.png" id="AMSimg6c18b94a2a3728f973142a9a6c7115a9.png" />
+<item media-type="image/png" href="Images/img6f069e5c11b36ada9a3108e9911f7991.png" id="AMSimg6f069e5c11b36ada9a3108e9911f7991.png" />
+<item media-type="image/png" href="Images/img748d43c8fcb54b8ce02f2a04332176a4.png" id="AMSimg748d43c8fcb54b8ce02f2a04332176a4.png" />
+<item media-type="image/png" href="Images/img7c697d6fca561943a9c8d0a31b614a55.png" id="AMSimg7c697d6fca561943a9c8d0a31b614a55.png" />
+<item media-type="image/png" href="Images/img7e30528963a3ddc1c441d2a6d8f3dded.png" id="AMSimg7e30528963a3ddc1c441d2a6d8f3dded.png" />
+<item media-type="image/png" href="Images/img81f4701404db32c2b6aa27e4f98722fb.png" id="AMSimg81f4701404db32c2b6aa27e4f98722fb.png" />
+<item media-type="image/png" href="Images/img85ae6d2ad1cbb2c2eae5167d488b7b79.png" id="AMSimg85ae6d2ad1cbb2c2eae5167d488b7b79.png" />
+<item media-type="image/png" href="Images/img88a4b914ebff769c66603308d3d3166b.png" id="AMSimg88a4b914ebff769c66603308d3d3166b.png" />
+<item media-type="image/png" href="Images/img9430fcd736ce6617e1d1db45aaec9bc5.png" id="AMSimg9430fcd736ce6617e1d1db45aaec9bc5.png" />
+<item media-type="image/png" href="Images/img9b572eb580a5eff023af2708975e6e48.png" id="AMSimg9b572eb580a5eff023af2708975e6e48.png" />
+<item media-type="image/png" href="Images/img9f99d5caf4f5973d8faff916928a47f3.png" id="AMSimg9f99d5caf4f5973d8faff916928a47f3.png" />
+<item media-type="image/png" href="Images/imga17309b893472a954b723d9646316bc3.png" id="AMSimga17309b893472a954b723d9646316bc3.png" />
+<item media-type="image/png" href="Images/imga3eb0413f4b58bcc92873351e8133b60.png" id="AMSimga3eb0413f4b58bcc92873351e8133b60.png" />
+<item media-type="image/png" href="Images/imgaef8f267cbb4e25ee5d3bb744ce093f1.png" id="AMSimgaef8f267cbb4e25ee5d3bb744ce093f1.png" />
+<item media-type="image/png" href="Images/imgb0b5ee3f8ff1d4cb68c4e93dbd370efa.png" id="AMSimgb0b5ee3f8ff1d4cb68c4e93dbd370efa.png" />
+<item media-type="image/png" href="Images/imgb4944d516980ca02bcaf63301cf0fef6.png" id="AMSimgb4944d516980ca02bcaf63301cf0fef6.png" />
+<item media-type="image/png" href="Images/imgb6c1eea69ee3984cd9e6d89fb4cb70f7.png" id="AMSimgb6c1eea69ee3984cd9e6d89fb4cb70f7.png" />
+<item media-type="image/png" href="Images/imgb8d05c3a95e6339456bf605517179fd2.png" id="AMSimgb8d05c3a95e6339456bf605517179fd2.png" />
+<item media-type="image/png" href="Images/imgb94cfdbcd540f93446c7b8d4fa33b928.png" id="AMSimgb94cfdbcd540f93446c7b8d4fa33b928.png" />
+<item media-type="image/png" href="Images/imgbd39ba7b2d83e1e6c594302ab47efba1.png" id="AMSimgbd39ba7b2d83e1e6c594302ab47efba1.png" />
+<item media-type="image/png" href="Images/imgc0d10a3992f90e115763d07fafde60bc.png" id="AMSimgc0d10a3992f90e115763d07fafde60bc.png" />
+<item media-type="image/png" href="Images/imgc8b2856d6ec488392dd394ca94dd8187.png" id="AMSimgc8b2856d6ec488392dd394ca94dd8187.png" />
+<item media-type="image/png" href="Images/imgcf06407e499c15ae8648509bd7a51b0b.png" id="AMSimgcf06407e499c15ae8648509bd7a51b0b.png" />
+<item media-type="image/png" href="Images/imgda9003e48a0b6c654915d191fc4f0a7c.png" id="AMSimgda9003e48a0b6c654915d191fc4f0a7c.png" />
+<item media-type="image/png" href="Images/imgdce8064f13429b1c789f20532dea16ea.png" id="AMSimgdce8064f13429b1c789f20532dea16ea.png" />
+<item media-type="image/png" href="Images/imge0627d159ca2b379ac7f9019fc9ece8b.png" id="AMSimge0627d159ca2b379ac7f9019fc9ece8b.png" />
+<item media-type="image/png" href="Images/imge74f341e317e165138ebff9c3e0ec7dc.png" id="AMSimge74f341e317e165138ebff9c3e0ec7dc.png" />
+<item media-type="image/png" href="Images/imgf5cf8b4e26dc5a373db2a718b19ecb19.png" id="AMSimgf5cf8b4e26dc5a373db2a718b19ecb19.png" />
+<item media-type="image/png" href="Images/imgf9f8c514eb399f7948de485f910cabd9.png" id="AMSimgf9f8c514eb399f7948de485f910cabd9.png" />
+<item media-type="image/png" href="Images/imgfa0f4c9f2d0de48998f756a4c9cb8ec9.png" id="AMSimgfa0f4c9f2d0de48998f756a4c9cb8ec9.png" />
+<item media-type="image/png" href="Images/imgfa815f623953afa93009c54a0a4a5cd5.png" id="AMSimgfa815f623953afa93009c54a0a4a5cd5.png" />
+<item media-type="image/png" href="Images/imgff3241c96ff55c9f77d5a4ca11306ba5.png" id="AMSimgff3241c96ff55c9f77d5a4ca11306ba5.png" />
+</manifest>
+  <spine>
+    <itemref idref="cover.xhtml" />
+    <itemref idref="index.xhtml" />
+    <itemref idref="cip.xhtml" />
+    <itemref idref="toc01.xhtml" />
+  <itemref idref="AMSPart-0001.xhtml" />
+<itemref idref="AMSPart-0003.xhtml" />
+<itemref idref="AMSPart-0004.xhtml" />
+<itemref idref="AMSPart-0005.xhtml" />
+<itemref idref="AMSPart-0006.xhtml" />
+<itemref idref="AMSPart-0007.xhtml" />
+<itemref idref="AMSPart-0008.xhtml" />
+<itemref idref="AMSPart-0009.xhtml" />
+<itemref idref="AMSPart-0010.xhtml" />
+<itemref idref="AMSPart-0011.xhtml" />
+<itemref idref="AMSPart-0012.xhtml" />
+<itemref idref="AMSPart-0013.xhtml" />
+<itemref idref="AMSPart-0014.xhtml" />
+<itemref idref="AMSPart-0015.xhtml" />
+<itemref idref="AMSPart-0016.xhtml" />
+<itemref idref="AMSPart-0017.xhtml" />
+<itemref idref="AMSPart-0018.xhtml" />
+<itemref idref="AMSPart-0019.xhtml" />
+<itemref idref="AMSPart-0020.xhtml" />
+</spine>
+  <guide>
+    <reference type="text" title="Start reading" href="Text/Part-0001.xhtml" />
+    <reference type="toc" title="Table of Contents" href="Text/toc01.xhtml" />
+    <reference type="cover" title="Cover" href="Text/cover.xhtml" />
+  </guide>
+</package>
+    

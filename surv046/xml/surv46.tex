@@ -1,24 +1,8 @@
-% Author Package file for use with AMS-LaTeX 1.2
-% 
-% Scanned by scansub v1.20.5 on Mon Feb 10 13:34:49 EST 2014
-% 
-% Suspicious packages:
-%     hyperref
-% 
-% Environments look ok.
-% 
-% Suspicious commands:
-%     \break (9)
-%     \clearpage (2)
-%     \newtheorem{}{}[] (1)
-%     \noindent (33)
-%     \space (1)
-%     \thispagestyle (2)
-% 
-% Suspicious characters:
-%     ASCII 13 (Control-M Carriage return) (36)
-
 \documentclass{surv-l}
+
+\usepackage{iftexml}
+\usepackage{epigraph}
+
 
 \usepackage{amssymb}
 \usepackage{mathrsfs}
@@ -29,6 +13,7 @@
 \numberwithin{table}{section}
 \numberwithin{figure}{section}
 
+\theoremstyle{plain}
 \newtheorem{theorem}[equation]{Theorem}
 \newtheorem{question}[equation]{Question}
 \newtheorem{lemma}[equation]{Lemma}
@@ -50,117 +35,16 @@
 \newtheorem{example}[equation]{Example}
 \newtheorem{notation}[equation]{Notation}
 
-\newenvironment{copyrightpage}{\clearpage\thispagestyle{empty}}{\thispagestyle{empty}\clearpage}
 
-\newcommand\circledinfty{\ooalign{$\bigcirc$\cr$\infty$\cr}\space}
 
 \makeindex
 
-\setcounter{chapter}{0}
 \begin{document}
 
 \frontmatter
 
-\begin{titlepage}
-Symmetric Inverse Semigroups
-\end{titlepage}
-
-\title{Symmetric Inverse Semigroups}
-
-\author{Stephen Lipscomb}
-
-\dedicatory{to the memory of my father\\
-David Leon Lipscomb (1913--1996)}
-
-
-\maketitle
-
-\begin{copyrightpage}
-\begin{center}
-\textbf{EDITORIAL COMMITTEE}
-\end{center}
-
-\noindent\qquad\qquad\qquad Georgia Benkart, Chair\qquad\qquad\qquad Howard Masur
-
-\noindent\qquad\qquad\qquad Robert Greene\qquad\qquad\qquad\qquad\qquad Tudor Ratiu
-
-Financial support from the following is gratefully acknowledged:
-Mary Washington College and the Navy-ASEE (American Society of
-Engineering Education) via the Marine Corps Systems Command
-Amphibious Warfare Directorate under the Marine Corps Exploratory
-Development Program (MQIA PE 62131M).
-
-\begin{center}
-1991 \emph{Mathematics Subject Classification}. Primary 20M20,20M18;
-
-Secondary 20M05, 05C60, 20M30, 20B30.
-\end{center}
-
-\noindent \textsc{Abstract}. With over 60 figures, tables, and
-diagrams, the text is both an intuitive introduction to and
-rigorous study of finite symmetric inverse semigroups. It turns
-out that these semigroups enjoy many of the classical features of
-the finite symmetric groups. For example, cycle notation,
-conjugacy, cummutativity, parity of permutations, alternating
-subgroups, Klein 4-group, Ruffini's result\index{Ruffini's result}
-on cyclic groups, Moore's presentations of the symmetric and
-alternating groups, and the centralizer theory of symmetric groups
-are extended to more general counterparts in the semigroups
-studied here. We also classify normal subsemigroups, study
-congruences, and illustrate and apply an Eilenberg-style wreath
-product. The basic semigroup theory is further extended to partial
-transformation semigroups, and the Reconstruction
-Conjecture\index{Reconstruction Conjecture} of graph theory is
-recast as a Rees ideal-extension~conjecture.\\
-
-\textbf{Library of Congress Cataloging-in-Publication Data}
-
-Lipscomb, Stephen, 1944--
-
-\quad Symmetric inverse semigroups/Stephen Lipscomb.
-
-\qquad p. cm. --- (Mathematical surveys and monographs, ISSN
-0076-5376 ; v. 46)
-
-\quad Includes bibliographical references and index.
-
-\quad ISBN 0-8218-0627-0 (alk. paper)
-
-\quad 1. Inverse semigroups. I. Title. II. Series: Mathematical
-surveys and monographs; no. 46.
-
-QA182.L56\quad 1996\hfill 96-26968
-
-512$'$.2---dc20\hfill CIP\\
-
-\textbf{Copying and reprinting.} Individual readers of this
-publication, and nonprofit libraries acting for them, are
-permitted to make fair use of the material, such as to copy a
-chapter for use in teaching or research. Permission is granted to
-quote brief passages from this publication in reviews, provided
-the customary acknowledgment of the source is~given.
-
-Republication, systematic copying, or multiple reproduction of any
-material in this publication (including abstracts) is permitted
-only under license from the American Mathematical Society.
-Requests for such permission should be addressed to the Assistant
-to the Publisher, American Mathematical Society, P. O. Box 6248,
-Providence, Rhode Island 02940-6248. Requests can also be made by
-e-mail to \texttt{reprint-permission@ams.org}.
-
-\begin{center}
-\textcopyright\ 1996 by the American Mathematical Society. All rights reserved.
-
-The American Mathematical Society retains all rights except those granted to the United States Government.
-
-Printed in the United States of America.
-
-\circledinfty\ The paper used in this book is acid-free and falls within the guidelines established to ensure permanence and durability.
-
-10\ 9\ 8\ 7\ 6\ 5\ 4\ 3\ 2\ 1\qquad 01\ 00\ 99\ 98\ 97\ 96
-\end{center}
-\end{copyrightpage}
-
+\dedicatory{dedicated to the memory of my father\\
+David Leon Lipscomb (1913 -- 1996)}
 
 \tableofcontents
 
@@ -168,11 +52,9 @@ Printed in the United States of America.
 
 \chapter*{Preface}
 
-
-\noindent ``$\ldots$ \emph{the invention of a convenient and flexible
+\epigraph{``$\ldots$ the invention of a convenient and flexible
 notation\index{notation} is often more seminal than is the proof
-of even the deepest of theorems}.''\hfill J. A. Paulos
-(1991)\footnote{[\hyperlink{bib1}{1}], Page~163.}
+of even the deepest of theorems.''}{J. A. Paulos (1991)\footnote{[\ref{bib1}], Page~163.}}
 
 The primary purpose of this book is to document a study of the
 \index{symmetric inverse}\emph{symmetric inverse
@@ -244,7 +126,7 @@ each course, I benefited greatly from students' criticisms and
 suggestions, especially those of Chris Dupilka\index{Dupilka C.},
 Margaret Hermann\index{Hermann M.}, and Dan Parks.\index{Parks,
 A.D.} (In fact, Parks\index{Parks, A.D.}
-[\hyperlink{bib57}{1}] went on to introduce an
+[\ref{bib57}] went on to introduce an
 application of inverse semigroup theory to quantum physics.)
 
 Some of the research for this text was completed during my senior
@@ -265,22 +147,21 @@ Petrich, whose advisory comments led to a greatly improved
 presentation.
 
 And a word of thanks to my wife Patty, who kept me healthy
-and~happy.\\
+and~happy.
 
-\noindent May 1996\hfill S.L.L.
-
-\noindent Mary Washington College
-
-\noindent Fredericksburg, Virginia
+\aufm{S.L.L.\\
+Mary Washington College\\
+Fredericksburg, Virginia\\
+May 1996}
 
 \chapter*{Introduction}
 
 In 1815, inspired by Gauss' ``theory of forms'' (in
 \emph{Disquisitiones Arithmeticae}), Cauchy
-[\hyperlink{bib7}{1}] published a memoir in which he
+[\ref{bib7}] published a memoir in which he
 introduced the (cycle) notation ``$(a,b)$'' to indicate the
 transposition of two letters $a$ and $b$ by a permutation. In the
-second part of that memoir, Cauchy [\hyperlink{bib7a}{2}]
+second part of that memoir, Cauchy [\ref{bib7a}]
 also introduced both the decomposition of a permutation into
 disjoint cycles and the alternating subgroup\index{alternating
 group} $A_{n}$ of the symmetric\index{group!symmetric}
@@ -303,7 +184,7 @@ groups, and that the basic content of semigroup theory should be
 its relationship with transformation
 semigroups\index{transformation semigroups}
 (Gluskin\index{Gluskin, L. M.} and Schein\index{Schein,
-B.M.}~[\hyperlink{bib20}{1}]). (A \emph{transformation
+B.M.}~[\ref{bib20}]). (A \emph{transformation
 semigroup}\index{semi-groups} on a set $X$ is a semigroup whose
 elements are partial transformations on $X$ and whose
 multiplication is the usual composition of functions.\footnote{A
@@ -313,7 +194,7 @@ and a \emph{chart}\index{charts(s)} on $X$ is a one-one partial
 transformation on $X$.})
 
 Thirty years later, in 1952, V.V. Wagner\index{Wagner, V.V.}
-[\hyperlink{bib78}{1}] was the first to introduce inverse
+[\ref{bib78}] was the first to introduce inverse
 semigroups, where the semigroup $C_{n}$ of charts on
 $N=\{1,\ldots, n\}$ plays the role that $S_{n}$ plays in the
 theory of groups. (Formally, a semigroup $S$ is an \emph{inverse
@@ -342,7 +223,7 @@ Semigroups}.
 During that same 30-year period, however, relatively little was
 written on symmetric inverse semigroups: For example, as early as
 1953, A.E. Liber\index{Liber, A.E.}
-[\hyperlink{bib72}{1}] had provided an algebraic
+[\ref{bib72}] had provided an algebraic
 characterization and studied congruences, but as late as 1994, the
 normal subsemigroups of $C_{n}$ were yet to be classified.
 
@@ -355,16 +236,14 @@ $A_{n}^{c}$ (alternating semigroup) of~$C_{n}$.
 As far as this author knows, from 1957 to 1987 there were four
 independently introduced notations for elements of $C_{n}$. The
 first appeared in a 1957 paper by W.D. Munn\index{Munn,
-W.D.}~[\hyperlink{bib54}{1}]; the second, path notation,
-in a 1986 paper by the author~[\hyperlink{bib37}{1}]; and
+W.D.}~[\ref{bib54}]; the second, path notation,
+in a 1986 paper by the author~[\ref{bib37}]; and
 the third and fourth in 1987 papers --- one authored by G.M.S.
 Gomes\index{Gomes, G. M. S.} and J.M. Howie\index{Howie, J.
-M.}~[\hyperlink{bib22a}{2}], and another by R.P.
-Sullivan\index{Sullivan, R.P.}~[\hyperlink{bib72}{1}].
+M.}~[\ref{bib22a}], and another by R.P.
+Sullivan\index{Sullivan, R.P.}~[\ref{bib72}].
 
-\begin{center}
 \textbf{Format, Conventions, and Outline}
-\end{center}
 
 The style of the text is informal, e.g., definitions of terms are
 generally neither numbered nor offset. A term that is being
@@ -377,7 +256,7 @@ The sections are numbered sequentially throughout the text, from
 last section) in the Appendix. Each figure, table, lemma,
 proposition, and theorem is numbered according to the section in
 which it appears. To illustrate, in \S\textbf{51} we begin with
-``Figure~51.1.'' Then we have \textbf{51.2 Lemma},
+``Figure~\ref{fig11.51.1}.'' Then we have \textbf{51.2 Lemma},
 which is followed by \textbf{51.3 Theorem}. In short,
 everything may be found by looking for the appropriate section
 numbers.
@@ -560,7 +439,7 @@ j_{n-k}\}$, then
 
 \begin{figure}[!h]
 \includegraphics{chap01-vend-scan-01.eps}
-\caption{Picturing paths.\label{fig1.1.1}}
+\caption{Picturing paths.}\label{fig1.1.1}
 \end{figure}
 
 \noindent is a \emph{circuit}\index{circuit} (a
@@ -885,7 +764,7 @@ Figure~\ref{fig1.3.3}.
 \setcounter{figure}{2}
 \begin{figure}[!h]
 \includegraphics{chap01-vend-scan-02.eps}
-\caption{The path decomposition of a chart.\label{fig1.3.3}}
+\caption{The path decomposition of a chart.}\label{fig1.3.3}
 \end{figure}
 
 We also note that while the zero\index{chart!zero} chart $0$ of
@@ -930,21 +809,21 @@ structure.
 Historically, it is claimed that the term ``semigroup'' first
 appeared in the mathematical literature in 1904 (page 8 of J.-A.
 de S\'{e}guier's\index{S\'{e}guier, J.-A. de} book
-[\hyperlink{bib70}{1}]), that the first published paper
+[\ref{bib70}]), that the first published paper
 on semigroups appeared in 1905 (L. E. Dickson\index{Dickson L. E.}
-[\hyperlink{bib12}{1}]), and that the first book on
+[\ref{bib12}]), and that the first book on
 semigroups appeared in 1937 (A. K.
 Suschkewitsch\index{Suschkewitsch,
-A.K.}~[\hyperlink{bib73a}{2}]). (Clifford and
-Preston\index{Preston, G.B.}~[\hyperlink{bib8}{1}] and
-also Schein\index{Schein, B.M.}~[\hyperlink{bib69}{1}].)
+A.K.}~[\ref{bib73a}]). (Clifford and
+Preston\index{Preston, G.B.}~[\ref{bib8}] and
+also Schein\index{Schein, B.M.}~[\ref{bib69}].)
 
 From 1940 to 1961, according to Clifford and Preston, ``$\ldots$
 the number of papers [on semigroups] appearing each year has grown
 fairly steadily to a little more than 30 on average.'' Their
 estimate roughly equates to the 494 bibliographical entries in the
 1958 (first) edition of Ljapin's\index{Ljapin, E.S.}
-book~[\hyperlink{bib46}{1}].
+book~[\ref{bib46}].
 
 In 1952, Wagner introduced inverse semigroups as \emph{generalized
 groups}, and two years later, in 1954, Preston independently
@@ -957,10 +836,10 @@ substantial: In 1984, M. Petrich published his 674-page text,
 the year that Ljapin listed~494.
 
 At the very beginnings of inverse semigroup theory,
-Wagner\index{Wagner, V.V.} [\hyperlink{bib78}{1}] in
+Wagner\index{Wagner, V.V.} [\ref{bib78}] in
 1952, Preston\index{Preston, G.B.}
-[\hyperlink{bib63a}{2}] in 1954, and
-Preston\index{Preston, G.B.} [\hyperlink{bib63b}{3}] in
+[\ref{bib63a}] in 1954, and
+Preston\index{Preston, G.B.} [\ref{bib63b}] in
 1957, proved the Wagner-Preston Theorem --- each inverse semigroup
 is isomorphic to a subsemigroup of a symmetric\index{symmetric}
 inverse semigroup
@@ -968,7 +847,7 @@ inverse semigroup
 
 Also in 1957, as part of his study of characters of symmetric
 inverse semigroups, W. D. Munn\index{Munn, W.D.}
-[\hyperlink{bib54}{1}] was the first to discover a
+[\ref{bib54}] was the first to discover a
 notational representation of charts that is essentially equivalent
 to path decomposition.
 
@@ -986,20 +865,20 @@ notational~form.
 
 By the mid-1980s, the idea of a proper path was evidently an idea
 waiting to happen: In 1986, the author
-[\hyperlink{bib37}{1}] independently invented path
+[\ref{bib37}] independently invented path
 notation (as presented here) and proved Theorem~\ref{thm1.3.2}.
 (The approach grew out of a study of hypomorphic mapping sets in
 the famous Graph Reconstruction Conjecture
 (Chapter~\ref{chap13}).$)$ In the next year (1987), G. M. S.
 Gomes\index{Gomes, G. M. S.} and J. H. Howie\index{Howie, J. M.}
-[\hyperlink{bib22a}{2}] independently introduced the
+[\ref{bib22a}] independently introduced the
 notion of a \emph{primitive nilpotent}, which they denoted
 ``$||12\cdots k||$.'' (Unlike ``links,'' primitive nilpotents are
 precisely proper paths.) In their Theorem~2.8, they show that a
 non-zero nilpotent in $C_{n}$ is a disjoint union of primitive
 nilpotents, which is part of our Theorem~\ref{thm1.3.2}. And also
 in 1987, R. P. Sullivan\index{Sullivan, R.P.}
-[\hyperlink{bib72}{1}] independently defined
+[\ref{bib72}] independently defined
 $k$-\emph{chains} ``$[1,\ldots, k+1]$'' and $k$-\emph{cycles}
 ``($1,\ldots,k$)'', which are, respectively, proper $(k+1)$ paths
 and $k$-circuits.
@@ -1008,13 +887,13 @@ This mid-1980s idea of decomposing charts into paths merits
 comparison with the 1815 idea of decomposing permutations into
 cycles. In the permutation case, cycle decomposition appeared in
 1815 along with the beginnings of finite group theory. In
-particular, in 1815 Cauchy [\hyperlink{bib7}{1, page 18}]
+particular, in 1815 Cauchy [\ref{bib7}]
 introduced cycle notation ``$(i,j)$'' for transpositions, factored
 a three cycle $(i,j,k)=(j,k)\circ (i,j)$, and then (Cauchy
-[\hyperlink{bib7a}{2}]) decomposed permutations into
+[\ref{bib7a}]) decomposed permutations into
 disjoint cycles. Cycle notation proved useful in the early (up to
 1911) development of finite group theory: Burnside\index{Burnside
-W.} [\hyperlink{bib6}{1}] opens his 1911 text
+W.} [\ref{bib6}] opens his 1911 text
 \emph{Theory of Groups of Finite Order} with the following comment
 on cycle notation,
 \begin{quote}
@@ -1035,11 +914,11 @@ axiomatic from its inception. It has the $C_{n}$ theory as one of
 its branches and path notation did not appear until the mid-1980s.
 As to the state of the $C_{n}$ theory in 1985, consider the
 following statement of Gomes\index{Gomes, G. M. S.} and
-Howie\index{Howie, J. M.} [\hyperlink{bib22}{1}]:
+Howie\index{Howie, J. M.} [\ref{bib22}]:
 \begin{quote}
 ``Since the theory of inverse semigroups is now extensive enough
 to have been the subject of a substantial book by Petrich
-[\hyperlink{bib60}{1}], it is perhaps rather surprising
+[\ref{bib60}], it is perhaps rather surprising
 that very little has been written on the symmetric inverse
 semigroup.''
 \end{quote}
@@ -1060,11 +939,11 @@ introduced and connected, extending their group counterparts (from
 $S_{n}$ to $C_{n}$). This connection is used to compute the
 conjugacy classes of $C_{4}$ (Table~\ref{tab2.7.1}). Path notation
 is also applied to finite cyclic semigroups, thereby generalizing
-Ruffini's classical result [\hyperlink{bib66}{1}] that
+Ruffini's classical result [\ref{bib66}] that
 the order of a permutation is the least common multiple of the
 order of its cycles. For completeness of the cyclic semigroup
 theory, we sharpen Frobenius' result\index{Frobenius
-result} [\hyperlink{bib17}{1}].
+result} [\ref{bib17}].
 
 \setcounter{section}{4}
 \section{Idempotents, Nilpotents, Inverses, Conjugacy}\label{sec2.5}
@@ -1240,7 +1119,7 @@ $\langle(123](4567)\rangle\in C_{7}$.
 
 \begin{figure}[!h]
 \includegraphics{chap02-vend-scan-01.eps}
-\caption{A cyclic semigroup isomorphism.\label{fig2.6.1}}
+\caption{A cyclic semigroup isomorphism.}\label{fig2.6.1}
 \end{figure}
 
 In addition to such isomorphisms, the ideas developed below are
@@ -1368,7 +1247,7 @@ each ``path structure form''
 determines, and is determined by, a conjugacy class.
 
 \begin{table}[!h]
-\caption{Path structure of charts in $C_{4}$.\label{tab2.7.1}}
+\caption{Path structure of charts in $C_{4}$.}\label{tab2.7.1}
 {\begin{tabular}{@{}|l|c|c|c|c|@{}} \hline
 \multicolumn{1}{|l|}{\textbf{number of} $m\rightarrow m$ \textbf{maps}}&  \multicolumn{1}{|l|}{\textbf{path structure}}&   \multicolumn{1}{|l|}{\textbf{number}}& \multicolumn{1}{|l|}{\textbf{index}}& \multicolumn{1}{|l|}{\textbf{period}} \\
 \hline
@@ -1422,40 +1301,40 @@ m
 Both finite group theory and cycle notation date from the time of
 Cauchy\index{Cauchy, A.L.}. For the development of finite group
 theory prior to 1911, see W. Burnside's\index{Burnside W.} text
-[\hyperlink{bib6}{1}], and for many of the developments
+[\ref{bib6}], and for many of the developments
 after 1911, see any standard reference, e.g., Suzuki\index{Suzuki,
-M.} [\hyperlink{bib74}{1}] and
-[\hyperlink{bib74a}{2}]. As for cycle notation, inspired
+M.} [\ref{bib74}] and
+[\ref{bib74a}]. As for cycle notation, inspired
 by Gauss'\index{Gauss, C. F.} use of ``the theory of forms,''
 Cauchy introduced the notation in his 1815 memoir (Cauchy
-[\hyperlink{bib7}{1}]
-and~[\hyperlink{bib7a}{2}]).
+[\ref{bib7}]
+and~[\ref{bib7a}]).
 
 One benefit of cycle notation is that in $S_{n}$, cycle structure
 determines conjugacy. This result is rather old, appearing as a
 ''first principle'' in \S\ref{sec7.32} of C.
 Jordan's\index{Jordan, C.} 1870 text
-[\hyperlink{bib34}{1}], while its (obvious) extension to
+[\ref{bib34}], while its (obvious) extension to
 $C_{n}$\index{cyclic!in $C_{n}$}, that path structure determines
 conjugacy, is rather new, introduced in 1992 by the author
-[\hyperlink{bib43d}{5}]. By 1995, the more general view
+[\ref{bib43d}]. By 1995, the more general view
 of conjugacy was fundamental to classifying the $S_{n}$-normal
 semigroups (Chapter~\ref{chap7}).
 
 As for conjugacy in arbitrary semigroups, there seems to be no
 standard. One definition is given in Dauns
-[\hyperlink{bib10}{1}], where semigroups with a zero have
+[\ref{bib10}], where semigroups with a zero have
 every pair of elements conjugate, two equivalent definitions
 appear in Lallement\index{Lallement, G.}\index{Lallement's
-Question} [\hyperlink{bib38}{1}], which concern words in
+Question} [\ref{bib38}], which concern words in
 a free semigroup, and yet another in Goldstein\index{Goldstein,
 R.} and Teymouri\index{Teymouri, J.}
-[\hyperlink{bib21}{1}], which is a modification of the
+[\ref{bib21}], which is a modification of the
 one used by Lallement. Moreover, when the two equivalent
 definitions of conjugacy used by Lallement are extended to
 arbitrary monoids, they become different concepts
-(Zhang\index{Zhang, L.} [\hyperlink{bib80}{1}]
-and~[\hyperlink{bib80a}{2}]).
+(Zhang\index{Zhang, L.} [\ref{bib80}]
+and~[\ref{bib80a}]).
 
 While~\ref{lem1.3.1} extends to $C_{n}$ the unique representations
 enjoyed in $S_{n}$, Theorem~\ref{thm2.5.1} extends to $C_{n}$ the
@@ -1472,13 +1351,12 @@ proper paths, we ``see'' the following proposition because we
 ``essentially see'' the proper paths ``moving $A$ to the
 right,'' and not ``fixing $A$,'' which would require circuits
 in the representation of~$\alpha$.
-\end{enumerate}
-\begin{quote}
-A chart $\alpha\in C_{n}$ of rank $k<n$ is nilpotent if and
+
+\item[]A chart $\alpha\in C_{n}$ of rank $k<n$ is nilpotent if and
 only if there exists no nonempty subset $A$ of
 $\mathbf{d}\alpha$ such that $A\alpha= A$.
-\end{quote}
-\begin{enumerate}
+
+
 \item[(iii)] With (3) and (4) of \ref{thm2.5.1}, we ``see'' that $\alpha^{-1}$ and
 $\alpha$ are conjugate charts. Moreover, we may easily find
 $\beta\in S_{n}$ such that
@@ -1491,78 +1369,77 @@ powers of charts without performing any multiplications.
 \end{enumerate}
 
 For idempotents in other semigroups, in 1966 Howie
-[\hyperlink{bib22a}{2}] published a seminal paper where
+[\ref{bib22a}] published a seminal paper where
 he characterized the elements of $T_{X}$, the semigroup (under
 composition) of all total transformations $X\rightarrow X$, that
 may be written as a product of idempotents in $T_{X}$. His work
 was extended to $PT_{X}$, the semigroup (under composition) of all
 partial (not necessarily one-one) transformations $X\rightarrow
 X$, for finite $X$ in 1969 by Sullivan\index{Sullivan, R.P.}
-[\hyperlink{bib72a}{2}], and, independently, in 1970 and
+[\ref{bib72a}], and, independently, in 1970 and
 1972 for arbitrary $X$ by Evseev\index{Evseev, J. A.} and
-Podran\index{Podran N.E.} [\hyperlink{bib15}{1}] and
-[\hyperlink{bib15a}{2}]. For other examples and
+Podran\index{Podran N.E.} [\ref{bib15}] and
+[\ref{bib15a}]. For other examples and
 information on research in this area, see Howie's 1980 and 1984
-papers [\hyperlink{bib32b}{3}] and
-[\hyperlink{bib32c}{4}], see the introduction of
+papers [\ref{bib31b}] and [\ref{bib31c}], see the introduction of
 Sullivan's\index{Sullivan, R.P.} 1987 paper
-[\hyperlink{bib72}{1}], and Saito's\index{Saito, T.} 1989
-papers [\hyperlink{bib67}{1}]
-and~[\hyperlink{bib67a}{2}].
+[\ref{bib72}], and Saito's\index{Saito, T.} 1989
+papers [\ref{bib67}]
+and~[\ref{bib67a}].
 
 Nilpotents do not appear as elements of groups because nontrivial
 groups have no zero. If a finite transformation semigroup $S$
 contains a zero, then it contains nilpotents, and it is natural to
 ask about the subsemigroup of $S$ generated by all the nilpotents
 in $S$. In 1987, Gomes\index{Gomes, G. M. S.} and Howie\index{Howie,
-J. M.} [\hyperlink{bib22a}{2}] and
-Sullivan\index{Sullivan, R.P.} [\hyperlink{bib72}{1}]
+J. M.} [\ref{bib22a}] and
+Sullivan\index{Sullivan, R.P.} [\ref{bib72}]
 independently initiated this study for $C_{n}$ and $PT_{n}$,
 respectively. (Recall that $PT_{n}$ denotes the semigroup of all
 partial (not necessarily one-one) transformations $N\rightarrow
 N$.) Nilpotents have also been studied in other special cases,
 e.g., for a recent (1994) reference see Garba\index{Garba, G.
-U.}~[\hyperlink{bib18}{1}].
+U.}~[\ref{bib18}].
 
 The notion of regularity was introduced into ring theory in 1936
 by J. von Neumann\index{von Neumann, J.}. In the general theory of
 semigroups, regular semigroups were first studied by
-Thierrin\index{Thierrin, G.} [\hyperlink{bib76}{1}] in
+Thierrin\index{Thierrin, G.} [\ref{bib76}] in
 1951 under the name of \emph{demi-groupes inversifs}.
 
 Regular semigroups with commuting idempotents became important in
-1952 when Wagner [\hyperlink{bib78}{1}] introduced
+1952 when Wagner [\ref{bib78}] introduced
 inverse semigroups. In 1952 and 1954, respectively, Wagner
-[\hyperlink{bib78}{1}] and Preston\index{Preston, G.B.}
-[\hyperlink{bib63}{1}] independently showed that a
+[\ref{bib78}] and Preston\index{Preston, G.B.}
+[\ref{bib63}] independently showed that a
 regular semigroup with commuting idempotents is an inverse
 semigroup. In 1953, Liber\index{Liber, A.E.}
-[\hyperlink{bib42}{1}] proved the converse
+[\ref{bib42}] proved the converse
 --- any inverse semigroup is necessarily regular with commuting
 idempotents. Equivalent results were obtained in 1955 by Munn and
-Penrose\index{Penrose R.}~[\hyperlink{bib55}{1}].
+Penrose\index{Penrose R.}~[\ref{bib55}].
 
 It was G. Frobenius\index{Frobenius, G.}
-[\hyperlink{bib17}{1}] in 1895 who first characterized
+[\ref{bib17}] in 1895 who first characterized
 the smallest exponent $k$ such that $a^{k}$ is the identity of
 $K_{a}$ as the positive integer $k$ satisfying $m|k$ and $r\leq
 k<r+m$. That every element $a$ in every finite semigroup determines
 a $k$ such that $a^{k}$ is idempotent was also proved in 1902 by
-E. H. Moore\index{Moore, E.H.}~[\hyperlink{bib53a}{2}].
+E. H. Moore\index{Moore, E.H.}~[\ref{bib53a}].
 Corollary~\ref{cor2.6.4}, which provides a formula $k=k(r,m)$ for
 calculating $k$, was discovered by the author
-[\hyperlink{bib43}{1}]. The results of Frobenius were
+[\ref{bib43}]. The results of Frobenius were
 also found by Morgan Ward in 1933 (unpublished);
 Suschkewitsch\index{Suschkewitsch,
-A.K.}~[\hyperlink{bib73a}{2}, \S\ref{sec5.19} of
+A.K.}~[\ref{bib73a}, \S\ref{sec5.19} of
 Chapter~\ref{chap2}] (1937); Poole\index{Poole, A.R.}
-[\hyperlink{bib61}{1}] (1937); Rees\index{Rees, D.}
-[\hyperlink{bib23}{1}] (1940); and
-Climescu\index{Climescu, A.C.} [\hyperlink{bib9}{1}]
+[\ref{bib61}] (1937); Rees\index{Rees, D.}
+[\ref{bib23}] (1940); and
+Climescu\index{Climescu, A.C.} [\ref{bib9}]
 (1946).
 
 In the $S_{n}$ theory, it is standard practice
-(Rotman\index{Rotman, J.J.} [\hyperlink{bib65}{1}, pages
+(Rotman\index{Rotman, J.J.} [\ref{bib65}, pages
 41--44]) to use cycle notation to catalog conjugacy classes
 and/or count cyclic subgroups. The extension of such catalogs to
 include $C_{n}$ (Table~\ref{tab2.7.1}) was natural---path
@@ -1612,7 +1489,7 @@ $\alpha$-induced cyclic orderings (Figure~\ref{fig3.9.1}).
 
 \begin{figure}[!h]
 \includegraphics{chap03-vend-scan-01.eps}
-\caption{Picturing commuting permutations.\label{fig3.9.1}}
+\caption{Picturing commuting permutations.}\label{fig3.9.1}
 \end{figure}
 
 The $C_{n}$ case is similar. For the same permutation
@@ -1624,7 +1501,7 @@ however, $\beta'$ maps only the 3-circuit (123) onto the 3-circuit
 
 \begin{figure}[!h]
 \includegraphics{chap03-vend-scan-02.eps}
-\caption{Picturing commuting charts.\label{fig3.9.2}}
+\caption{Picturing commuting charts.}\label{fig3.9.2}
 \end{figure}
 
 For our final example, we stay in $C_{8}$ but change both $\alpha$
@@ -1639,11 +1516,11 @@ initial segment ``(12'' of (123] onto the final segment ``78]'' of
 Let $k\geq 2$ and suppose that $\eta=(i_{1}\cdots i_{k}]$ is a
 proper $k$-path. Then $\eta$ has
 \begin{align*}
-\emph{initial sets}:\index{initial sets of}\quad &\{i_{1}\},\ \{i_{1},\ i_{2}\},\ldots,
+\mathit{initial\ sets}:\index{initial sets of}\quad &\{i_{1}\},\ \{i_{1},\ i_{2}\},\ldots,
 \{i_{1},\ i_{2},\ldots, i_{k}\}; \\
-\emph{terminal sets}:\quad &\{i_{1},\ i_{2},\ldots, i_{k}\},\ldots, \{i_{k-1},\ i_{k}\},\ \{i_{k}\}; \\
-\emph{initial segments}:\quad &(i_{1}], (i_{1}i_{2}],\ldots,(i_{1}\cdots i_{k}];\quad \mathrm{and} \\
-\emph{terminal segments}:\quad &(i_{1}\cdots i_{k}],\ldots,(i_{k-1}i_{k}],(i_{k}].
+\mathit{terminal\ sets}:\quad &\{i_{1},\ i_{2},\ldots, i_{k}\},\ldots, \{i_{k-1},\ i_{k}\},\ \{i_{k}\}; \\
+\mathit{initial\ segments}:\quad &(i_{1}], (i_{1}i_{2}],\ldots,(i_{1}\cdots i_{k}];\quad \mathrm{and} \\
+\mathit{terminal\ segments}:\quad &(i_{1}\cdots i_{k}],\ldots,(i_{k-1}i_{k}],(i_{k}].
 \end{align*}
 For $k=1$, any attempt to define these concepts becomes a sticky
 wicket, because $(1]=(2]=\cdots=(n]=0\in C_{n}$. Nevertheless, we
@@ -1702,17 +1579,16 @@ equivalent~to
 \begin{figure}[!h]
 \includegraphics{chap03-vend-scan-03.eps}
 \caption{Expressing $\alpha \circ\beta=\beta \circ\alpha$ with commuting
-diagrams.\label{fig3.10.2}}
+diagrams.}\label{fig3.10.2}
 \end{figure}
 
 \noindent First, suppose $x\beta$ is in a circuit of $\alpha$, i.e., assume
-$x\beta=b_{11}$. Then $(x\beta)\alpha,(x\beta)\alpha^{2},\ldots,\break
-(x\beta)\alpha^{r_{1}}$ are all defined. This data is organized in
+$x\beta=b_{11}$. Then $(x\beta)\alpha,(x\beta)\alpha^{2},\ldots, (x\beta)\alpha^{r_{1}}$ are all defined. This data is organized in
 Figure~\ref{fig3.10.3}.
 
 \begin{figure}[!h]
 \includegraphics{chap03-vend-scan-04.eps}
-\caption{When $ x\beta$ is in a circuit of $\alpha$.\label{fig3.10.3}}
+\caption{When $ x\beta$ is in a circuit of $\alpha$.}\label{fig3.10.3}
 \end{figure}
 
 \noindent But viewing $\alpha \circ\beta=\beta \circ\alpha$ in terms of the
@@ -1721,7 +1597,7 @@ Figure~\ref{fig3.10.3} as indicated in Figure~\ref{fig3.10.4}.
 
 \begin{figure}[!h]
 \includegraphics{chap03-vend-scan-05.eps}
-\caption{Completing the diagram in Figure~\ref{fig3.10.3}.\label{fig3.10.4}}
+\caption{Completing the diagram in Figure~\ref{fig3.10.3}.}\label{fig3.10.4}
 \end{figure}
 
 \noindent It follows, since $\beta$ is one-one, that $x$ is also in an
@@ -1740,7 +1616,7 @@ terminates at $(x\beta)\alpha^{k}=d_{1q_{1}}\not\in
 
 \begin{figure}[!h]
 \includegraphics{chap03-vend-scan-06.eps}
-\caption{When $ x\beta$ is in a proper path of $\alpha$.\label{fig3.10.5}}
+\caption{When $ x\beta$ is in a proper path of $\alpha$.}\label{fig3.10.5}
 \end{figure}
 
 As before, viewing $\alpha \circ\beta=\beta \circ\alpha$ in terms
@@ -1750,7 +1626,7 @@ Figure~\ref{fig3.10.6}.
 
 \begin{figure}[!h]
 \includegraphics{chap03-vend-scan-07.eps}
-\caption{Completing the diagram in Figure~\ref{fig3.10.5}.\label{fig3.10.6}}
+\caption{Completing the diagram in Figure~\ref{fig3.10.5}.}\label{fig3.10.6}
 \end{figure}
 
 Next, observe that $x\alpha^{k}$ must be in a proper path.
@@ -1772,7 +1648,7 @@ Figure~\ref{fig3.10.2} and thereby~obtain
 
 \begin{figure}[!h]
 \includegraphics{chap03-vend-scan-08.eps}
-\caption{Mapping initial segments onto terminal segments.\label{fig3.10.7}}
+\caption{Mapping initial segments onto terminal segments.}\label{fig3.10.7}
 \end{figure}
 
 This backtrack argument shows that when $\beta$ is defined at
@@ -1829,7 +1705,7 @@ where $a_{ij}\beta=b_{ij}$ for all indices $i$ and~$j$.
 
 \begin{corollary}\label{cor3.10.9}
 Let $\alpha\in S_{n}$ have path decomposition
-$\alpha=(a_{11}\cdots a_{1\ell})\cdots\break (a_{m1}\cdots
+$\alpha=(a_{11}\cdots a_{1\ell})\cdots (a_{m1}\cdots
 a_{m\ell})$, i.e., let $\alpha$ be a regular permutation. Then the
 order of the centralizer $C(\alpha)= \{\beta\in
 S_{n}\mid \alpha \circ\beta=\beta \circ\alpha\}$ is $\ell^{m}m!$.
@@ -1853,7 +1729,7 @@ $S$ is a regular semigroup and the idempotents of $S$ commute.
 \setcounter{figure}{10}
 \begin{figure}[!h]
 \includegraphics{chap03-vend-scan-09.eps}
-\caption{Picturing that idempotents commute.\label{fig3.10.11}}
+\caption{Picturing that idempotents commute.}\label{fig3.10.11}
 \end{figure}
 
 \begin{proof} Clearly $S$ is regular. So first, use (1) of \ref{thm2.5.1} and apply
@@ -1869,14 +1745,14 @@ folklore --- $\alpha \circ\beta=\beta\circ\alpha
 \Leftrightarrow\beta^{-1}\circ \alpha \circ\beta=\alpha$, and the
 ``first principle'' in \S\ref{sec7.32} of C.
 Jordan's\index{Jordan, C.} 1870 text
-[\hyperlink{bib34}{1}] is that the cycles in the disjoint
+[\ref{bib34}] is that the cycles in the disjoint
 cycle decomposition of $\beta^{-1}\circ \alpha \circ\beta$ are
 obtained from those of $\alpha$ by replacing each letter $a_{ij}$
 with~$a_{ij}\beta$.
 
 The $C_{n}$ counterpart to~\ref{cor3.10.8}, namely
 \ref{thm3.10.1}, was introduced by the author
-[\hyperlink{bib43a}{2}] and is fundamental to our study
+[\ref{bib43a}] and is fundamental to our study
 of centralizers (Chapters~\ref{chap5} and \ref{chap6}). Recently,
 using the path decomposition of partial transformations
 (Chapter~\ref{chap11}), Theorem~\ref{thm3.10.1} was extended to a
@@ -1884,11 +1760,11 @@ characterization of $\alpha \circ\beta=\beta \circ\alpha$ where
 $\alpha,\beta\in PT_{n}$, the semigroup of partial (not
 necessarily one-one) transformations $N\rightarrow N$
 (Konieczny\index{Konieczny, J.} and Lipscomb
-[\hyperlink{bib37}{1}]). An alternative proof
+[\ref{bib37}]). An alternative proof
 of~\ref{cor3.10.9} appears in \S170 of Burnside's\index{Burnside,
-W.} text [\hyperlink{bib6}{1}], and \ref{cor3.10.10} is
+W.} text [\ref{bib6}], and \ref{cor3.10.10} is
 the finite case of Liber's\index{Liber, A.E.}
-[\hyperlink{bib42}{1}] 1953 classic~result.
+[\ref{bib42}] 1953 classic~result.
 
 Within the general theory of semigroups, studies of commutativity,
 in various guises, are indeed both plentiful and diverse, but
@@ -1896,7 +1772,7 @@ characterizations of commuting charts\index{of chart in $C_n$}
 prior to the 1988 discovery of \ref{thm3.10.1} seem to be
 nonexistent. For permuting full (not necessarily one-one)
 transformations, see Ehrenfeucht and Harju\index{Harju, T.} and
-Rozenberg [\hyperlink{bib13}{1}].
+Rozenberg [\ref{bib13}].
 
 \chapter{Centralizers\index{permutation(s)!centralizers of} of Permutations\index{permutation(s)}}\label{chap4}
 
@@ -1956,54 +1832,54 @@ the middle column serves as a memory aid, this time illustrating
 applications of Theorem~\ref{thm3.10.1}. (Recall
 Figure~\ref{fig3.9.2}.) The entries in the left column comprise
 the appropriate members of the wreath product $W=Z_{2}^{z}\
-\mathrm{wr}  C_{2}$, where $C_{2}$ encodes the charts defined on
+\mathrm{wr}\  C_{2}$, where $C_{2}$ encodes the charts defined on
 \{(12), (34)\}, and where $Z_{2}^{z}$, denoting $Z_{2}$ with a
 zero $z$ adjoined, accounts not only for the existence of two
 order-preserving maps between two 2-cycles, but also for the
 possibility of not having a map between two 2-cycles.
 
 \begin{table}
-\caption{The $S_{4}$-centralizer of $\alpha=(12)(34)$.\label{tab4.12.1}}
-{\tabcolsep1pc\begin{tabular}{|l|l|l|}
+\caption{The $S_{4}$-centralizer of $\alpha=(12)(34)$.}\label{tab4.12.1}
+{\tabcolsep1pc\begin{tabular}{|l|c|l|}
 \hline
 \multicolumn{1}{|c|}{$Z_{2}\  \mathrm{wr} \ S_{2}$}&   \multicolumn{1}{|c|}{mnemonic}& \multicolumn{1}{|l|}{$C(\alpha)$}   \\
 \hline
-1. (00,(1)(2)) &$\big(\!\begin{smallmatrix}12\\ 12\end{smallmatrix}\!\big) \big(\!\begin{smallmatrix}34\\ 34\end{smallmatrix}\!\big)$&1. (1)(2)(3)(4)\\[3pt]
-2. (10,(1)(2))&$\big(\!\begin{smallmatrix}12\\ 21\end{smallmatrix}\!\big) \big(\!\begin{smallmatrix}34\\ 34\end{smallmatrix}\!\big)$&2. (12)(3)(4)\\[3pt]
-3. (01,(1)(2))&$\big(\!\begin{smallmatrix}12\\ 12\end{smallmatrix}\!\big) \big(\!\begin{smallmatrix}34\\ 43\end{smallmatrix}\!\big)$&3. (1)(2)(34)\\[3pt]
-4. (11,(1)(2))&$\big(\!\begin{smallmatrix}12\\ 21\end{smallmatrix}\!\big) \big(\!\begin{smallmatrix}34\\ 43\end{smallmatrix}\!\big)$&4. (12)(34)\\[3pt]
-5. (00,(12))&$\big(\!\begin{smallmatrix}12\\ 34\end{smallmatrix}\!\big) \big(\!\begin{smallmatrix}34\\ 12\end{smallmatrix}\!\big)$&5. (13)(24)\\[3pt]
-6. (01,(12))&$\big(\!\begin{smallmatrix}12\\ 34\end{smallmatrix}\!\big) \big(\!\begin{smallmatrix}34\\ 21\end{smallmatrix}\!\big)$&6. (3241)\\[3pt]
-7. (10,(12))&$\big(\!\begin{smallmatrix}12\\ 43\end{smallmatrix}\!\big) \big(\!\begin{smallmatrix}34\\ 12\end{smallmatrix}\!\big)$&7. (3142)\\[3pt]
-8. (11,(12)) &$\big(\!\begin{smallmatrix}12\\ 43\end{smallmatrix}\!\big) \big(\!\begin{smallmatrix}34\\ 21\end{smallmatrix}\!\big)$&8. (32)(41) \\[3pt]
+1. (00,(1)(2)) &$\big(\kern0.5pt\begin{smallmatrix}12\\ 12\end{smallmatrix}\kern0.5pt\big) \big(\kern0.5pt\begin{smallmatrix}34\\ 34\end{smallmatrix}\kern0.5pt\big)$&1. (1)(2)(3)(4)\\[3pt]
+2. (10,(1)(2))&$\big(\kern0.5pt\begin{smallmatrix}12\\ 21\end{smallmatrix}\kern0.5pt\big) \big(\kern0.5pt\begin{smallmatrix}34\\ 34\end{smallmatrix}\kern0.5pt\big)$&2. (12)(3)(4)\\[3pt]
+3. (01,(1)(2))&$\big(\kern0.5pt\begin{smallmatrix}12\\ 12\end{smallmatrix}\kern0.5pt\big) \big(\kern0.5pt\begin{smallmatrix}34\\ 43\end{smallmatrix}\kern0.5pt\big)$&3. (1)(2)(34)\\[3pt]
+4. (11,(1)(2))&$\big(\kern0.5pt\begin{smallmatrix}12\\ 21\end{smallmatrix}\kern0.5pt\big) \big(\kern0.5pt\begin{smallmatrix}34\\ 43\end{smallmatrix}\kern0.5pt\big)$&4. (12)(34)\\[3pt]
+5. (00,(12))&$\big(\kern0.5pt\begin{smallmatrix}12\\ 34\end{smallmatrix}\kern0.5pt\big) \big(\kern0.5pt\begin{smallmatrix}34\\ 12\end{smallmatrix}\kern0.5pt\big)$&5. (13)(24)\\[3pt]
+6. (01,(12))&$\big(\kern0.5pt\begin{smallmatrix}12\\ 34\end{smallmatrix}\kern0.5pt\big) \big(\kern0.5pt\begin{smallmatrix}34\\ 21\end{smallmatrix}\kern0.5pt\big)$&6. (3241)\\[3pt]
+7. (10,(12))&$\big(\kern0.5pt\begin{smallmatrix}12\\ 43\end{smallmatrix}\kern0.5pt\big) \big(\kern0.5pt\begin{smallmatrix}34\\ 12\end{smallmatrix}\kern0.5pt\big)$&7. (3142)\\[3pt]
+8. (11,(12)) &$\big(\kern0.5pt\begin{smallmatrix}12\\ 43\end{smallmatrix}\kern0.5pt\big) \big(\kern0.5pt\begin{smallmatrix}34\\ 21\end{smallmatrix}\kern0.5pt\big)$&8. (32)(41) \\[3pt]
 \hline
 \end{tabular}}{}
 \end{table}
 
 \begin{table}
-\caption{The $C_{4}$-centralizer of $\alpha=(12)(34)$.\label{tab4.12.2}}
-{\tabcolsep1pc\begin{tabular}{@{}|l|l|l|@{}}
+\caption{The $C_{4}$-centralizer of $\alpha=(12)(34)$.}\label{tab4.12.2}
+{\tabcolsep1pc\begin{tabular}{@{}|l|c|l|@{}}
 \hline
 \multicolumn{1}{|l|}{$C(\alpha)$ in $Z_{2}^{z}\  \mathrm{wr} \ c_{2}$}&    \multicolumn{1}{|l|}{mnemonic}& \multicolumn{1}{|l|}{$C(\alpha)$}   \\
 \hline
-1. (00,\,(1)(2)) &$\big(\!\begin{smallmatrix}12 \\ 12\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 34\end{smallmatrix}\!\big)$ &1. (1)(2)(3)(4) \\[3pt]
-2. (10,\,(1)(2)) &$\big(\!\begin{smallmatrix}12 \\ 21\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 34\end{smallmatrix}\!\big)$ &2. (12)(3)(4) \\[3pt]
-3. (01,\,(1)(2)) &$\big(\!\begin{smallmatrix}12 \\ 12\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 43\end{smallmatrix}\!\big)$ &3. (1)(2)(34) \\[3pt]
-4. (11,\,(1)(2)) &$\big(\!\begin{smallmatrix}12 \\ 21\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 43\end{smallmatrix}\!\big)$ &4. (12)(34) \\[3pt]
-5. (00,\,(12)) &$\big(\!\begin{smallmatrix}12 \\ 34\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 12\end{smallmatrix}\!\big)$ &5. (13)(24) \\[3pt]
-6. (01,\,(12)) &$\big(\!\begin{smallmatrix}12 \\ 34\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 21\end{smallmatrix}\!\big)$ &6. (3241) \\[3pt]
-7. (10,\,(12)) &$\big(\!\begin{smallmatrix}12 \\ 43\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 12\end{smallmatrix}\!\big)$ &7. (3142) \\[3pt]
-8. (11,\,(12)) &$\big(\!\begin{smallmatrix}12 \\ 43\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 21\end{smallmatrix}\!\big)$ &8. (32)(41) \\[3pt]
+1. (00,\,(1)(2)) &$\big(\kern0.5pt\begin{smallmatrix}12 \\ 12\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 34\end{smallmatrix}\kern0.5pt\big)$ &1. (1)(2)(3)(4) \\[3pt]
+2. (10,\,(1)(2)) &$\big(\kern0.5pt\begin{smallmatrix}12 \\ 21\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 34\end{smallmatrix}\kern0.5pt\big)$ &2. (12)(3)(4) \\[3pt]
+3. (01,\,(1)(2)) &$\big(\kern0.5pt\begin{smallmatrix}12 \\ 12\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 43\end{smallmatrix}\kern0.5pt\big)$ &3. (1)(2)(34) \\[3pt]
+4. (11,\,(1)(2)) &$\big(\kern0.5pt\begin{smallmatrix}12 \\ 21\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 43\end{smallmatrix}\kern0.5pt\big)$ &4. (12)(34) \\[3pt]
+5. (00,\,(12)) &$\big(\kern0.5pt\begin{smallmatrix}12 \\ 34\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 12\end{smallmatrix}\kern0.5pt\big)$ &5. (13)(24) \\[3pt]
+6. (01,\,(12)) &$\big(\kern0.5pt\begin{smallmatrix}12 \\ 34\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 21\end{smallmatrix}\kern0.5pt\big)$ &6. (3241) \\[3pt]
+7. (10,\,(12)) &$\big(\kern0.5pt\begin{smallmatrix}12 \\ 43\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 12\end{smallmatrix}\kern0.5pt\big)$ &7. (3142) \\[3pt]
+8. (11,\,(12)) &$\big(\kern0.5pt\begin{smallmatrix}12 \\ 43\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 21\end{smallmatrix}\kern0.5pt\big)$ &8. (32)(41) \\[3pt]
 \hline
-9. ($0z$,\,(1)(2]) &$\big(\!\begin{smallmatrix}12 \\ 12\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\!\big)$ &9. (1)(2) \\[3pt]
-10. ($1z$,\,(1)(2]) &$\big(\!\begin{smallmatrix}12 \\ 21\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\!\big)$ &10. (12) \\[3pt]
-11. ($z0$,\,(1](2)) &$\big(\!\begin{smallmatrix}\vphantom{34}\\ 12\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 34\end{smallmatrix}\!\big)$ &11. (3)(4) \\[3pt]
-12. ($z1$,\,(1](2)) &$\big(\!\begin{smallmatrix}\vphantom{34}\\ 12\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}43 \\ 34\end{smallmatrix}\!\big)$ &12. (34) \\[3pt]
-13. ($0z$,\,(12]) &$\big(\!\begin{smallmatrix}12 \\ 34\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}\vphantom{34}\\ 12\end{smallmatrix}\!\big)$ &13. (13](24] \\[3pt]
-14. ($1z$,\,(12]) &$\big(\!\begin{smallmatrix}12 \\ 43\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}\vphantom{34}\\ 12\end{smallmatrix}\!\big)$ &14. (14](23] \\[3pt]
-15. ($z0$,\,(21]) &$\big(\!\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 12\end{smallmatrix}\!\big)$ &15. (31](42] \\[3pt]
-16. ($z1$,\,(21]) &$\big(\!\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 21\end{smallmatrix}\!\big)$ &16. (32](41] \\[3pt]
-17. ($zz$,\,(1](2]) &$\big(\!\begin{smallmatrix}\vphantom{34}\\ 12\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\!\big)$ &17. (1] \\[3pt]
+9. ($0z$,\,(1)(2]) &$\big(\kern0.5pt\begin{smallmatrix}12 \\ 12\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\kern0.5pt\big)$ &9. (1)(2) \\[3pt]
+10. ($1z$,\,(1)(2]) &$\big(\kern0.5pt\begin{smallmatrix}12 \\ 21\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\kern0.5pt\big)$ &10. (12) \\[3pt]
+11. ($z0$,\,(1](2)) &$\big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 12\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 34\end{smallmatrix}\kern0.5pt\big)$ &11. (3)(4) \\[3pt]
+12. ($z1$,\,(1](2)) &$\big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 12\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 43\end{smallmatrix}\kern0.5pt\big)$ &12. (34) \\[3pt]
+13. ($0z$,\,(12]) &$\big(\kern0.5pt\begin{smallmatrix}12 \\ 34\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 12\end{smallmatrix}\kern0.5pt\big)$ &13. (13](24] \\[3pt]
+14. ($1z$,\,(12]) &$\big(\kern0.5pt\begin{smallmatrix}12 \\ 43\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 12\end{smallmatrix}\kern0.5pt\big)$ &14. (14](23] \\[3pt]
+15. ($z0$,\,(21]) &$\big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 12\end{smallmatrix}\kern0.5pt\big)$ &15. (31](42] \\[3pt]
+16. ($z1$,\,(21]) &$\big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 21\end{smallmatrix}\kern0.5pt\big)$ &16. (32](41] \\[3pt]
+17. ($zz$,\,(1](2]) &$\big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 12\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\kern0.5pt\big)$ &17. (1] \\[3pt]
 \hline
 \end{tabular}}{}
 \end{table}
@@ -2012,7 +1888,7 @@ Multiplication in $Z_{2}^{z}\  \mathrm{wr} \ C_{2}$ is defined so
 that the bijection between the entries in the left column with
 those on the right is an isomorphism.
 
-\section{Centralizers as Direct Products}\label{sec4.13}
+\section[Centralizers as Directs Products]{Centralizers as Direct Products}\label{sec4.13}
 
 Let $S$ be a semigroup and suppose $a\in S$. As usual, the
 centralizer of $a$ in $S$ is the set $C_{S}(a)=\{x\in S \mid
@@ -2204,9 +2080,9 @@ If $\alpha\in S_{n}$ is a regular permutation whose path
 decomposition has precisely $n_{k}\ k$-circuits, then the order of
 $C(\alpha)$, relative to $C_{n}$,~is
 \[
-\sum\nolimits_{j=0}^{n_{k}}\ \big(\!\begin{smallmatrix}
+\sum\nolimits_{j=0}^{n_{k}}\ \big(\kern0.5pt\begin{smallmatrix}
 n_{k}\\
-j\end{smallmatrix}\!\big)^2 j!k^{j}=m_{k},
+j\end{smallmatrix}\kern0.5pt\big)^2 j!k^{j}=m_{k},
 \]
 and if $\alpha\in S_{n}$ is an arbitrary permutation whose path
 decomposition has precisely $n_{k}\ k$-circuits, where
@@ -2240,11 +2116,11 @@ $C(\alpha)$ where $\alpha=(12)(34)$. In this case $\alpha\in
 S_{4}$ is a regular permutation with $n_{k}$ k-circuits where
 $n_{k}= k=2$. We therefore calculate~that
 \[
-\sum\nolimits_{j=0}^{n_{k}} \big(\begin{smallmatrix}
+\sum\nolimits_{j=0}^{n_{k}} \big(\kern0.5pt\begin{smallmatrix}
 n_{k}\\
-j\end{smallmatrix}\big)^2 j!k^{j} = \sum\nolimits_{j=0}^{2} \big(\begin{smallmatrix}
+j\end{smallmatrix}\kern0.5pt\big)^2 j!k^{j} = \sum\nolimits_{j=0}^{2} \big(\kern0.5pt\begin{smallmatrix}
 2\\
-j\end{smallmatrix}\big)j!2^{j}=1+8+8=17,
+j\end{smallmatrix}\kern0.5pt\big)j!2^{j}=1+8+8=17,
 \]
 which agrees with Table~\ref{tab4.12.2}.
 
@@ -2279,11 +2155,11 @@ product of $H$ by~$Q$.
 \end{quote}
 
 Corollary~\ref{cor4.14.2} seems to be standard, e.g., in
-Suzuki's\index{Suzuki, M.} text [\hyperlink{bib74}{1}, page
+Suzuki's\index{Suzuki, M.} text [\ref{bib74}, page
 296], we find a statement similar to \ref{cor4.14.2} but
 involving a different ``wreath product\index{wreath product}.'' By
 extending the wreath product used by Suzuki\index{Suzuki, M.}, the
-author [\hyperlink{bib74a}{2}] managed to prove
+author [\ref{bib74a}] managed to prove
 Corollary~\ref{cor4.14.3} and a statement similar
 to~\ref{thm4.14.1}. Comparing those ``wreath products'' with the
 one used here, the difference turns on the definition of
@@ -2293,21 +2169,21 @@ corresponding wreath product is of the same ilk as the one used to
 study centralizers of arbitrary charts (Chapter~\ref{chap5}).
 
 These wreath products are fairly standard, e.g., in addition to
-Suzuki\index{Suzuki, M.} [\hyperlink{bib74}{1}], see
+Suzuki\index{Suzuki, M.} [\ref{bib74}], see
 Chapter~\ref{chap4} of Lallement\index{Lallement, G.}
-[\hyperlink{bib38}{1}], and for wreath products of
+[\ref{bib38}], and for wreath products of
 partial transformation semigroups, see Chapter~\ref{chap1} of
-Eilenberg [\hyperlink{bib14a}{2}]. The ``$n$-fold wreath
+Eilenberg [\ref{bib14a}]. The ``$n$-fold wreath
 products'' serve to define \emph{decompositions of transformation
 semigroups}, which, in turn, are basic to the important
 Krohn-Rhodes Decomposition Theorem
-(Eilenberg~[\hyperlink{bib14a}{2} Chapter~\ref{chap2}]).
+(Eilenberg~[\ref{bib14a} Chapter~\ref{chap2}]).
 
 Studies of centralizers outside of group theory but within the
 general theory of transformation semigroups do exist, e.g., see
 Ehrenfeucht and Harju and Rozenberg
-[\hyperlink{bib13}{1}] and Higgins\index{Higgins, P. M.}
-[\hyperlink{bib28}{2}], which are discussed in
+[\ref{bib13}] and Higgins\index{Higgins, P. M.}
+[\ref{bib28}], which are discussed in
 \S\ref{sec12.61} of Chapter~\ref{chap12}. But results on
 centralizers of permutations in $C_{n}$ prior to the 1988
 discovery of~\ref{thm4.14.1} seem to be nonexistent.
@@ -2383,28 +2259,28 @@ segments of (12] or (34] onto some terminal segments of (12]
 or~(34].
 
 \begin{table}[]
-\caption{The $C_{4}$ centralizer of $\eta=(12](34]$.\label{tab5.17.1}}
-{\tabcolsep1pc\begin{tabular}{@{}|l|l|l|@{}}
+\caption{The $C_{4}$ centralizer of $\eta=(12](34]$.}\label{tab5.17.1}
+{\tabcolsep1pc\begin{tabular}{@{}|l|c|l|@{}}
 \hline
 \multicolumn{1}{|l|}{$(f,t)\in S\ \mathrm{wr}\ c_{2}$}&  \multicolumn{1}{|l|}{mnemonic}& \multicolumn{1}{|l|}{$C(\eta)$} \\
 \hline
-1. (11, (1)(2))&$\big(\!\begin{smallmatrix}12 \\ 12\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 34\end{smallmatrix}\!\big)$&1. (1)(2)(3)(4) \\[3pt]
-2. ($\mu 1$, (1)(2))&$\big(\!\begin{smallmatrix}12 \\ 2\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 34\end{smallmatrix}\!\big)$&2. (12](3)(4) \\[3pt]
-3. ($1\mu$, (1)(2))&$\big(\!\begin{smallmatrix}12 \\ 12\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 4\end{smallmatrix}\!\big)$&3. (1)(2)(34] \\[3pt]
-4. ($\mu\mu$, (1)(2))&$\big(\!\begin{smallmatrix}12 \\ 2\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 4\end{smallmatrix}\!\big)$&4. (12](34] \\[3pt]
-5. (11, (12))&$\big(\!\begin{smallmatrix}12 \\ 34\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 12\end{smallmatrix}\!\big)$&5. (13)(24) \\[3pt]
-6. ($1\mu$, (12))&$\big(\!\begin{smallmatrix}12 \\ 34\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 2\end{smallmatrix}\!\big)$&6. (1324] \\[3pt]
-7. ($\mu 1$, (12))&$\big(\!\begin{smallmatrix}12 \\ 4\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 12\end{smallmatrix}\!\big)$&7. (3142] \\[3pt]
-8. ($\mu\mu$, (12))&$\big(\!\begin{smallmatrix}12 \\ 4\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}34 \\ 2\end{smallmatrix}\!\big)$&8. (32] (41] \\[3pt]
-9. ($1z$, (1)(2])&$\big(\!\begin{smallmatrix}12 \\ 12\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\!\big)$&9. (1)(2) \\[3pt]
-10. ($\mu z$, (1)(2])&$\big(\!\begin{smallmatrix}12 \\ 2\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\!\big)$&10. (12] \\[3pt]
-11. ($z1$, (1](2))&$\big(\!\begin{smallmatrix}\vphantom{12}\\ 12\end{smallmatrix}\!\big) \big(\!\begin{smallmatrix}34 \\ 34\end{smallmatrix}\!\big)$&11. (3)(4) \\[3pt]
-12. ($z\mu$, (1](2))&$\big(\!\begin{smallmatrix}\vphantom{12}\\ 12\end{smallmatrix}\!\big) \big(\!\begin{smallmatrix}34 \\ 4\end{smallmatrix}\!\big)$&12. (34] \\[3pt]
-13. ($1z$, (12])&$\big(\!\begin{smallmatrix}12 \\ 34\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}\vphantom{34}\\ 12\end{smallmatrix}\!\big)$&13. (13](24] \\[3pt]
-14. ($\mu z$, (12])&$\big(\!\begin{smallmatrix}12 \\ 4\end{smallmatrix}\!\big)\ \big(\!\begin{smallmatrix}\vphantom{34}\\ 12\end{smallmatrix}\!\big)$&14. (14] \\[3pt]
-15. ($z1$, (21])&$\big(\!\begin{smallmatrix} \vphantom{34}\\ 34\end{smallmatrix}\!\big) \big(\!\begin{smallmatrix}34 \\ 12\end{smallmatrix}\!\big)$&15. (31](42] \\[3pt]
-16. ($z\mu$, (21])&$\big(\!\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\!\big) \big(\!\begin{smallmatrix}34 \\ 2\end{smallmatrix}\!\big)$&16. (32] \\[3pt]
-17. ($zz$, (1](2])&$\big(\!\begin{smallmatrix}\vphantom{12} \\ 12\end{smallmatrix}\!\big) \big(\!\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\!\big)$&17. (1] \\[3pt]
+1. (11, (1)(2))&$\big(\kern0.5pt\begin{smallmatrix}12 \\ 12\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 34\end{smallmatrix}\kern0.5pt\big)$&1. (1)(2)(3)(4) \\[3pt]
+2. ($\mu 1$, (1)(2))&$\big(\kern0.5pt\begin{smallmatrix}12 \\ 2\phantom{3}\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 34\end{smallmatrix}\kern0.5pt\big)$&2. (12](3)(4) \\[3pt]
+3. ($1\mu$, (1)(2))&$\big(\kern0.5pt\begin{smallmatrix}12 \\ 12\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 4\phantom{3}\end{smallmatrix}\kern0.5pt\big)$&3. (1)(2)(34] \\[3pt]
+4. ($\mu\mu$, (1)(2))&$\big(\kern0.5pt\begin{smallmatrix}12 \\ 2\phantom{3}\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 4\phantom{3}\end{smallmatrix}\kern0.5pt\big)$&4. (12](34] \\[3pt]
+5. (11, (12))&$\big(\kern0.5pt\begin{smallmatrix}12 \\ 34\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 12\end{smallmatrix}\kern0.5pt\big)$&5. (13)(24) \\[3pt]
+6. ($1\mu$, (12))&$\big(\kern0.5pt\begin{smallmatrix}12 \\ 34\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 2\phantom{3}\end{smallmatrix}\kern0.5pt\big)$&6. (1324] \\[3pt]
+7. ($\mu 1$, (12))&$\big(\kern0.5pt\begin{smallmatrix}12 \\ 4\phantom{3}\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 12\end{smallmatrix}\kern0.5pt\big)$&7. (3142] \\[3pt]
+8. ($\mu\mu$, (12))&$\big(\kern0.5pt\begin{smallmatrix}12 \\ 4\phantom{3}\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}34 \\ 2\phantom{3}\end{smallmatrix}\kern0.5pt\big)$&8. (32] (41] \\[3pt]
+9. ($1z$, (1)(2])&$\big(\kern0.5pt\begin{smallmatrix}12 \\ 12\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\kern0.5pt\big)$&9. (1)(2) \\[3pt]
+10. ($\mu z$, (1)(2])&$\big(\kern0.5pt\begin{smallmatrix}12 \\ 2\phantom{3}\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\kern0.5pt\big)$&10. (12] \\[3pt]
+11. ($z1$, (1](2))&$\big(\kern0.5pt\begin{smallmatrix}\vphantom{12}\\ 12\end{smallmatrix}\kern0.5pt\big) \big(\kern0.5pt\begin{smallmatrix}34 \\ 34\end{smallmatrix}\kern0.5pt\big)$&11. (3)(4) \\[3pt]
+12. ($z\mu$, (1](2))&$\big(\kern0.5pt\begin{smallmatrix}\vphantom{12}\\ 12\end{smallmatrix}\kern0.5pt\big) \big(\kern0.5pt\begin{smallmatrix}34 \\ 4\phantom{3}\end{smallmatrix}\kern0.5pt\big)$&12. (34] \\[3pt]
+13. ($1z$, (12])&$\big(\kern0.5pt\begin{smallmatrix}12 \\ 34\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 12\end{smallmatrix}\kern0.5pt\big)$&13. (13](24] \\[3pt]
+14. ($\mu z$, (12])&$\big(\kern0.5pt\begin{smallmatrix}12 \\ 4\phantom{3}\end{smallmatrix}\kern0.5pt\big)\ \big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 12\end{smallmatrix}\kern0.5pt\big)$&14. (14] \\[3pt]
+15. ($z1$, (21])&$\big(\kern0.5pt\begin{smallmatrix} \vphantom{34}\\ 34\end{smallmatrix}\kern0.5pt\big) \big(\kern0.5pt\begin{smallmatrix}34 \\ 12\end{smallmatrix}\kern0.5pt\big)$&15. (31](42] \\[3pt]
+16. ($z\mu$, (21])&$\big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\kern0.5pt\big) \big(\kern0.5pt\begin{smallmatrix}34 \\ 2\phantom{3} \end{smallmatrix}\kern0.5pt\big)$&16. (32] \\[3pt]
+17. ($zz$, (1](2])&$\big(\kern0.5pt\begin{smallmatrix}\vphantom{12} \\ 12\end{smallmatrix}\kern0.5pt\big) \big(\kern0.5pt\begin{smallmatrix}\vphantom{34}\\ 34\end{smallmatrix}\kern0.5pt\big)$&17. (1] \\[3pt]
 \hline
 \end{tabular}}{}
 \end{table}
@@ -2566,7 +2442,7 @@ Thus, the right-side of (\ref{eq5.19.2}) is true, completing
 the~proof.
 \end{proof}
 
-\section{Imbedding $C(\eta)$ in the Quotient Semigroup}\label{sec5.20}
+\section[Imbedding $C(\eta)$ into the Quotient Semigroup]{Imbedding $C(\eta)$ in the Quotient Semigroup}\label{sec5.20}
 
 Throughout this section, we continue to assume that the nilpotent
 $\eta$ has path decomposition (\ref{eq5.18.1}) and that
@@ -2712,7 +2588,7 @@ $pt_{\rho\tau}=k=jt_{\tau}=(pt_{\rho})t_{\tau}.$
 
 \begin{theorem}\label{thm5.20.10}
 Let $\eta\in C_{n}$ have path decomposition $(a_{10}a_{11}\cdots
-a_{{1r}_{1}}]\cdots\break (a_{m0}\cdots a_{mr_{m}}]$, and let $\theta :
+a_{{1r}_{1}}]\cdots (a_{m0}\cdots a_{mr_{m}}]$, and let $\theta :
 C(\eta)\rightarrow \mathcal{W}$ be given by
 $\rho\mapsto[(f_{\rho}, t_{\rho})]$ where $f_{\rho}$ and
 $t_{\rho}$ are defined by $(\ref{eq5.20.1})$ and
@@ -2855,7 +2731,7 @@ and we calculate that
 \section{Comments}\label{sec5.23}
 
 The constructions and results in this chapter are due to the
-author [\hyperlink{bib43c}{4}]. As in the case of the
+author [\ref{bib43c}]. As in the case of the
 centralizer of a permutation, a few comments on the wreath product
 are in order.
 
@@ -2874,15 +2750,15 @@ z &\mathrm{if}\ p\not\in \mathbf{d}t.
 \]
 This kind of product is essentially the one found in
 Chapter~\ref{chap1} of Eilenberg\index{Eilenberg, S.}
-[\hyperlink{bib14}{1}] or Chapter~\ref{chap4} of
-Lallement\index{Lallement, G.} [\hyperlink{bib38}{1}].
+[\ref{bib14}] or Chapter~\ref{chap4} of
+Lallement\index{Lallement, G.} [\ref{bib38}].
 
 In comparing the permutation case (Chapter~\ref{chap4}) with the
 nilpotent case (Chapter~\ref{chap5}), there is the natural
 question of whether $\mathcal{W}$ could be replaced with a wreath
 product, so both cases could be viewed as wreath products. This
 open question was first posed by Lallement\index{Lallement, G.}
-[\hyperlink{bib38a}{2}] (I have adjusted his notation to
+[\ref{bib38a}] (I have adjusted his notation to
 conform to the notation used here and any misinterpretation is
 my~fault.):
 
@@ -3097,9 +2973,9 @@ $C_{n}$, we see that $J_{n-1}^{e}$ contains exactly half of the
 members of~$J_{n-1}$. As a consequence, the order of $A_{n}^{c}$
 is
 \[
-|A_{n}^{c}|=\tfrac{1}{2}n!+\tfrac{1}{2}n^{2} (n-1)!+\sum\nolimits_{k=0}^{n-2}\big(\!\begin{smallmatrix}
+|A_{n}^{c}|=\tfrac{1}{2}n!+\tfrac{1}{2}n^{2} (n-1)!+\sum\nolimits_{k=0}^{n-2}\big(\kern0.5pt\begin{smallmatrix}
 n\\
-k\end{smallmatrix}\!\big)^2 {k}!.
+k\end{smallmatrix}\kern0.5pt\big)^2 {k}!.
 \]
 For example, the 22 members of $A_{3}^{c}$ are pictured in
 Figure~\ref{fig6.25.4}.
@@ -3108,7 +2984,7 @@ Figure~\ref{fig6.25.4}.
 \begin{figure}[!h]
 \includegraphics{chap06-vend-scan-01.eps}
 \caption{Comparing $C_{3}$ with the alternating semigroup
-$A_{3}^{c}$.\label{fig6.25.4}}
+$A_{3}^{c}$.}\label{fig6.25.4}
 \end{figure}
 
 \section{Generators of Alternating Semigroups}\label{sec6.26}
@@ -3209,36 +3085,36 @@ This proves (ii). If $n =4$, then the members of $T$ are just the
 \]
 \setcounter{table}{1}
 \begin{table}[!h]
-\caption{The 61-semigroup.\label{tab6.26.2}}
+\caption{The 61-semigroup.}\label{tab6.26.2}
 {\begin{tabular}{|lrr|}
 \hline
 \multicolumn{1}{|l}{\textbf{Path Form}} &\multicolumn{1}{c}{\textbf{Number}} &\multicolumn{1}{c|}{\textbf{Rank}} \\
 \hline
-$(ij)(k\ell)$ &$\frac{1}{2}\times \big(\!\begin{smallmatrix}4\\
-2\end{smallmatrix}\!\big)=3$ &4 \\[3pt]
-$(i)(j)(k)(\ell)$ &$\big(\!\begin{smallmatrix}
+$(ij)(k\ell)$ &$\frac{1}{2}\times \big(\kern0.5pt\begin{smallmatrix}4\\
+2\end{smallmatrix}\kern0.5pt\big)=3$ &4 \\[3pt]
+$(i)(j)(k)(\ell)$ &$\big(\kern0.5pt\begin{smallmatrix}
 4\\
-4\end{smallmatrix}\!\big)=1$ &4 \\
+4\end{smallmatrix}\kern0.5pt\big)=1$ &4 \\
 \hline
-$(ij)(k\ell]$ &$\big(\!\begin{smallmatrix}4\\
-2\end{smallmatrix}\!\big)\times 2=12$ &3 \\
-$(i)(j)(k)(\ell]$ &$\big(\!\begin{smallmatrix}4\\
-3\end{smallmatrix}\!\big)=4$ &3 \\
+$(ij)(k\ell]$ &$\big(\kern0.5pt\begin{smallmatrix}4\\
+2\end{smallmatrix}\kern0.5pt\big)\times 2=12$ &3 \\
+$(i)(j)(k)(\ell]$ &$\big(\kern0.5pt\begin{smallmatrix}4\\
+3\end{smallmatrix}\kern0.5pt\big)=4$ &3 \\
 \hline
-$(ij)(k](\ell]$ &$\big(\!\begin{smallmatrix}4\\
-2\end{smallmatrix}\!\big)=6$ &2 \\
-$(ij](k\ell]$ &$\frac{1}{2}\big(\!\begin{smallmatrix}4\\
-2\end{smallmatrix}\!\big)\times 4=12$ &2 \\
-$(i)(j)(k](\ell]$ &$\big(\!\begin{smallmatrix}4\\
-2\end{smallmatrix}\!\big)=6$ &2 \\
+$(ij)(k](\ell]$ &$\big(\kern0.5pt\begin{smallmatrix}4\\
+2\end{smallmatrix}\kern0.5pt\big)=6$ &2 \\
+$(ij](k\ell]$ &$\frac{1}{2}\big(\kern0.5pt\begin{smallmatrix}4\\
+2\end{smallmatrix}\kern0.5pt\big)\times 4=12$ &2 \\
+$(i)(j)(k](\ell]$ &$\big(\kern0.5pt\begin{smallmatrix}4\\
+2\end{smallmatrix}\kern0.5pt\big)=6$ &2 \\
 \hline
-$(ij](k](\ell]$ &$\big(\!\begin{smallmatrix}4\\
-2\end{smallmatrix}\!\big)\times 2=12$ &1 \\
-$(i)(j](k](\ell]$ &$\big(\!\begin{smallmatrix}
-4\\ 1\end{smallmatrix}\!\big)=4$ &1 \\
+$(ij](k](\ell]$ &$\big(\kern0.5pt\begin{smallmatrix}4\\
+2\end{smallmatrix}\kern0.5pt\big)\times 2=12$ &1 \\
+$(i)(j](k](\ell]$ &$\big(\kern0.5pt\begin{smallmatrix}
+4\\ 1\end{smallmatrix}\kern0.5pt\big)=4$ &1 \\
 \hline
-$(i](j](k](\ell]$ &$\big(\!\begin{smallmatrix}4\\
-0\end{smallmatrix}\!\big)=1$ &0 \\
+$(i](j](k](\ell]$ &$\big(\kern0.5pt\begin{smallmatrix}4\\
+0\end{smallmatrix}\kern0.5pt\big)=1$ &0 \\
 \hline
 &$\mathrm{Order} = 61$ & \\
 \hline
@@ -3309,10 +3185,10 @@ sense, Theorem~\ref{thm6.25.1} is the ``one-cut Theorem'' (rank $n
 \section{Comments}\label{sec6.27}
 
 Along with cycle notation and even\index{even chart} permutations,
-Cauchy\index{Cauchy, A.L.} [\hyperlink{bib7}{1}] and
-[\hyperlink{bib7a}{2}] introduced the alternating groups
+Cauchy\index{Cauchy, A.L.} [\ref{bib7}] and
+[\ref{bib7a}] introduced the alternating groups
 $A_{n}$ in 1815. Nearly two centuries later (1987), R. P.
-Sullivan\index{Sullivan, R.P.}~[\hyperlink{bib72}{1},
+Sullivan\index{Sullivan, R.P.}~[\ref{bib72},
 page~330] was evidently the first to advance a concept of an
 \emph{even transformation}\index{even transformation}:
 \begin{quote}
@@ -3327,7 +3203,7 @@ be regarded as even permutations$\ldots\,.$''
 \end{quote}
 
 Independent of Sullivan\index{Sullivan, R.P.}, in 1992 the author
-[\hyperlink{bib43d}{5}] introduced both even charts and
+[\ref{bib43d}] introduced both even charts and
 alternating semigroups as they are defined in \S\ref{sec6.24}.
 That these alternating semigroups had connections with other
 semigroups was immediately recognized. For example, $A_{n}^{c}$ is
@@ -3343,33 +3219,33 @@ I_{n-1} &\mathrm{if}\ n\ \mathrm{is\ even}.
 \end{cases}
 \]
 Gomes\index{Gomes, G. M. S.} and Howie
-[\hyperlink{bib22a}{2}] had introduced and characterized
+[\ref{bib22a}] had introduced and characterized
 $\langle \mathcal{N}_{1}\rangle$ in 1987. In fact, other results
 in Gomes and Howie\index{Howie, J. M.}
-[\hyperlink{bib22a}{2}] relate to $A_{n}^{c}$: They
+[\ref{bib22a}] relate to $A_{n}^{c}$: They
 proved that $(1\cdots r](r+1)\cdots(n)$ is even when $n$ is odd
 (their Lemma~3.10), they introduced the notion of
 \emph{completion}\index{completion of a chart}, which, for the
 rank $n-1$ charts in~$C_{n}$, agrees with the one given in
 \S\ref{sec6.24}, and they defined the idea of \emph{tidy
 product}\index{tidy product}, which was used by the author
-[\hyperlink{bib43d}{5}] in an alternative proof
+[\ref{bib43d}] in an alternative proof
 of~\ref{thm6.25.1}.
 
 For a development of the group theory (with semigroup theory
 removed) that runs closely parallel to \S\ref{sec6.26}, see
-Suzuki\index{Suzuki, M.} [\hyperlink{bib74}{1}, p~293].
+Suzuki\index{Suzuki, M.} [\ref{bib74}, p~293].
 Following the study of congruences of $C_{n}$ by
 Scheiblich\index{Scheiblich, H.E.}
-[\hyperlink{bib68}{1}], Lipscomb
-[\hyperlink{bib43b}{3}] showed that the congruences of
+[\ref{bib68}], Lipscomb
+[\ref{bib43b}] showed that the congruences of
 $A_{n}^{c}$ also form a chain. The author originally calculated
 that the 61-semigroup had less than 61 members! The remaining
 members were discovered by M. Hermann's\index{Hermann M.}
 computer~program.
 
 The label ``alternating semigroup'' has also been used by J.
-D\'{e}nes [\hyperlink{bib11}{1}] to name a subsemigroup
+D\'{e}nes [\ref{bib11}] to name a subsemigroup
 $K_{n}$ of the full transformation semigroup $T_{n}$. To construct
 $K_{n}$, remove $S_{n}$ from $T_{n}$, and then add back $A_{n}$,
 i.e., the semigroup $K_{n}=(T_{n}-S_{n})\cup A_{n}$.
@@ -3404,7 +3280,7 @@ and the $X_{n}$-semigroups (\S\ref{sec7.29}), which only
 appear when $n$ is~even.
 
 \setcounter{section}{27}
-\section{Example, Lemma, Overview, Notation}\label{sec7.28}
+\section[Examples, Lemma, Overview, Notation]{Example, Lemma, Overview, Notation}\label{sec7.28}
 
 For $n =2$, we have 10 $S_{2}$-normal semigroups
 (Figure~\ref{fig7.28.1}). To understand these semigroups, let ``1''
@@ -3428,7 +3304,7 @@ semilattice and the $X_{2}$-semigroup an ideal.
 \begin{figure}[!h]
 \includegraphics{chap07-vend-scan-01.eps}
 \caption{Egg-box picture of $C_{2}$ and lattice of $S_{2}$-normal
-semigroups.\label{fig7.28.1}}
+semigroups.}\label{fig7.28.1}
 \end{figure}
 
 To motivate our approach in the general case, let $T$ be $S_{2}$
@@ -3546,7 +3422,7 @@ where $M=\{k\alpha \mid k\in K\}$.
 \begin{figure}[!h]
 \includegraphics{chap07-vend-scan-02.eps}
 \caption{Constructing $S_{n}$-normalizers $\langle\alpha;S_{n}\rangle$ and
-$\langle A;S_{n}\rangle$.\label{fig7.28.5}}
+$\langle A;S_{n}\rangle$.}\label{fig7.28.5}
 \end{figure}
 
 And finally, we define an $S_{n}$-normalizer: For $A\subset
@@ -3780,9 +3656,7 @@ Figure~\ref{fig7.32.2}, we shall first follow the right-side
 branch (index $\alpha>1$), and then second, returning to the top,
 we shall follow the left-side branch (index $\alpha=1$).)
 
-\begin{center}
 \emph{Nonidempotents of Index} $>$ \emph{1}.
-\end{center}
 
 The results in this subsection follow mainly from
 Lemma~\ref{lem7.28.2}.
@@ -3813,7 +3687,7 @@ has length strictly less than $\ell$, which finishes the~proof.
 \begin{figure}[!h]
 \includegraphics{chap07-vend-scan-03.eps}
 \caption{Cases for computing $\langle\alpha;S_{n}\rangle$ when $\alpha$ is
-a nonidempotent.\label{fig7.32.2}}
+a nonidempotent.}\label{fig7.32.2}
 \end{figure}
 
 Note that the charts $\alpha$ and $\beta$ specified in
@@ -3896,9 +3770,7 @@ Lemma 32.4; $(iii)$ by (6) of \ref{lem7.28.2} and 32.4; and
 (\emph{iv}) by (8) and then (4) of~\ref{lem7.28.2}.
 \end{proof}
 
-\begin{center}
 \emph{Nonidempotents of Index~$1$}
-\end{center}
 
 In contrast to the picture painted in the previous subsection, an
 $S_{n}$-normal semigroup $T$ generated by charts with index 1 can
@@ -3907,19 +3779,19 @@ meet a $\mathcal{J}$-class of $C_{n}$ in a subset of index
 
 \begin{proposition}\label{prop7.32.6}
 Let $n \geq 2$, let $0\leq r\leq n$, and let $H_{1},\ldots,
-H_{\big(\!\begin{smallmatrix}{r}\\ {n}\end{smallmatrix}\!\big)}$
+H_{\big(\kern0.5pt\begin{smallmatrix}{n}\\ {r}\end{smallmatrix}\kern0.5pt\big)}$
 denote the maximal subgroups of $C_{n}$ that are included in the
 $\mathcal{J}$-class $J_{r}$. If each chart in $A =
 \{\alpha_{1},\ldots, \alpha_{m}\}\subset C_{n}$ has index $1$ and
 rank $r$, then $T=\langle A;S_{n}\rangle$ meets $J_{r}$ in a
-disjoint union $U=\vee_{1\leq i\leq\big(\!\begin{smallmatrix}n\\
-r\end{smallmatrix}\!\big)}G_{i}$ of conjugate normal subgroups
+disjoint union $U=\vee_{1\leq i\leq\big(\kern0.5pt\begin{smallmatrix}n\\
+r\end{smallmatrix}\kern0.5pt\big)}G_{i}$ of conjugate normal subgroups
 $G_{i}\subset H_{i}$.
 \end{proposition}
 
-\begin{proof} For each $i,  1\leq i\leq \big(\!\begin{smallmatrix}
+\begin{proof} For each $i,  1\leq i\leq \big(\kern0.5pt\begin{smallmatrix}
 n\\
-r \end{smallmatrix}\!\big)$, let $G_{i}=T\cap H_{i}$. Then clearly
+r \end{smallmatrix}\kern0.5pt\big)$, let $G_{i}=T\cap H_{i}$. Then clearly
 $G_{i}$ is a subgroup of $H_{i}$. To see that $G_{i}$ is normal in
 $H_{i}$, let $\sigma\in G_{i}$ and suppose
 $\lambda=\gamma(j_{1}]\cdots(j_{n-r}]\in H_{i}$. Then
@@ -3963,8 +3835,7 @@ semigroups:
 \item[(3)] a union $E_{m}\cup I_{r}, 0\leq r\leq m\leq n -1$,
 
 \item[(4)] a union $E_{m}\cup U\cup I_{r-1},2\leq r\leq m\leq n
--1$, where $U=\vee_{1\leq i\leq\big(\!\begin{smallmatrix}r\\
-n\end{smallmatrix}\!\big)}G_{i}$ is a disjoint union of
+-1$, where $U=\vee_{1\leq i\leq\big(\kern0.5pt\begin{smallmatrix}n\\ r\end{smallmatrix}\kern0.5pt\big)}G_{i}$ is a disjoint union of
 nontrivial conjugate groups defined in
 \emph{Proposition~\ref{prop7.32.6}},
 
@@ -4081,7 +3952,7 @@ $T_{61}\cap S_{4}= V$.
 
 \begin{figure}[!h]
 \includegraphics{chap07-vend-scan-04.eps}
-\caption{Lattice of $S_{3}$-normal semigroups.\label{fig7.34.1}}
+\caption{Lattice of $S_{3}$-normal semigroups.}\label{fig7.34.1}
 \end{figure}
 
 Turning to subsemigroups of $T_{61}$,\index{semigroup!$T_{61}$} we
@@ -4144,7 +4015,7 @@ Because of these inclusions, the result follows.
 
 \section{Comments}\label{sec7.35}
 
-Chapter III of Petrich's text [\hyperlink{bib60}{1}] is a
+Chapter III of Petrich's text [\ref{bib60}] is a
 good reference for the general theory of congruences of inverse
 semigroups and the role played by normal semigroups. The term
 $S_{n}$-normal derives from the more general term
@@ -4156,25 +4027,25 @@ for all $\alpha\in \mathcal{G}_X$. (In our case,~$X=N$.)
 
 For $X$ finite, the $\mathcal{G}_X$-normal semigroups of total
 transformations were classified in 1976 by J. S. V.
-Symons\index{Symons, J.S.V.}~[\hyperlink{bib75}{1}]. A
+Symons\index{Symons, J.S.V.}~[\ref{bib75}]. A
 similar ``to appear'' result for partial transformations was
 announced in 1980 by Sullivan\index{Sullivan,
-R.P.}~[\hyperlink{bib72b}{3} Ref.~8]. For $X$ infinite,
+R.P.}~[\ref{bib72b} Ref.~8]. For $X$ infinite,
 $\mathcal{G}_X$-normal semigroups of one-one transformations were
 studied in 1990 and 1991 (I. Levi\index{Levi, I} and W.
-Williams\index{Williams, W.}~[\hyperlink{bib41}{1}] and
-[\hyperlink{bib41a}{2}], and Levi\index{Levi,
-I.}~[\hyperlink{bib40}{1}]).
+Williams\index{Williams, W.}~[\ref{bib41}] and
+[\ref{bib41a}], and Levi\index{Levi,
+I.}~[\ref{bib40}]).
 
 The classification of the $S_{n}$-normal semigroups did not appear
 until 1995 when, along with the classification, the $X$
 semigroups, the $T_{57}$ semigroup, and the $T_{105}$ semigroup
 were first introduced (Lipscomb and
-Konieczny~[\hyperlink{bib44}{1}]). In fact, except for
+Konieczny~[\ref{bib44}]). In fact, except for
 equation (\ref{eq7.30.1}), the statements and proofs of the
 theorems presented here were first introduced in that paper. As
 for equation (\ref{eq7.30.1}), it was first proved in 1987 by
-Sullivan\index{Sullivan, R.P.}~[\hyperlink{bib72}{1}, Lemma 2].
+Sullivan\index{Sullivan, R.P.}~[\ref{bib72}, Lemma 2].
 
 \chapter{Normal Semigroups and Congruences}\label{chap8}
 
@@ -4212,16 +4083,15 @@ number of $C_{n}$ congruences (\S\ref{sec8.40}).
 
 \setcounter{section}{35}
 
-\section{Examples$^{1}$}\label{sec8.36}
+\section[Examples]{Examples\protect\footnote{The reader may want to return to these
+examples after reading \S38.}}\label{sec8.36}
 
-Letting\footnotetext[1]{The reader may want to return to these
-examples after reading \S\ref{sec8.38}.} $n =2$ and using ``1'' to
+Letting $n =2$ and using ``1'' to
 denote the identity (1)(2) of $C_{2}$, we see in
 Figure~\ref{fig8.36.1} the three full self-conjugate subsemigroups
 of $C_{2}$ --- we see the $S_{2}$-normal semigroups in Figure
 \ref{fig7.28.1} that contain all idempotents of~$C_{2}$.
-
-\noindent Observe that these three semigroups, $E_{2}\subset
+ Observe that these three semigroups, $E_{2}\subset
 I_{1}^{1}\subset C_{2}$, yield to pairwise disjoint decompositions
 of the form ``ideal'' or ``ideal $\cup$ group $\cup\cdots\cup$
 group.'' And further inspection shows that only one of these
@@ -4242,7 +4112,7 @@ T\}$, we can illustrate this correspondence:
 
 \begin{figure}[!h]
 \includegraphics{chap08-vend-scan-01.eps}
-\caption{Egg-box of $C_{2}$ and lattice of normal subsemigroups.\label{fig8.36.1}}
+\caption{Egg-box of $C_{2}$ and lattice of normal subsemigroups.}\label{fig8.36.1}
 \end{figure}
 
 \setcounter{footnote}{0}
@@ -4259,12 +4129,12 @@ group,'' $A_{3}^{c}$ being the only outlier.
 \setcounter{figure}{1}
 \begin{figure}[!h]
 \includegraphics{chap08-vend-scan-02.eps}
-\caption{Egg-box of $C_{3}$ and lattice of kernel-normal subsemigroups.\label{fig8.36.2}}
+\caption{Egg-box of $C_{3}$ and lattice of kernel-normal subsemigroups.}\label{fig8.36.2}
 \end{figure}
 
 \begin{figure}[!h]
 \includegraphics{chap08-vend-scan-03.eps}
-\caption{Quotient set $C_{3}/\rho$ relative to the egg-box of $C_{3}$.\label{fig8.36.3}}
+\caption{Quotient set $C_{3}/\rho$ relative to the egg-box of $C_{3}$.}\label{fig8.36.3}
 \end{figure}
 
 As in the $n=2$ case, exactly one normal subsemigroup of $C_{3}$,
@@ -4327,7 +4197,7 @@ A reduced cover $R_{I}$ is not necessarily a cover
 
 \begin{figure}[!h]
 \includegraphics{chap08-vend-scan-04.eps}
-\caption{Reduced cover $R_{I}$ that is not a cover of $I$.\label{fig8.37.1}}
+\caption{Reduced cover $R_{I}$ that is not a cover of $I$.}\label{fig8.37.1}
 \end{figure}
 
 The key relation between $R_{I}$ and $I$ is that every pair of
@@ -4389,9 +4259,9 @@ some $i$ and some~$j$. And in particular, if $E=E_{n}$ is the
 semilattice of idempotents in $C_{n}$ and $K_{0}$ consists of all
 idempotents of rank $\leq r$, then each $K_{ij}$ is a trivial
 group whose lone member $\varepsilon_{ij}$ is an idempotent of
-rank $r+i$ and each $r_{i}=\big(\!\begin{smallmatrix}
+rank $r+i$ and each $r_{i}=\big(\kern0.5pt\begin{smallmatrix}
 n\\
-r+i\end{smallmatrix}\!\big)$ is the number of idempotents of rank
+r+i\end{smallmatrix}\kern0.5pt\big)$ is the number of idempotents of rank
 $r+i$. In this particular case, then, $\tau$ is a Rees congruence
 on~$E_{n}$.
 \end{proposition}
@@ -4428,7 +4298,7 @@ chain) of the ideals $K_{0}\subseteq K_{1}\subset\cdots\subset K_{m}=E$.
 \begin{figure}[!h]
 \includegraphics{chap08-vend-scan-05.eps}
 \caption{Semilattice $E_{3}=K_{0}\cup K_{11}\cup K_{12}\cup K_{13}\cup
-K_{21}$ in $C_{3}$.\label{fig8.37.4}}
+K_{21}$ in $C_{3}$.}\label{fig8.37.4}
 \end{figure}
 
 To see that each $\tau$-class $e\tau\in E/\tau$ is either $K_{0}$
@@ -4448,9 +4318,9 @@ To see that each $K_{ij}$ must be a trivial group when $E=E_{n}$
 is the set of idempotents in $C_{n}$ and $K_{0}$ consists of all
 idempotents whose rank is $\leq r$, we first observe that the
 reduced cover of $K_{0}$ is the set of idempotents of rank $r+1$
-and that $r_{1}=\big(\!\begin{smallmatrix}
+and that $r_{1}=\big(\kern0.5pt\begin{smallmatrix}
 n\\
-r+1\end{smallmatrix}\!\big)$ (Figure~\ref{fig8.37.4}). Then, since
+r+1\end{smallmatrix}\kern0.5pt\big)$ (Figure~\ref{fig8.37.4}). Then, since
 each idempotent that follows a rank $r+1$ idempotent follows at
 least two idempotents of rank $r+1$, we see from the definition of
 $K_{1j}$ that each $K_{1j}=\{\varepsilon_{1j}\}$ is a trivial
@@ -4693,8 +4563,8 @@ is a normal subsemigroup of $C_{n}$ if and only if $K$ is one of
 the following semigroups:
 \begin{enumerate}
 \item[(1)] $I_{r-1}\cup U\cup E_{n}$, where $U=\vee_{1\leq
-i\leq\big(\!\begin{smallmatrix}{r}\\
-{n}\end{smallmatrix}\!\big)}G_{i}$ is a disjoint union of
+i\leq\big(\kern0.5pt\begin{smallmatrix}{r}\\
+{n}\end{smallmatrix}\kern0.5pt\big)}G_{i}$ is a disjoint union of
 conjugate groups defined in \emph{Proposition~\ref{prop7.32.6}};
 
 \item[(2)] the alternating semigroup $A_{n}^{c}$;
@@ -4718,7 +4588,7 @@ congruences\index{kernels of congruences} on~$C_{n}$.
 Let $n \geq 5$. Then a normal semigroup $K$ in $C_{n}$ is the
 kernel of a congruence on $C_{n}$ if and only if there exists an
 $r$, $0<r\leq n$, such that $K=I_{r-1}\cup U\cup E_{n}$, where
-$U=\vee_{1\leq t\leq\big(\!\begin{smallmatrix}n\\r\end{smallmatrix}\!\big)}G_{i}$ is a disjoint union of
+$U=\vee_{1\leq t\leq\big(\kern0.5pt\begin{smallmatrix}n\\r\end{smallmatrix}\kern0.5pt\big)}G_{i}$ is a disjoint union of
 conjugate groups defined~in \emph{Proposition~\ref{prop7.32.6}}.
 \end{corollary}
 
@@ -4747,7 +4617,7 @@ rank 2, it is the ``X''\index{$X$} in $X_{4}$; and at rank $\leq
 \setcounter{figure}{4}
 \begin{figure}[!h]
 \includegraphics{chap08-vend-scan-06.eps}
-\caption{The 61-semigroup $T_{61}$ pictured in the egg-box of $C_{4}$.\label{fig8.39.5}}
+\caption{The 61-semigroup $T_{61}$ pictured in the egg-box of $C_{4}$.}\label{fig8.39.5}
 \end{figure}
 
 The next proposition follows from 39.1 and 34.2.
@@ -4762,8 +4632,8 @@ is a normal subsemigroup of $C_{4}$ if and only if $K$ is one of
 the following semigroups:
 \begin{enumerate}
 \item[(1)] $I_{r-1}\cup U\cup E_{4}$, where $U=\vee_{1\leq
-i\leq\big(\!\begin{smallmatrix}{n}\\
-{r}\end{smallmatrix}\!\big)}G_{i}$ is a disjoint union of
+i\leq\big(\kern0.5pt\begin{smallmatrix}{n}\\
+{r}\end{smallmatrix}\kern0.5pt\big)}G_{i}$ is a disjoint union of
 conjugate groups defined in \emph{Proposition~\ref{prop7.32.6}},
 
 \item[(2)] $A_{4}^{c}$, the alternating semigroup,
@@ -4785,7 +4655,7 @@ conjugate groups defined in \emph{Proposition~\ref{prop7.32.6}},
 \setcounter{figure}{6}
 \begin{figure}[!h]
 \includegraphics{chap08-vend-scan-07.eps}
-\caption{A typical egg-box; and the kernel-normal semigroups in $C_{4}$.\label{fig8.39.7}}
+\caption{A typical egg-box; and the kernel-normal semigroups in $C_{4}$.}\label{fig8.39.7}
 \end{figure}
 
 
@@ -4801,18 +4671,18 @@ are not kernels of any congruences on $C_{4}$. Moreover, a normal
 semigroup $K$ of $C_{4}$ is the kernel of a congruence on $C_{4}$
 if and only if there exists an $r, 0\leq r\leq 4$, such that
 $K=I_{r-1}\cup U\cup E_{4}$, where $U=\vee\,\{G_{i}\mid 1 \leq
-i\leq\big(\!\begin{smallmatrix}
+i\leq\big(\kern0.5pt\begin{smallmatrix}
 4\\
-r \end{smallmatrix}\!\big)\}$ is a disjoint union of conjugate
+r \end{smallmatrix}\kern0.5pt\big)\}$ is a disjoint union of conjugate
 groups defined in \emph{Proposition~\ref{prop7.32.6}}.
 \end{corollary}
 
 The chain of kernel-normal semigroups in $C_{4}$ is pictured in
 Figure~\ref{fig8.39.7}, where, for example,
 $(S_{2})_{1}\cup\cdots\cup(S_{2})_{6}$ denotes the disjoint union
-$\vee\,\{G_{i}\mid 1\leq i\leq\big(\!\begin{smallmatrix}
+$\vee\,\{G_{i}\mid 1\leq i\leq\big(\kern0.5pt\begin{smallmatrix}
 4\\
-2 \end{smallmatrix}\!\big)\}$ of conjugate groups $G_{i}$, each
+2 \end{smallmatrix}\kern0.5pt\big)\}$ of conjugate groups $G_{i}$, each
 isomorphic to~$S_{2}$.
 
 \section{Counting Congruences}\label{sec8.40}
@@ -4820,15 +4690,15 @@ isomorphic to~$S_{2}$.
 It follows from 38.3 and 39.2 that a congruence $\rho$ on $C_{n}$
 is determined by two parameters, namely, a rank $r\geq 1$, which
 specifies the $\mathcal{D}$ class~$D_{r}$ containing the disjoint
-union $\vee \{G_{i}\mid 1 \leq i\leq\big(\!\begin{smallmatrix}
+union $\vee \{G_{i}\mid 1 \leq i\leq\big(\kern0.5pt\begin{smallmatrix}
 n\\
-r \end{smallmatrix}\!\big)\}$, and a group $G$, which specifies
+r \end{smallmatrix}\kern0.5pt\big)\}$, and a group $G$, which specifies
 the isomorphism class of the conjugate groups $G_{i}$. To make use
 of this observation, we shall use ``$\rho^{G_{r}}$'' to denote the
 congruence corresponding to the kernel normal semigroup $K=I_{r-1}
-\cup \vee \{G_{i}\mid 1\leq i\leq\big(\!\begin{smallmatrix}
+\cup \vee \{G_{i}\mid 1\leq i\leq\big(\kern0.5pt\begin{smallmatrix}
 n\\
-r \end{smallmatrix}\!\big)\}\cup E_{n}$. As to the kinds of groups
+r \end{smallmatrix}\kern0.5pt\big)\}\cup E_{n}$. As to the kinds of groups
 that we have for $G_{r}$, we see that $G_{r}$ could be the trivial
 group $1_{r}$, the symmetric group $S_{r}$, the alternating group
 $A_{r}$, or, in the special case when $r=4$, the Klein 4-group
@@ -4873,36 +4743,36 @@ determined in 37.3. Furthermore, the partition $K=I \cup
 G_{1}\cup\cdots\cup G_{t}$ may be viewed as a kernel normal system
 $\{I, G_{1},\ldots, G_{t}\}$. A systematic exposition of kernel
 normal systems and congruence pairs may be found in Chapter~III of
-Petrich [\hyperlink{bib60}{1}]. For congruence pairs in
+Petrich [\ref{bib60}]. For congruence pairs in
 the wider class of regular semigroups, see Pastijn\index{Pastijn,
-F.} and Petrich~[\hyperlink{bib58}{1}].
+F.} and Petrich~[\ref{bib58}].
 
 Congruences on semilattices have been studied by
-Papert\index{Papert, D.} [\hyperlink{bib58}{1}],
+Papert\index{Papert, D.} [\ref{bib58}],
 Freese\index{Freese, R.} and Nation\index{Nation J.B.}
-[\hyperlink{bib16}{1}], and Hall\index{Hall, T. E.}
-[\hyperlink{bib26}{1}]. In this chapter,
+[\ref{bib16}], and Hall\index{Hall, T. E.}
+[\ref{bib26}]. In this chapter,
 Proposition~\ref{prop8.37.2} is standard and
 Proposition~\ref{prop8.37.3} is due to the~author.
 
 Congruences on symmetric inverse semigroups were first studied in
-1953 by Liber\index{Liber, A.E.} [\hyperlink{bib42}{1}],
+1953 by Liber\index{Liber, A.E.} [\ref{bib42}],
 who used techniques very similar to those used in 1952 by
-Malcev\index{Malcev, A.I.} [\hyperlink{bib49}{1}] for
+Malcev\index{Malcev, A.I.} [\ref{bib49}] for
 characterizing the congruences on full transformation semigroups.
 An updated approach, with some new insights, was provided in 1973
 by Scheiblich\index{Scheiblich, H.E.}
-[\hyperlink{bib68}{1}], who used kernel normal systems
+[\ref{bib68}], who used kernel normal systems
 and Brandt semigroups to obtain our (\S\ref{sec8.40}) chain of
 congruences for $C_{n}$. An approach parallel to Scheiblich's was
-used by the author [\hyperlink{bib43b}{3}] to determine
+used by the author [\ref{bib43b}] to determine
 the chain of congruences for the alternating
 semigroups~$A_{n}^{c}$.
 
 \chapter{Presentations\index{presentation(s)} of Symmetric Inverse Semigroups}\label{chap9}
 
 In 1895, E. H. Moore\index{Moore, E.H.}
-[\hyperlink{bib53}{1}] formulated a presentation of
+[\ref{bib53}] formulated a presentation of
 $S_{n}$ that has $n-1$ generators $t_{1},\ldots, t_{n-1}$ and
 defining relations
 \[
@@ -4929,7 +4799,7 @@ define the isomorphism $\psi : M_{X}/\rho\rightarrow C_{n}$ in
 \S\ref{sec9.44}. The main result is Theorem~\ref{thm9.44.3}.
 
 Our approach for $C_{n}$ runs parallel to the one that we shall
-use in chapter 10, where we similarly ``extend'' E. H.
+use in chapter~\ref{chap10}, where we similarly ``extend'' E. H.
 Moore's\index{Moore, E.H.} presentation of the alternating group
 $A_{n}$\index{presentation(s)!of~$A_{n}$} to one for the
 alternating
@@ -4971,10 +4841,9 @@ each $A\in \mathcal{A}$ and each $\phi : X\rightarrow A$, there
 exists a unique homomorphism $\psi : F\rightarrow A$ such that
 $\iota \circ\psi=\phi$:
 
-\begin{align}\label{eq9.42.2}
-\\[-3pc]
-\includegraphics{chap09-vend-scan-01.eps}\notag
-\end{align}
+\begin{align*}
+\includegraphics{chap09-vend-scan-01.eps}
+\end{align*}
 
 \noindent We say that $F$ is a free $\mathcal{A}$-algebra when an $\iota$
 exists such that $(F,\iota)$ is a free
@@ -4983,9 +4852,7 @@ is usually taken as a subset of $F$ and is sometimes called a
 basis for~$F$.
 \end{definition}
 
-\begin{center}
 Congruences and Presentations
-\end{center}
 
 Recall that a \emph{congruence}\index{semigroup!congruence} $\rho$ on a
 semigroup $S$ is an equivalence relation $\rho\subset S\times S$
@@ -5063,9 +4930,7 @@ subgroup of $F$ generated by $\{r_{j}\mid j\in J\}$. In this
 case, we say that $G$ has \emph{presentation} $\langle X\mid
 r_{j}=1;j\in J\rangle$.
 
-\begin{center}
 Constructions of Free $\mathcal{A}$-Algebras
-\end{center}
 
 To construct a free semigroup on a nonempty set $X$, we call $X$
 an \emph{alphabet}\index{letters in alphabet} and then refer to
@@ -5420,11 +5285,11 @@ relations $(et_{1})^{2}=(t_{1}e)^{2}=(t_{1}e)^{3}$.
 
 \item[(3)] For relations among the $e_{i}$ and the $t_{i}$ we have
 \[
-\begin{array}{@{}cll}
-t_{i}e_{i} =e_{i+1}t_{i} &\text{when}  &1\leq i<n, \\
-e_{i}t_{i}=t_{i}e_{i+1} &\text{when} &1\leq i<n, \\
-e_{i}t_{i+1}=t_{i+1}e_{i}\quad &\text{when} &1\leq i<n,\quad \text{and} \\
-t_{j}e_{i}=e_{i}t_{j}\enspace\ &\text{when} &|i-j|>1.
+\begin{array}{@{}r@{\,}lll}
+t_{i}e_{i}& =e_{i+1}t_{i} &\mathit{when}  &1\leq i<n, \\
+e_{i}t_{i}&=t_{i}e_{i+1} &\mathit{when} &1\leq i<n, \\
+e_{i}t_{i+1}&=t_{i+1}e_{i}\quad &\mathit{when} &1\leq i<n,\quad \mathit{and} \\
+t_{j}e_{i}&=e_{i}t_{j} &\mathit{when} &|i-j|>1.
 \end{array}
 \]
 \item[(4)] For any word $w$ in $M_{X}$, we have
@@ -5434,9 +5299,9 @@ e_{i_{k}}$.
 \item[(5)] For $1\leq i<n$, let both $t_{i,i+1}$ and
 $t_{i+1,i}$ denote $t_{i}$. And for $k>i+1$, let
 \begin{align*}
-&t_{ik}\quad \text{denote}\quad t_{i}t_{i+1}\cdots
+&t_{ik}\quad \mathit{denote}\quad t_{i}t_{i+1}\cdots
 t_{k-2}t_{k-1}t_{k-2}\cdots t_{i+1}t_{i}\quad and\ let \\
-&t_{ki}\quad \text{denote}\quad t_{k-1}t_{k-2}\cdots
+&t_{ki}\quad \mathit{denote}\quad t_{k-1}t_{k-2}\cdots
 t_{i+1}t_{i}t_{i+1}\cdots t_{k-2}t_{k-1}.
 \end{align*}
 Then for any $i, k$ with $i\neq k$, we may conclude that
@@ -5629,7 +5494,7 @@ $(te_{B}, t_{0}e_{B})\in\rho$.
 
 \begin{proof}Let $p_{m}$ denote the statement
 ``$\widehat{t}\widehat{e}_{B}=\widehat{t}_{0}\widehat{e}_{B}$ when
-$|B|\leq m \Rightarrow (te_{B}, t_{0}e_{B})\break \in\rho$. We show
+$|B|\leq m \Rightarrow (te_{B}, t_{0}e_{B}) \in\rho$. We show
 $p_{0}, p_{1}$, and (the implication) ``$p_{m-1}\Rightarrow
 p_{m}$'' are true. If $m=0$, then $B=\emptyset$ and,
 consequently, $\widehat{t}=\widehat{t}_{0}$. It follows, since an
@@ -5679,7 +5544,7 @@ $t_{0}e_{B}=t_{\ast}e_{B}\ (\mathrm{mod}\ \rho).$
 \end{proof}
 
 \begin{theorem}\label{thm9.44.3}
-Let $M_{X}$ be the free inverse monoid generated by $X =\break\{t_{1},
+Let $M_{X}$ be the free inverse monoid generated by $X = \{t_{1},
 t_{2},\ldots, t_{n-1}, e\}$, and let $\rho$ be the congruence on
 $M_{X}$ generated by the relations
 \begin{gather*}
@@ -5709,27 +5574,27 @@ cast in the context of \emph{solutions to universal mapping
 problems}. In fact, the commutative diagrams in \S\ref{sec9.42}
 and \S\ref{sec9.44} are now typical. For a nice overview of these
 developments, see W. S. Massey's\index{Massey, W.S.} 1967 text
-[\hyperlink{bib50}{1}]. For generators and defining
+[\ref{bib50}]. For generators and defining
 relations in group theory, the 1977 text by R.
 Lyndon\index{Lyndon, R.C.} and P. Schupp\index{Schupp P.E.}
-[\hyperlink{bib48}{1}] contains, in addition to several
+[\ref{bib48}] contains, in addition to several
 historical references in its preface, many detailed discussions of
 the kinds of problems encountered in the generator-relations
 approach to group theory. For progress in the study of free
 inverse semigroups since the early 1970s, see Chapter~\ref{chap2}
-of Higgins' text [\hyperlink{bib28}{1}]; and for
+of Higgins' text [\ref{bib28}]; and for
 presentations of finite symmetric semigroups, i.e., for the
 semigroup $T_{n}$ of all functions from $N$ into $N$ under the
 usual composition of mappings, see \index{A\u{i}zen\u{s}tat,
-A.Ja}A\u{\i}zen\u{s}tat [\hyperlink{bib1}{1}].
+A.Ja}A\u{\i}zen\u{s}tat [\ref{bib1}].
 
 The early work on defining relations for $S_{n}$ is discussed in
-Burnside [\hyperlink{bib6}{1}], where Moore\index{Moore,
-E.H.} [\hyperlink{bib53}{1}] and Burnside
-[\hyperlink{bib6b}{2}] are also referenced. A proof that
+Burnside [\ref{bib6}], where Moore\index{Moore,
+E.H.} [\ref{bib53}] and Burnside
+[\ref{bib6b}] are also referenced. A proof that
 any set of generators of $S_{n}$ coupled with any rank $n-1$
 member of $C_{n}$ is a generating set for $C_{n}$ may be found in
-Gomes and Howie's 1987 paper [\hyperlink{bib22}{1},  Theorem 3.1].
+Gomes and Howie's 1987 paper [\ref{bib22},  Theorem 3.1].
 
 The presentation of $C_{n}$ presented in this chapter
 (the~relations
@@ -5741,7 +5606,7 @@ augmented with the $\{t_{i}\}$ relations of $S_{n}$ are defining
 relations for $C_{n}$) was formulated in 1991 by the author, who
 later learned that this presentation may be deduced from one found
 in 1961 by L. M. Popova\index{Popova, L.M.}
-[\hyperlink{bib62}{1}]. Popova's result may be viewed as
+[\ref{bib62}]. Popova's result may be viewed as
 augmenting the $\{t_{i}\}$ relations of $S_{n}$ with the relations
 \begin{gather*}
 e^{2}=e,\quad e=t_{2}et_{2},\quad e=(t_{n-1}t_{n-2}\cdots t_{2})e(t_{2}t_{3}\cdots t_{n-1}), \\
@@ -5751,7 +5616,7 @@ e^{2}=e,\quad e=t_{2}et_{2},\quad e=(t_{n-1}t_{n-2}\cdots t_{2})e(t_{2}t_{3}\cdo
 \chapter{Presentations of Alternating Semigroups}\label{chap10}
 
 In 1895, E. H. Moore\index{Moore, E.H.}
-[\hyperlink{bib53}{1}] formulated a presentation of
+[\ref{bib53}] formulated a presentation of
 $A_{n}$ that has $n-2$ generators $s_{1},\ldots, s_{n-2}$ and
 relations
 \[
@@ -5888,7 +5753,7 @@ $(1](2)\cdots(n)$, and is motivated~by
 (1)(2](3)\cdots(n)=(321)\circ(1](2)\cdots(n)\circ (123).
 \]
 Similarly, $e_{3}=s^{-1}e_{2}s_{1}$ corresponds to the conjugate
-(1)(2)$(3](4)\cdots(n)$ of (1)(2](3)$\cdots\break (n)$,~i.e.,
+(1)(2)$(3](4)\cdots(n)$ of (1)(2](3)$\cdots (n)$,~i.e.,
 \[
 (1)(2)(3](4)\cdots(n)=(321)\circ (1)(2](3)\cdots(n)\circ (123).
 \]
@@ -5978,10 +5843,10 @@ either $s^{-1}$ or $s$, follow from the definitions of $e_{2}$
 and $e_{3}$, respectively. For $k=3$, let $i\geq 3$, and
 consider
 \begin{align*}
-e_{3}s_{i}&=s^{-1}s^{-1}esss_{i}=sesss_{i}\qquad\qquad\qquad\quad (\mathrm{since}\ s^{-2}=s) \\
-&=ses(s_{i}s^{-1})\qquad\qquad\qquad\qquad\qquad\quad\enspace\ (\mathrm{since}\ (s_{1}s_{i})^{2}=1\ \mathrm{for}\ i\geq 3) \\
-&=s(es_{i})s^{-1}s^{-1}=ss_{i}e_{2}s^{-1}s^{-1}\qquad\qquad\ (\mathrm{from\ case}\ k=1) \\
-&=s_{i}s^{-1}e_{2}s^{-1}s^{-1}=s_{i}s^{-1}e_{2}s=s_{i}e_{3}.
+e_{3}s_{i}&=s^{-1}s^{-1}esss_{i}=sesss_{i}&& (\mathrm{since}\ s^{-2}=s) \\
+&=ses(s_{i}s^{-1})&& (\mathrm{since}\ (s_{1}s_{i})^{2}=1\ \mathrm{for}\ i\geq 3) \\
+&=s(es_{i})s^{-1}s^{-1}=ss_{i}e_{2}s^{-1}s^{-1}&& (\mathrm{from\ case}\ k=1) \\
+&=s_{i}s^{-1}e_{2}s^{-1}s^{-1}=s_{i}s^{-1}e_{2}s=s_{i}e_{3}.\quad&&
 \end{align*}
 And for equalities involving either $s^{-1}$ or $s$, use the
 uniqueness of the inverse of $e_{2}s_{1}=s_{1}e_{3}$ and the
@@ -6321,10 +6186,10 @@ inductive argument. (Proposition~\ref{prop9.42.11} played a key
 role in allowing for the use of the group presentation.)
 
 The presentation of $A_{n}$ used in this chapter was first
-introduced by Moore [\hyperlink{bib53}{1}] and later
-discussed in Burnside [\hyperlink{bib6}{1}]. The
+introduced by Moore [\ref{bib53}] and later
+discussed in Burnside [\ref{bib6}]. The
 presentation of $A_{n}^{c}$ first appeared in a paper written by
-the author [\hyperlink{bib71e}{6}] and communicated by J.
+the author [\ref{bib71e}] and communicated by J.
 M. Howie.\index{Howie, J. M.} During the review of that paper,
 Howie made several comments that led to a considerably improved
 proof of Lemma~\ref{lem10.48.1}.
@@ -6365,7 +6230,7 @@ pictured geometrically.
 
 \begin{figure}[!h]
 \includegraphics{chap11-vend-scan-01.eps}
-\caption{Partial transformations and path notation.\label{fig11.50.1}}
+\caption{Partial transformations and path notation.}\label{fig11.50.1}
 \end{figure}
 
 \section{Path Notation for Partial Transformations}\label{sec11.51}
@@ -6429,7 +6294,7 @@ common terminal segment $\sigma=(31]$.
 \begin{figure}[!h]
 \includegraphics{chap11-vend-scan-02.eps}
 \caption{Maximal proper paths, circuits, and terminal
-segments.\label{fig11.51.1}}
+segments.}\label{fig11.51.1}
 \end{figure}
 
 \setcounter{equation}{1}
@@ -6623,7 +6488,7 @@ We shall refer to this unique representation as either the
 \emph{join representation} of $\alpha$. In particular,
 $\alpha=0\in PT_{n}$ has join representation $(1]\cdots (n]$, even
 though the zero transformation $0$ of $PT_{n}$ is excluded
-from~51.3.
+from~\ref{thm11.51.3}.
 
 In the join representation of a partial transformation, proper
 paths are of two kinds, namely, those that meet circuits and those
@@ -6640,7 +6505,7 @@ the right angle ``$\rangle$'', yielding
 \alpha=(1,2,\ldots, i, x_{0}\rangle(x_{0}, x_{1},\ldots, x_{m-1}).
 \]
 We say that $(x_{0}, x_{1},\ldots, x_{m-1})$ is \emph{associated
-with} ($1, 2,\ldots, i, x_{0}\rangle$, and that\break $(1, 2,\ldots, i,
+with} ($1, 2,\ldots, i, x_{0}\rangle$, and that $(1, 2,\ldots, i,
 x_{0}\rangle$ is \emph{associated with} $(x_{0}, x_{1},\ldots,
 x_{m-1})$. We may, in fact, have any finite number of cilia
 $\eta_{1},\ldots, \eta_{k}$ associated with one circuit $\gamma$,
@@ -6660,7 +6525,7 @@ and the other with~none.
 
 \begin{figure}[!h]
 \includegraphics{chap11-vend-scan-03.eps}
-\caption{Decomposing a partial transformation.\label{fig11.52.1}}
+\caption{Decomposing a partial transformation.}\label{fig11.52.1}
 \end{figure}
 
 \section{Idempotents and Nilpotents}\label{sec11.53}
@@ -6690,7 +6555,7 @@ A partial transformation is nilpotent if and only if its path
 decomposition contains no circuits.
 \end{proposition}
 
-To illustrate 53.1 and 53.2, consider
+To illustrate \ref{prop11.53.1} and \ref{prop11.53.2}, consider
 $\varepsilon=(4](12\rangle(2)(35\rangle(5)\in PT_{5}$ and
 $\eta=(12](3](456](76]\in PT_{7}$.
 
@@ -6715,7 +6580,7 @@ subscripts modulo $m$, then
 \begin{lemma}\label{lem11.54.2}
 Let the path decomposition of $\alpha\in
 PT_{n}$\index{idempotent(s)!in $PT_{n}$} be
-$\eta_{1}\cdots\eta_{u}\gamma_{1}\cdots\gamma_{v}(\eta_{11}\cdots\eta_{1m_{1}}\gamma_{1}')\break\cdots
+$\eta_{1}\cdots\eta_{u}\gamma_{1}\cdots\gamma_{v}(\eta_{11}\cdots\eta_{1m_{1}}\gamma_{1}') \cdots
 (\eta_{w1}\cdots\eta_{wm_{w}}\gamma_{w}')$ with each $\eta_{j}$ a
 proper path, each $\gamma_{j}$ a circuit, and each
 $(\eta_{j1}\cdots\eta_{jm_{j}}\gamma_{j}')$ a cell. Then for
@@ -6733,7 +6598,7 @@ is~$i$.
 \end{theorem}
 
 \begin{proof} From 54.1, for every $k\geq i$, we have $\alpha^{k}=(1,
-x_{k-i}\rangle(2,x_{k-(i-1)}\rangle\cdots\break (i,x_{k-1}\rangle
+x_{k-i}\rangle(2,x_{k-(i-1)}\rangle\cdots (i,x_{k-1}\rangle
 (x_{0}\cdots x_{m-1})^{k}$. On the other hand, if $k$ is positive
 and less than $i$, then for $t= k-r\ (\mathrm{mod}\ m)$ where
 $i=qk+r$ and $0\leq r<k$, we have $1\alpha^{k}\in\{2,\ldots, i\}$,
@@ -6773,7 +6638,7 @@ then the index (period)\index{partial!index and period of} of
 $\alpha$ is~$1$.
 \end{corollary}
 
-\begin{proof} Use \ref{thm11.51.3}, 54.2, 54.3, and the fact that the order of a
+\begin{proof} Use \ref{thm11.51.3}, \ref{lem11.54.2}, \ref{thm11.54.3}, and the fact that the order of a
 permutation is the least common multiple of the lengths of
 its~cycles.
 \end{proof}
@@ -6781,7 +6646,7 @@ its~cycles.
 \section{Cyclic Semigroups of Partial Transformations}\label{sec11.55}
 
 Expressing $\alpha\in PT_{n}$ in its join representation, we
-``know'' (via 54.5) the index and period of
+``know'' (via \ref{cor11.54.5}) the index and period of
 $\langle\alpha\rangle$, i.e., we know $\langle\alpha\rangle$ up to
 isomorphism. As a consequence, the isomorphism classes of cyclic
 subsemigroups of $PT_{n}$ may be determined by listing all
@@ -6789,20 +6654,20 @@ possible forms of join representations.
 
 \begin{table}[!h]
 \caption{Index and Period for $\alpha\in
-PT_{4}-C_{4}$.\label{tab11.55.1}}
+PT_{4}-C_{4}$.}\label{tab11.55.1}
 {\begin{tabular}{|l|c|c|c|c|}
 \hline
 \textbf{number of} $m\rightarrow k$ \textbf{maps} &\textbf{path structure} &\textbf{number} &\textbf{index} &\textbf{period} \\
 \hline
-$\big(\!\begin{smallmatrix}4 \\ 2\end{smallmatrix}\!\big)\big(\!\begin{smallmatrix}4\\ 1\end{smallmatrix}\!\big)S(2,1)1!=24$ & (21$\rangle$(1)(3](4] &12 &1 &1 \\
+$\big(\kern0.5pt\begin{smallmatrix}4 \\ 2\end{smallmatrix}\kern0.5pt\big)\big(\kern0.5pt\begin{smallmatrix}4\\ 1\end{smallmatrix}\kern0.5pt\big)S(2,1)1!=24$ & (21$\rangle$(1)(3](4] &12 &1 &1 \\
 &(13](23](4] &12 &2 &1 \\
 \hline
-$\big(\!\begin{smallmatrix}4\\ 3\end{smallmatrix}\!\big)\big(\!\begin{smallmatrix}4\\ 1\end{smallmatrix}\!\big)S(3,1)1!=16$ &(21$\rangle$(31$\rangle$(1)(4] &12 &1 &1 \\
+$\big(\kern0.5pt\begin{smallmatrix}4\\ 3\end{smallmatrix}\kern0.5pt\big)\big(\kern0.5pt\begin{smallmatrix}4\\ 1\end{smallmatrix}\kern0.5pt\big)S(3,1)1!=16$ &(21$\rangle$(31$\rangle$(1)(4] &12 &1 &1 \\
 &(14](24](34] &4 &2 &1 \\
 \hline
-$\big(\!\begin{smallmatrix}4\\ 4\end{smallmatrix}\!\big)\big(\!\begin{smallmatrix}4\\ 1\end{smallmatrix}\!\big)S(4,1)1!=4$ &(21$\rangle$(31$\rangle$(41$\rangle$(1) &4 &1 &1 \\
+$\big(\kern0.5pt\begin{smallmatrix}4\\ 4\end{smallmatrix}\kern0.5pt\big)\big(\kern0.5pt\begin{smallmatrix}4\\ 1\end{smallmatrix}\kern0.5pt\big)S(4,1)1!=4$ &(21$\rangle$(31$\rangle$(41$\rangle$(1) &4 &1 &1 \\
 \hline
-$\big(\!\begin{smallmatrix}4\\ 3 \end{smallmatrix}\!\big)\big(\!\begin{smallmatrix}4\\ 2\end{smallmatrix}\!\big)S(3,2)2!=144$ &(1)(32$\rangle$(2)(4] &24 &1 &1 \\
+$\big(\kern0.5pt\begin{smallmatrix}4\\ 3 \end{smallmatrix}\kern0.5pt\big)\big(\kern0.5pt\begin{smallmatrix}4\\ 2\end{smallmatrix}\kern0.5pt\big)S(3,2)2!=144$ &(1)(32$\rangle$(2)(4] &24 &1 &1 \\
 &(31$\rangle$(12)(4] &24 &1 &2 \\
 &(321$\rangle$(1)(4] &24 &2 &1 \\
 &(14](24](3) &12 &2 &1 \\
@@ -6810,14 +6675,14 @@ $\big(\!\begin{smallmatrix}4\\ 3 \end{smallmatrix}\!\big)\big(\!\begin{smallmatr
 &(14](23$\rangle$(3) &24 &2 &1 \\
 &(124](324] &12 &3 &1 \\
 \hline
-$\big(\!\begin{smallmatrix}4\\ 4\end{smallmatrix}\!\big)\big(\!\begin{smallmatrix}4\\ 2\end{smallmatrix}\!\big)S(4,2)2!=84$ &(2)(31$\rangle$(41$\rangle$(1) &12 &1 &1 \\
+$\big(\kern0.5pt\begin{smallmatrix}4\\ 4\end{smallmatrix}\kern0.5pt\big)\big(\kern0.5pt\begin{smallmatrix}4\\ 2\end{smallmatrix}\kern0.5pt\big)S(4,2)2!=84$ &(2)(31$\rangle$(41$\rangle$(1) &12 &1 &1 \\
 &(21$\rangle$(1)(43$\rangle$(3) &12 &1 &1 \\
 &(41$\rangle$(23$\rangle$(31) &12 &1 &2 \\
 &(31$\rangle$(41$\rangle$(12) &12 &1 &2 \\
 &(321$\rangle$(41$\rangle$(1) &24 &2 &1 \\
 &(321$\rangle$(421$\rangle$(1) &12 &2 &1 \\
 \hline
-$\big(\!\begin{smallmatrix}4\\ 4\end{smallmatrix}\!\big)\big(\!\begin{smallmatrix}4\\ 3\end{smallmatrix}\!\big)S(4,3)3!=144$ &(2)(3)(41$\rangle$(1) &12 &1 &1 \\
+$\big(\kern0.5pt\begin{smallmatrix}4\\ 4\end{smallmatrix}\kern0.5pt\big)\big(\kern0.5pt\begin{smallmatrix}4\\ 3\end{smallmatrix}\kern0.5pt\big)S(4,3)3!=144$ &(2)(3)(41$\rangle$(1) &12 &1 &1 \\
 &(2)(431$\rangle$(1) &24 &2 &1 \\
 &(23)(41$\rangle$(1) &12 &1 &2 \\
 &(1)(42$\rangle$(23) &24 &1 &2 \\
@@ -6835,23 +6700,23 @@ $PT_{4}-C_{4}$ case appears in Table~\ref{tab11.55.1}. (Recall
 that the forms for charts in $C_{4}$ appear in
 Table~\ref{tab2.7.1}.) The number of members of $PT_{4}$~is
 \[
-1+\sum\nolimits_{1\leq k\leq m\leq 4}\ \big(\!\begin{smallmatrix}
+1+\sum\nolimits_{1\leq k\leq m\leq 4}\ \big(\kern0.5pt\begin{smallmatrix}
 4\\
 m
-\end{smallmatrix}\!\big)\big(\!\begin{smallmatrix}
+\end{smallmatrix}\kern0.5pt\big)\big(\kern0.5pt\begin{smallmatrix}
 4\\
 k
-\end{smallmatrix}\!\big)\ S(m, k)k!=625.
+\end{smallmatrix}\kern0.5pt\big)\ S(m, k)k!=625.
 \]
 In this formula, the Stirling number $S(m, k)$ of the second kind
 is the number of partitions of a set of $m$ objects into $k$
-classes (see page 40 of Berge [\hyperlink{bib3}{1}]).
+classes (see page 40 of Berge [\ref{bib3}]).
 Among these 625 members of $PT_{4}$, we~find
 \[
-1+\textstyle\sum_{m=1}^{4} \big(\!\begin{smallmatrix}
+1+\textstyle\sum_{m=1}^{4} \big(\kern0.5pt\begin{smallmatrix}
 4\\
 m
-\end{smallmatrix}\!\big)^2 m!=209
+\end{smallmatrix}\kern0.5pt\big)^2 m!=209
 \]
 charts (partial one-one transformations), i.e., 209 of the 625 are
 members of $C_{4}\subset PT_{4}$. Thus, our Table~\ref{tab11.55.1}
@@ -6861,25 +6726,25 @@ $PT_{4}-C_{4}$.
 \section{Comments}\label{sec11.56}
 
 According to Higgins\index{Higgins, P.
-M.} [\hyperlink{bib28}{1}, page 70], it was
+M.} [\ref{bib28}, page 70], it was
 Suschkewitsch\index{Suschkewitsch, A.K.}
-[\hyperlink{bib73b}{3}] who, in 1928, first depicted a
+[\ref{bib73b}] who, in 1928, first depicted a
 full transformation $\alpha\in T_{n}\subset PT_{n}$ as a digraph
 on $n$ vertices in which $ij$ is a diedge whenever $i\alpha=j$.
 These digraphs are characterized by the condition that every
 vertex have out degree one, in which case they are called
 \emph{functional digraphs}. The number of non-isomorphic
 functional digraphs having $n$ vertices was determined in 1959 by
-Harary\index{Harary, F.} [\hyperlink{bib27}{1}].
+Harary\index{Harary, F.} [\ref{bib27}].
 
 Since their introduction, many authors have used functional
 digraphs. For example, in 1968 D\'{e}nes
-[\hyperlink{bib11a}{2}] illustrated in his Figure 3 the
+[\ref{bib11a}] illustrated in his Figure 3 the
 concept of ``mainpermutation'' of $\alpha\in T_{n}$, which, by
 considering $\alpha\in PT_{n}$, is the union of the circuits
 appearing in its path decomposition. And in 1988 these digraph
 representations (of full transformations) were employed by Higgins
-[\hyperlink{bib28a}{2}] in finding algorithms to solve
+[\ref{bib28a}] in finding algorithms to solve
 equations such~as
 \[
 \alpha x^{m}\beta=\gamma\quad \mathrm{and}\quad \alpha x=x\beta\quad
@@ -6894,7 +6759,7 @@ out degree at most one. From this view, the path notation applied
 here to partial transformations captures the essential features of
 the digraph representation. The ideas and results of this chapter
 are due to Konieczny\index{Konieczny, J.} and Lipscomb
-[\hyperlink{bib37a}{2}].
+[\ref{bib37a}].
 
 \chapter{Commuting Partial Transformations}\label{chap12}
 
@@ -6950,12 +6815,12 @@ $\beta$ maps $\gamma$ onto $\sigma$ and that $\alpha
 
 \begin{figure}[!h]
 \includegraphics{chap12-vend-scan-01.eps}
-\caption{Mapping initial segments onto terminal segments.\label{fig12.57.1}}
+\caption{Mapping initial segments onto terminal segments.}\label{fig12.57.1}
 \end{figure}
 
 \begin{figure}[!h]
 \includegraphics{chap12-vend-scan-02.eps}
-\caption{Mapping cells onto subcells.\label{fig12.57.2}}
+\caption{Mapping cells onto subcells.}\label{fig12.57.2}
 \end{figure}
 
 In the other picture in Figure~\ref{fig12.57.2}, we have
@@ -7066,7 +6931,7 @@ map $S^{1}\rightarrow S^{1}$ given by $z\mapsto z^{2}$.
 \begin{figure}[!h]
 \includegraphics{chap12-vend-scan-06.eps}
 \caption{Folding a $k$-circuit onto an $\ell$-circuit $m$
-times.\label{fig12.58.4}}
+times.}\label{fig12.58.4}
 \end{figure}
 
 Even when the circuits have associated cilia, we may have
@@ -7076,7 +6941,7 @@ associated circuit onto a circuit (Figure~\ref{fig12.58.5}).
 
 \begin{figure}[!h]
 \includegraphics{chap12-vend-scan-07.eps}
-\caption{Folding both a cilium and its associated circuit onto a circuit.\label{fig12.58.5}}
+\caption{Folding both a cilium and its associated circuit onto a circuit.}\label{fig12.58.5}
 \end{figure}
 
 
@@ -7121,14 +6986,14 @@ n_{1}\beta=m_{1},\ldots, n_{t}\beta=m_{t},\ n_{t+1}\beta=j_{w},\ n_{t+2}\beta=j_
 
 If $\gamma$ and $\sigma$ are cells in $\alpha$, and if $\beta$
 maps $\gamma$ onto a subcell of $\sigma$, then it follows from
-58.6 that $\alpha$ restricted to $(\mathbf{d}\gamma)\beta$ is a
+\ref{defn12.58.6} that $\alpha$ restricted to $(\mathbf{d}\gamma)\beta$ is a
 subcell of $\sigma$.
 
 
 \setcounter{figure}{6}
 \begin{figure}[!h]
 \includegraphics{chap12-vend-scan-08.eps}
-\caption{A cell and some of its subcells.\label{fig12.58.7}}
+\caption{A cell and some of its subcells.}\label{fig12.58.7}
 \end{figure}
 
 \setcounter{equation}{7}
@@ -7156,8 +7021,8 @@ segment of some maximal proper path in~$\alpha$.
 \end{theorem}
 
 \begin{proof} Suppose $\alpha \circ\beta=\beta\circ\alpha$. Then ($i$) and
-($iii$) follow from 58.1. To see that ($ii$) holds, we shall use
-58.6 and the notation therein. So we already have
+($iii$) follow from \ref{lem12.58.1}. To see that ($ii$) holds, we shall use
+\ref{defn12.58.6} and the notation therein. So we already have
 $\gamma'=(i_{0}\cdots i_{k-1})$ and some $ i_{u}\in
 \mathbf{d}\beta$. Our first observation is that we may assume that
 $u=0$. Second, we define $j_{0}=i_{0}\beta$. Coupling this with
@@ -7258,9 +7123,9 @@ PT_{n}$, where the $\eta_{k}$ are maximal proper 1-paths and the
 $\varepsilon_{j}$ are cells with $m_{j}\geq 0$ cilia. For $0\leq
 i\leq p$ and $1\leq j\leq p$,~let
 \[
-s_{i}=\sum_{k=0}^{m_{i}} \big(\!\begin{smallmatrix}
+s_{i}=\sum_{k=0}^{m_{i}} \big(\kern0.5pt\begin{smallmatrix}
 m_{i}\\
-k\end{smallmatrix}\!\big)m_{0}^{k}\quad \text{and}\quad t_{j}=\sum_{i=1}^{p}(m_{i}+1)^{m_{j}}.
+k\end{smallmatrix}\kern0.5pt\big)m_{0}^{k}\quad \text{and}\quad t_{j}=\sum_{i=1}^{p}(m_{i}+1)^{m_{j}}.
 \]
 Then
 \[
@@ -7346,7 +7211,7 @@ in bold-face font are idempotents.
 
 \begin{figure}[!h]
 \includegraphics{chap12-vend-scan-16.eps}
-\caption{Egg-box structures of full transformation semigroups.\label{fig12.60.1}}
+\caption{Egg-box structures of full transformation semigroups.}\label{fig12.60.1}
 \end{figure}
 
 It is a trivial observation (Figure~\ref{fig12.60.1}) that the
@@ -7423,12 +7288,12 @@ $PT_{n}$ that parallel those presented in Chapters~\ref{chap3},
 full transformation semigroups $T_{n}$ --- there is the recent
 (1993) paper by A. Ehrenfeucht,\index{Ehrenfeucht, A.} T.
 Harju,\index{Harju, T.} and G. Rozenberg
-[\hyperlink{bib13}{1}], where permutable transitive
+[\ref{bib13}], where permutable transitive
 subsemigroups $S$ and $T$ of $T_{n}$ are characterized as simply
 transitive groups of permutations that are centralizers of each
 other. That paper contains no pictures or references to digraphs.
 In contrast, the (1988) paper by Higgins\index{Higgins, P. M.}
-[\hyperlink{bib28a}{2}], where those $\beta\in T_{n}$
+[\ref{bib28a}], where those $\beta\in T_{n}$
 that solve the equation $\alpha \circ\beta=\beta
 \circ\gamma\ (\alpha,\gamma\in T_{n})$ are constructed, and where
 those members $\alpha\in T_{n}$ whose centralizer
@@ -7446,12 +7311,12 @@ $C_{n}$
 methods. On the other hand, Lemma~\ref{lem12.60.2} (discovered in
 1995 by Konieczny\index{Konieczny, J.}) is purely algebraic,
 requiring only multiplication, and led Konieczny\index{Konieczny,
-J.} and Lipscomb [\hyperlink{bib37a}{2}] to our proof of
+J.} and Lipscomb [\ref{bib37a}] to our proof of
 Howie's\index{Howie, J. M.} Theorem~\ref{thm12.60.3}.
 
 Earlier proofs of Howie's Theorem\index{Howie's theorems}, namely
-Howie [\hyperlink{bib31a}{2}] (1965) and
-Higgins\index{Higgins, P. M.} [\hyperlink{bib28a}{2}]
+Howie [\ref{bib31a}] (1965) and
+Higgins\index{Higgins, P. M.} [\ref{bib28a}]
 (1992), are devoid of path notation. So one should ask, \emph{Is
 path notation really necessary to study} $PT_{n}$? While it is a
 fact that path notation led to Theorem~\ref{thm12.58.8} and its
@@ -7473,10 +7338,10 @@ multiplication.
 The ``foldings'' $z\rightarrow z^{m}$ (Figure~\ref{fig12.58.4})
 that motivated the definition of a morphism of cells are common in
 topology, especially in the study of covering spaces (K.
-J\"{a}nich\index{J\"{a}nich} [\hyperlink{bib33}{1},
+J\"{a}nich\index{J\"{a}nich} [\ref{bib33},
 Chapter IX]). For background on (the more general) morphisms of
 digraphs, see the text by Bondy and Murty\index{Murty U.S.R.}
-[\hyperlink{bib5}{1}].
+[\ref{bib5}].
 
 \chapter{Centralizers, Conjugacy, Reconstruction}\label{chap13}
 
@@ -7485,7 +7350,7 @@ Chapters~\ref{chap3}, \ref{chap4}, and \ref{chap5}, restating
 Lallement's question and proposing that the results on $C_{n}$ be
 extended to $PT_{n}$ (\S\ref{sec13.62}). We also return to
 conjugacy, considering Saito's Theorem\index{Saito's Theorem}
-[\hyperlink{bib67b}{3}] on the conjugacy of $\alpha
+[\ref{bib67b}] on the conjugacy of $\alpha
 \circ\beta$ and $\beta \circ\alpha$, counting conjugacy classes in
 $C_{n}$ (\S\ref{sec13.63}), and introducing ``conjugacy'' in
 $PT_{n}$ (\S\ref{sec13.64}). For the $S_{n}$-normal theory as it
@@ -7510,7 +7375,7 @@ Expressing
 $\gamma=(\gamma_{11}\cdots\gamma_{1k_{1}})\cdots(\gamma_{m1}\cdots\gamma_{mk_{m}})$
 as a join of ``regular charts'' $\gamma_{i1}\cdots\gamma_{ik_{i}}$
 with each circuit $\gamma_{ij}$ having length $\ell_{i}$, we
-recall from Chapter 4 that $C(\gamma)$ may be imbedded in a direct
+recall from Chapter~\ref{chap4} that $C(\gamma)$ may be imbedded in a direct
 product $W_{1}\times\cdots\times W_{m}$ of wreath products
 $W_{i}=Z_{\ell_{i}}^{z}\ \mathrm{wr}\ C_{k_{i}}$. On the other
 hand, expressing $\eta=\eta_{1}\cdots\eta_{u}$ in its join
@@ -7534,7 +7399,7 @@ W_{1}\times\cdots\times W_{m}\times \mathcal{W}.
 
 This state of affairs brings us to Lallement's
 question\index{Lallement's question}
-[\hyperlink{bib38a}{2}] previously mentioned in
+[\ref{bib38a}] previously mentioned in
 \S\ref{sec5.23}.
 
 \begin{question}\label{ques13.62.1}
@@ -7584,7 +7449,7 @@ demonstrate --- $\alpha \circ\beta=(1](2345]$ is not conjugate to
 $(1](2](345]=\beta\circ\alpha$.
 
 In 1991, T. Saito\index{Saito, T.}
-[\hyperlink{bib67b}{3}] found a rather nice
+[\ref{bib67b}] found a rather nice
 characterization for two charts to have their two products
 conjugate. He was able to detail a matching between the paths in
 the path decomposition of $\alpha \circ\beta$ with those in the
@@ -7599,7 +7464,7 @@ $\alpha$ via
 If $\alpha=(123](45]$, for example, then each
 $i^{\alpha}\in\{1,4\}=I_{\alpha}$ is an \emph{initial point}, and each
 $t^{\alpha}\in\{3,5\}=T_{\alpha}$ is a \emph{terminal point}.
-(Saito\index{Saito, T.} [\hyperlink{bib67b}{3}] denotes
+(Saito\index{Saito, T.} [\ref{bib67b}] denotes
 $I_{\alpha}$ and $T_{\alpha}$, respectively, as $Y_{\alpha}$ and
 $X_{\alpha}.$) Continuing, we also represent points in
 $\mathbf{d}\alpha$ and $\mathbf{r}\alpha$, respectively, by
@@ -7711,7 +7576,7 @@ semigroups also appears in a combinatorial form. For example,
 our next theorem (counting conjugacy classes of $C_{n}$) should be
 compared to its classical group counterpart (see Problem~1 on page
 25 of Lov\'{a}sz\index{Lov\'{a}sz, L.}
-[\hyperlink{bib47}{1}]).
+[\ref{bib47}]).
 
 \begin{theorem}[Counting Conjugacy Classes]\label{thm13.63.5}
 The number of conjugacy classes in $C_{n}$ is
@@ -7763,19 +7628,19 @@ worthy of further study.
 \section{$S_{n}$-normal Semigroups in $PT_{n}$}\label{sec13.65}
 
 As mentioned in \S\ref{sec7.35}, for finite $X$,
-Symons\index{Symons, J.S.V.} [\hyperlink{bib75}{1}] (in
+Symons\index{Symons, J.S.V.} [\ref{bib75}] (in
 1976) classified the $\mathcal{G}_{X}$-normal semigroups of full
 transformations. In the more general (partial transformation)
 $PT_{n}$ case, a similar ``to appear'' result was announced in
 1980 by Sullivan\index{Sullivan, R.P.}
-[\hyperlink{bib72b}{3}, Ref.~8].
+[\ref{bib72b}, Ref.~8].
 
 \begin{problem}\label{prob13.65.1}
 Classify the $S_{n}$-normal subsemigroups of $PT_{n}$. Such a
 classification would extend the classification for both the
 $C_{n}$ \emph{(Chapter~\ref{chap7})} and the full transformation
 cases \emph{(Symons\index{Symons,
-J.S.V.} [\hyperlink{bib75}{1}])}.
+J.S.V.} [\ref{bib75}])}.
 \end{problem}
 
 \section{Graph Reconstruction}\label{sec13.66}
@@ -7858,7 +7723,7 @@ to reconstruct the $D'$ in Figure~\ref{fig13.66.1}.)
 
 \begin{figure}[!h]
 \includegraphics{chap13-vend-scan-01.eps}
-\caption{A digraph $D$ and corresponding semigroup $D'$.\label{fig13.66.1}}
+\caption{A digraph $D$ and corresponding semigroup $D'$.}\label{fig13.66.1}
 \end{figure}
 
 It turns out that nonisomorphic digraphs may have the same deck.
@@ -7870,11 +7735,11 @@ though both are extensions of $I_{1}$ by the same semigroup.
 
 For arbitrary extensions of one Brandt semigroup by another,
 Lallement\index{Lallement, G.} and Petrich
-[\hyperlink{bib39}{1}] found a fundamental connection to
+[\ref{bib39}] found a fundamental connection to
 certain collections of sets. For reconstruction of digraphs,
 Stockmeyer\index{Stockmeyer, P.K.}
-[\hyperlink{bib71}{1}]---[\hyperlink{bib71e}{6}]
-and Kocay\index{Kocay, W. L.} [\hyperlink{bib36}{1}]
+[\ref{bib71}]---[\ref{bib71e}]
+and Kocay\index{Kocay, W. L.} [\ref{bib36}]
 found infinite classes of ``nonreconstructible'' digraph-pairs.
 But neither the extension characterization nor the digraph
 discoveries has produced any classification theorems concerning
@@ -7882,12 +7747,12 @@ extensions of one Brandt semigroup by~another.
 
 \begin{figure}[!h]
 \includegraphics{chap13-vend-scan-02.eps}
-\caption{Digraph and corresponding semigroup decks.\label{fig13.66.2}}
+\caption{Digraph and corresponding semigroup decks.}\label{fig13.66.2}
 \end{figure}
 
 \begin{figure}[!h]
 \includegraphics{chap13-vend-scan-03.eps}
-\caption{Another digraph and corresponding semigroup.\label{fig13.66.3}}
+\caption{Another digraph and corresponding semigroup.}\label{fig13.66.3}
 \end{figure}
 
 \setcounter{equation}{3}
@@ -8069,7 +7934,7 @@ In summary, both categories $\mathcal{G}$ and $\mathcal{E}$ were
 obtained by essentially choosing edge sets. While the idea of a
 graph is clearly obtained by such a process, it was
 Lallement\index{Lallement, G.} and Petrich
-[\hyperlink{bib39}{1}] who showed that extensions of one
+[\ref{bib39}] who showed that extensions of one
 Brandt semigroup by another is also fundamentally related to
 choosing collections of sets whose pairwise intersections are at
 most singleton~sets.
@@ -8097,19 +7962,19 @@ Reconstruction Conjecture by replacing ``$\mathcal{E}$'' with
 $*:\mathcal{G}\rightarrow \mathcal{E}$, we can straightforwardly
 see that a solution to either conjecture yields a solution to the
 other. As to progress up to 1977 on the graph version, Bondy and
-Hemminger\index{Hemminger, R.L.} [\hyperlink{bib6}{1}]
+Hemminger\index{Hemminger, R.L.} [\ref{bib6}]
 provide a survey. In the same volume of that journal,
-McKay\index{McKay, B.D.} [\hyperlink{bib51}{1}] reports
+McKay\index{McKay, B.D.} [\ref{bib51}] reports
 that computer programs have verified the reconstruction conjecture
 for graphs (and hence for semigroups) with at most 9 vertices. On
 the other hand, the orthodox approach to finding a counterexample
 is explained in a 1981 paper by Kimble,\index{Kimble, R. J., A.
 J.} Schwenk, and Stockmeyer\index{Stockmeyer, P.K.}
-[\hyperlink{bib35}{1}], where the idea of
+[\ref{bib35}], where the idea of
 \emph{pseudo-similarity} is fundamental. They state, ``We suggest
 that any search for nonreconstructible graphs should begin at this
 size (20 vertices).'' A 1988 result by Yang Yongzhi\index{Yongzhi
-Y.} [\hyperlink{bib79}{1}] shows that one only need to
+Y.} [\ref{bib79}] shows that one only need to
 prove the conjecture true for graphs that are 2-connected.
 
 \begin{problem}\label{prob13.68.1}
@@ -8130,16 +7995,16 @@ the form $(v_{1},v_{2},v_{3}]\circ (v_{2}, v_3, v_{4}]\circ\cdots
 \section{Comments}\label{sec13.69}
 
 For background in graph theory, see either Bondy and
-Murty\index{Murty U.S.R.} [\hyperlink{bib5}{1}] or
-Harary\index{Harary, F.} [\hyperlink{bib27a}{2}]. For
+Murty\index{Murty U.S.R.} [\ref{bib5}] or
+Harary\index{Harary, F.} [\ref{bib27a}]. For
 graph reconstruction, see either Bondy and
 Hemminger's\index{Hemminger, R.L.} survey
-[\hyperlink{bib6}{2}] or Harary's paper
-[\hyperlink{bib27b}{3}]. Saito's
+[\ref{bib6}] or Harary's paper
+[\ref{bib27b}]. Saito's
 Theorem~\ref{thm13.63.2}\index{Saito's Theorem} first appeared in
-Saito\index{Saito, T.} [\hyperlink{bib67b}{3}]. The
+Saito\index{Saito, T.} [\ref{bib67b}]. The
 category isomorphism in \S\ref{sec13.67} first appeared in
-Lipscomb~[\hyperlink{bib43d}{5}].
+Lipscomb~[\ref{bib43d}].
 
 %\renewcommand{\thechapter}{\Roman{chapter}}
 
@@ -8340,7 +8205,7 @@ permutation $\alpha\in S_{X}$~is
 \alpha=\left(\begin{matrix}
 x_{1} & x_{2} & x_{3} &\cdot & \cdot &\cdot & x_{n}\\
 x_{1}\alpha & x_{2}\alpha & x_{3}\alpha &\cdot&\cdot&\cdot & x_{n}\alpha
-\end{matrix}\right)\!.
+\end{matrix}\right).
 \]
 
 A more flexible and useful notation is \emph{cycle notation}: Let
@@ -8442,15 +8307,15 @@ We call the normal subgroup $A_{n}$ of $S_{n}$ the
 \emph{alternating group}\index{alternating group} of degree $n$.
 That the order $|A_{n}|$ of $A_{n}$ is $n!/2$ follows from~72.5.
 
-\begin{theorem}\label{thmA.72.6}\hfill
+\begin{theorem}\label{thmA.72.6}
 \begin{enumerate}
-\item[(\emph{i})] For $n\geq 3$, the alternating group $A_{n}$
+\item[({\it i})] For $n\geq 3$, the alternating group $A_{n}$
 is generated by the set of $3$-cycles.
 
-\item[(\emph{ii})] If $n \geq 5$, then $A_{n}$ is generated
+\item[({\it ii})] If $n \geq 5$, then $A_{n}$ is generated
 by the permutations of type $(2,2)$.
 
-\item[(\emph{iii})] For $n =4$, the set of permutations of type
+\item[({\it iii})] For $n =4$, the set of permutations of type
 $(2, 2)$ generates a normal subgroup (of $S_{4}$) of order~$4$.
 \end{enumerate}
 \end{theorem}
@@ -8798,7 +8663,7 @@ $S/I$ is also a Brandt semigroup.
 For any semigroup $S$, we have Green's relations $\mathcal{L},
 \mathcal{R}, \mathcal{D}, \mathcal{H}$, and $\mathcal{J}$. These
 relations were introduced by J. Green
-[\hyperlink{bib24}{1}], and are defined as follows:
+[\ref{bib24}], and are defined as follows:
 \begin{align*}
 a\mathcal{L}b &\enspace \Leftrightarrow\quad \mathrm{there\ exist}\ x, y\in S^{1}\ \mathrm{such\
 that}\ xa=b\ \mathrm{and}\ yb=a; \\
@@ -8918,18 +8783,19 @@ isomorphic} if there exists functors $F_{1} :
 F_{1}=1_{\mathcal{C}_{1}}$ and $F_{1}\circ
 F_{2}=1_{\mathcal{C}_{2}}$.
 
-\chapter*{Bibliography}
 
-\begin{enumerate}
+\def\labelenumi{[\theenumi]}
+
+\begin{thebibliography}{}
 
 \item[] A\u{\i}zen\u{s}tat, A. Ja.\index{A\u{i}zen\u{s}tat, A. Ja.}
 
 \begin{enumerate}
-\item[\hypertarget{bib1}{[1]}] \emph{Defining relations of finite symmetric
+\item \label{bib1} \emph{Defining relations of finite symmetric
 semigroups}, Mat. Sb. \textbf{45} (1958), 261--280.
 (Russian)
 
-\item[\hypertarget{bib1a}{[2]}] \emph{Defining relations in symmetric semigroups},
+\item \label{bib1a} \emph{Defining relations in symmetric semigroups},
 Leningrad. Gos. Ped. Inst. U\u{c}en. Zap. \textbf{166}
 (1958), 121--142. (Russian)
 \end{enumerate}
@@ -8937,7 +8803,7 @@ Leningrad. Gos. Ped. Inst. U\u{c}en. Zap. \textbf{166}
 \item[] Almeida, J.\index{Almeida, J.}
 
 \begin{enumerate}
-\item[\hypertarget{bib2}{[1]}] \emph{On the membership problem for pseudovarieties of
+\item \label{bib2} \emph{On the membership problem for pseudovarieties of
 commutative semigroups}, Semigroup Forum \textbf{42}
 (1991), 47--51.
 \end{enumerate}
@@ -8945,46 +8811,46 @@ commutative semigroups}, Semigroup Forum \textbf{42}
 \item[] Berge, C.\index{Berge, C.}
 
 \begin{enumerate}
-\item[\hypertarget{bib3}{[1]}] Principles of Combinatorics, Academic Press, New York,
+\item \label{bib3} Principles of Combinatorics, Academic Press, New York,
 1971.
 \end{enumerate}
 
 \item[] Birkhoff, G.\index{Birkhoff, G.}
 \begin{enumerate}
-\item[\hypertarget{bib4}{[1]}] Lattice Theory, Amer. Math. Soc. Colloq. Publ., 1940,
+\item \label{bib4} Lattice Theory, Amer. Math. Soc. Colloq. Publ., 1940,
 revised 1948.
 \end{enumerate}
 
 \item[] Bondy, J. A. and U. S. R. Murty\index{Murty U.S.R.}
 \begin{enumerate}
-\item[\hypertarget{bib5}{[1]}] Graph Theory with Applications, North Holland, New York,
+\item \label{bib5} Graph Theory with Applications, North Holland, New York,
 1976.
 \end{enumerate}
 
 \item[] Bondy, J. A. and R. L. Hemminger\index{Hemminger, R.L.}
 \begin{enumerate}
-\item[\hypertarget{bib6}{[1]}] \emph{Graph Reconstruction --- A Survey}, J. Graph
+\item \label{bib6} \emph{Graph Reconstruction --- A Survey}, J. Graph
 Theory \textbf{1} (1977), 227--268.
 \end{enumerate}
 
 \item[] Burnside, W.
 \begin{enumerate}
-\item[\hypertarget{bib6}{[1]}] Theory of Groups of Finite Order, 2nd edition, Cambridge
+\item \label{bib6b} Theory of Groups of Finite Order, 2nd edition, Cambridge
 University Press, 1911; Dover Publications, New York,
 1955.
 
-\item[\hypertarget{bib6a}{[2]}] \emph{Note on the symmetric group}, Proc. London Math.
+\item \label{bib6a} \emph{Note on the symmetric group}, Proc. London Math.
 Soc. \textbf{28} (1897), 119--129.
 \end{enumerate}
 
 \item[] Cauchy, A. L.\index{Cauchy, A. L.}
 \begin{enumerate}
-\item[\hypertarget{bib7}{[1]}] \emph{M\'{e}moire sur le nombre des valeurs qu'une fonction peut acqu\'{e}rir, lorsqu'on y permute
+\item \label{bib7} \emph{M\'{e}moire sur le nombre des valeurs qu'une fonction peut acqu\'{e}rir, lorsqu'on y permute
 de toutes les mani\`{e}res possibles les quantit\'{e}s
 qu'elle renferme}, J. Ecole Polytech. \textbf{10} (1815),
 1--28.
 
-\item[\hypertarget{bib7a}{[2]}] \emph{M\'{e}moire sur les fonctions qui ne peuvent
+\item \label{bib7a} \emph{M\'{e}moire sur les fonctions qui ne peuvent
 obtenir que deux valeurs \'{e}gales et de signes
 contraires par suite des transpositions op\'{e}r\'{e}es
 entre les variables qu'elles renferment}, J. Ecole
@@ -8993,31 +8859,31 @@ Polytech. \textbf{10} (1815), 29--112.
 
 \item[] Clifford, A. H.\index{Clifford, A. H.} and G. B. Preston\index{Preston G.B.}
 \begin{enumerate}
-\item[\hypertarget{bib8}{[1]}] The Algebraic Theory of Semigroups, Math. Surveys No. 7,
+\item \label{bib8} The Algebraic Theory of Semigroups, Math. Surveys No. 7,
 Amer. Math. Soc, Providence, Vol. I (1961).
 
-\item[\hypertarget{bib8a}{[2]}] The Algebraic Theory of Semigroups, Math. Surveys No. 7,
+\item \label{bib8a} The Algebraic Theory of Semigroups, Math. Surveys No. 7,
 Amer. Math. Soc., Providence, Vol. II (1967).
 \end{enumerate}
 
 \item[] Climescu, A. C.\index{Climescu, A. C.}
 \begin{enumerate}
-\item[\hypertarget{bib9}{[1]}] \emph{Sur les quasicycles}, Bull. \'{E}cole Polytech.
+\item \label{bib9} \emph{Sur les quasicycles}, Bull. \'{E}cole Polytech.
 Jassy \textbf{1} (1946), 5--14.
 \end{enumerate}
 
 \item[] Dauns, J.\index{Dauns, J.}
 \begin{enumerate}
-\item[\hypertarget{bib10}{[1]}] \emph{Centers of semigroup rings and conjugacy
+\item \label{bib10} \emph{Centers of semigroup rings and conjugacy
 classes}, Semigroup Forum \textbf{38} (1989), 355--364.
 \end{enumerate}
 
 \item[] D\'{e}nes, J.\index{D\'{e}nes, J.}
 \begin{enumerate}
-\item[\hypertarget{bib11}{[1]}] \emph{On some properties of commutator subsemigroups},
+\item \label{bib11} \emph{On some properties of commutator subsemigroups},
 Publ. Math. Debrecen \textbf{15} (1968), 283--285.
 
-\item[\hypertarget{bib11a}{[2]}] \emph{On transformations, transformation-semigroups and
+\item \label{bib11a} \emph{On transformations, transformation-semigroups and
 graphs}, in Theory of Graphs, Proc. Coll. held at Tihany,
 Hungary, Editors P. Erd\"{o}s and G. Katona, Akad\'{e}miai
 Kiad\'{o}, Budapest, 1968.
@@ -9025,386 +8891,386 @@ Kiad\'{o}, Budapest, 1968.
 
 \item[] Dickson, L. E.\index{Dickson, L. E.}
 \begin{enumerate}
-\item[\hypertarget{bib12}{[1]}] \emph{On semi-groups and the general isomorphism
+\item \label{bib12} \emph{On semi-groups and the general isomorphism
 between infinite groups}, Trans. Amer. Math. Soc.
 \textbf{6} (1905), 205--208.
 \end{enumerate}
 
 \item[] Ehrenfeucht, A.,\index{Ehrenfeucht, A.} T. Harju\index{Harju T.} and G. Rozenberg
 \begin{enumerate}
-\item[\hypertarget{bib13}{[1]}] \emph{Permutable transformation semigroups}, Semigroup
+\item \label{bib13} \emph{Permutable transformation semigroups}, Semigroup
 Forum \textbf{47} (1993), 123--125.
 \end{enumerate}
 
 \item[] Eilenberg, S.\index{Eilenberg, S.}
 \begin{enumerate}
-\item[\hypertarget{bib14}{[1]}] Automata, Languages, and Machines, Academic Press, New
+\item \label{bib14} Automata, Languages, and Machines, Academic Press, New
 York, Volume A, 1974.
 
-\item[\hypertarget{bib14a}{[2]}] Automata, Languages, and Machines, Academic Press, New
+\item \label{bib14a} Automata, Languages, and Machines, Academic Press, New
 York, Volume B, 1976.
 \end{enumerate}
 
 \item[] Evseev, J. A.\index{Evseev, J. A.} and N. E. Podran\index{Podran N.E.}
 \begin{enumerate}
-\item[\hypertarget{bib15}{[1]}] \emph{Semigroups of transformations generated by
+\item \label{bib15} \emph{Semigroups of transformations generated by
 idempotents with given projection characteristics}, Izv.
 Vys\u{s}. U\u{c}ebn. Zaved. Mat. \textbf{12} (103) (1970),
 30--36.
 
-\item[\hypertarget{bib15a}{[2]}] \emph{Semigroups of transformations generated by
+\item \label{bib15a} \emph{Semigroups of transformations generated by
 idempotents with given defect}, Izv. Vys\u{s}. U\u{c}ebn.
 Zaved. Mat. \textbf{2} (117) (1972), 44--50.
 \end{enumerate}
 
 \item[] Freese, R.\index{Freese, R.} and J. B. Nation\index{Nation J.B.}
 \begin{enumerate}
-\item[\hypertarget{bib16}{[1]}] \emph{Congruence lattices of semilattices}, Pacific J.
+\item \label{bib16} \emph{Congruence lattices of semilattices}, Pacific J.
 Math. \textbf{49} (1973), 51--58.
 \end{enumerate}
 
 \item[] Frobenius, G.\index{Frobenius, G.}
 \begin{enumerate}
-\item[\hypertarget{bib17}{[1]}] \emph{\"{U}ber endliche Gruppen}, Sitzungsber. Akad. Wiss.
+\item \label{bib17} \emph{\"{U}ber endliche Gruppen}, Sitzungsber. Akad. Wiss.
 Berlin (1895), 163--194.
 \end{enumerate}
 
 \item[] Garba, G. U.\index{Garba, G. U.}
 \begin{enumerate}
-\item[\hypertarget{bib18}{[1]}] \emph{Nilpotents in semigroups of partial one-to-one
+\item \label{bib18} \emph{Nilpotents in semigroups of partial one-to-one
 order preserving mappings}, Semigroup Forum \textbf{48}
 (1994), 37--49.
 \end{enumerate}
 
 \item[] Gauss, C. F.\index{Gauss, C. F.}
 \begin{enumerate}
-\item[\hypertarget{bib19}{[1]}] Disquisitiones Arithmeticae, Apud G. Fleischer, Lipsiae,
+\item \label{bib19} Disquisitiones Arithmeticae, Apud G. Fleischer, Lipsiae,
 1801.
 \end{enumerate}
 
 \item[] Gluskin, L. M.\index{Gluskin, L. M.} and B. M. Schein\index{Schein, B.M.}
 \begin{enumerate}
-\item[\hypertarget{bib20}{[1]}] \emph{The theory of operations as the general theory
+\item \label{bib20} \emph{The theory of operations as the general theory
 of groups}, An historical review of Suschketwitch's 1922
 Dissertation, Semigroup Forum \textbf{4} (1972), 367--371.
 \end{enumerate}
 
 \item[] Goldstein, R.\index{Goldstein, R.} and J. Teymouri\index{Teymouri, J.}
 \begin{enumerate}
-\item[\hypertarget{bib21}{[1]}] \emph{Adjan's theorem and conjugacy in
+\item \label{bib21} \emph{Adjan's theorem and conjugacy in
 semigroups}, Semigroup Forum \textbf{47} (1993), 299--304.
 \end{enumerate}
 
 \item[] Gomes, G. M. S.\index{Gomes, G. M. S.} and J. M. Howie\index{J. M. Howie}
 \begin{enumerate}
-\item[\hypertarget{bib22}{[1]}] \emph{On the ranks of certain finite semigroups of
+\item \label{bib22} \emph{On the ranks of certain finite semigroups of
 transformations}, Math. Proc. Cambridge Philos. Soc.
 \textbf{101} (1987), 395--403.
 
-\item[\hypertarget{bib22a}{[2]}] \emph{Nilpotents in finite symmetric inverse
+\item \label{bib22a} \emph{Nilpotents in finite symmetric inverse
 semigroups}, Proc. Edinburgh Math. Soc. \textbf{30}
 (1987), 383--395.
 \end{enumerate}
 
 \item[] Green, J. A.\index{Green, J. A.}
 \begin{enumerate}
-\item[\hypertarget{bib24}{[1]}] \emph{On the structure of semigroups}, Ann. of Math.
+\item \label{bib24} \emph{On the structure of semigroups}, Ann. of Math.
 \textbf{54} (1951), 163--172.
 \end{enumerate}
 
 \item[] Grillet, P. A.\index{Grillet, P. A.}
 \begin{enumerate}
-\item[\hypertarget{bib25}{[1]}] \emph{Commutative semigroup cohomology}, Semigroup
+\item \label{bib25} \emph{Commutative semigroup cohomology}, Semigroup
 Forum \textbf{43} (1991), 247--252.
 \end{enumerate}
 
 \item[] Hall, T. E.\index{Hall, T. E.}
 \begin{enumerate}
-\item[\hypertarget{bib26}{[1]}] \emph{On the lattice of congruences on a semilattice}, J. Austral. Math. Soc. \textbf{12} (1971), 456--460.
+\item \label{bib26} \emph{On the lattice of congruences on a semilattice}, J. Austral. Math. Soc. \textbf{12} (1971), 456--460.
 \end{enumerate}
 
 \item[] Harary, F.\index{Harary, F.}
 \begin{enumerate}
-\item[\hypertarget{bib27}{[1]}] \emph{The number of functional digraphs}, Math. Ann.
+\item \label{bib27} \emph{The number of functional digraphs}, Math. Ann.
 \textbf{138} (1959), 203--210.
 
-\item[\hypertarget{bib27a}{[2]}] Graph Theory, Addison-Wesley, Reading, Massachusetts,
+\item \label{bib27a} Graph Theory, Addison-Wesley, Reading, Massachusetts,
 1969.
 
-\item[\hypertarget{bib27b}{[3]}] \emph{On the reconstruction of a graph from a collection
+\item \label{bib27b} \emph{On the reconstruction of a graph from a collection
 of subgraphs}, in Theory of Graphs and Applications,
 Academic Press, New York, 1964.
 \end{enumerate}
 
 \item[] Higgins, P. M.\index{Higgins, P. M.}
 \begin{enumerate}
-\item[\hypertarget{bib28}{[1]}] Techniques of Semigroup Theory, Oxford Science
+\item \label{bib28} Techniques of Semigroup Theory, Oxford Science
 Publications, Oxford, 1992.
 
-\item[\hypertarget{bib28a}{[2]}] \emph{Digraphs and the semigroup of all functions on
+\item \label{bib28a} \emph{Digraphs and the semigroup of all functions on
 a finite set}, Glasgow Math. J. \textbf{30} (1988),
 41--57.
 \end{enumerate}
 
 \item[] Hille, E.\index{Hille, E.}
 \begin{enumerate}
-\item[\hypertarget{bib29}{[1]}] Functional Analysis and Semigroups, Amer. Math. Soc.
+\item \label{bib29} Functional Analysis and Semigroups, Amer. Math. Soc.
 Colloq. Publ., Vol. 31, Providence, R.I., 1948.
 \end{enumerate}
 
 \item[] Hille, E.\index{Hille, E.} and R. S. Phillips\index{Phillips R.S.}
 \begin{enumerate}
-\item[\hypertarget{bib30}{[1]}] Functional Analysis and Semigroups, 1957, revision of
+\item \label{bib30} Functional Analysis and Semigroups, 1957, revision of
 Hille [1].
 \end{enumerate}
 
 \item[] Howie, J. M.\index{Howie, J. M.}
 \begin{enumerate}
-\item[\hypertarget{bib31}{[1]}] An Introduction to Semigroup Theory, Academic Press,
+\item \label{bib31} An Introduction to Semigroup Theory, Academic Press,
 London, 1976.
 
-\item[\hypertarget{bib31a}{[2]}] \emph{The subsemigroup generated by the idempotents of
+\item \label{bib31a} \emph{The subsemigroup generated by the idempotents of
 a full transformation semigroup}, J. London Math. Soc.
 \textbf{41} (1966), 707--716.
 
-\item[\hypertarget{bib31b}{[3]}] \emph{Products of idempotents in finite full
+\item \label{bib31b} \emph{Products of idempotents in finite full
 transformation semigroups}, Proc. Roy. Soc. Edinburgh
 Sect. A \textbf{86} (1980), 243--245.
 
-\item[\hypertarget{bib31c}{[4]}] \emph{Products of idempotents in finite full
+\item \label{bib31c} \emph{Products of idempotents in finite full
 transformation semigroups: some upper bounds}, Proc. Roy.
 Soc. Edinburgh Sect. A \textbf{98} (1984), 25--35.
 \end{enumerate}
 
 \item[] Howie, J. M. and M. P. O. Marques-Smith\index{Marques-Smith  M.P.O.}
 \begin{enumerate}
-\item[\hypertarget{bib32}{[1]}] \emph{Inverse semigroups generated by nilpotent
+\item \label{bib32} \emph{Inverse semigroups generated by nilpotent
 transformations}, Proc. Royal Soc. Edinburgh Sect. A
 \textbf{99} (1984), 153--162.
 \end{enumerate}
 
 \item[] J\"{a}nich, K.\index{J\"{a}nich, K.}
 \begin{enumerate}
-\item[\hypertarget{bib33}{[1]}] Topology, Springer, New York, 1984.
+\item \label{bib33} Topology, Springer, New York, 1984.
 \end{enumerate}
 
 \item[] Jordan, C.\index{Jordan, C.}
 \begin{enumerate}
-\item[\hypertarget{bib34}{[1]}] Trait\'{e} des Substitutions, Gauthier-Villars, Paris,
+\item \label{bib34} Trait\'{e} des Substitutions, Gauthier-Villars, Paris,
 1870.
 \end{enumerate}
 
 \item[] Kimble, R. J., A. J.\index{Kimble, R. J., A. J.} Schwenk and P. K. Stockmeyer\index{Stockmeyer, P.K.}
 \begin{enumerate}
-\item[\hypertarget{bib35}{[1]}] \emph{Pseudosimilar vertices in a graph}, J.
+\item \label{bib35} \emph{Pseudosimilar vertices in a graph}, J.
 Graph Theory \textbf{5} (1981), 171--181.
 \end{enumerate}
 
 \item[] Kocay, W. L.\index{Kocay, W. L.}
 \begin{enumerate}
-\item[\hypertarget{bib36}{[1]}] \emph{On Stockmeyer's non-reconstructible
+\item \label{bib36} \emph{On Stockmeyer's non-reconstructible
 tournaments}, J. Graph Theory \textbf{9} (1985), 473--476.
 \end{enumerate}
 
 \item[] Konieczny, J.\index{Konieczny, J.} and S. Lipscomb
 \begin{enumerate}
-\item[\hypertarget{bib37}{[1]}] \emph{Centralizers of partial transformations}, to appear.
+\item \label{bib37} \emph{Centralizers of partial transformations}, to appear.
 
-\item[\hypertarget{bib37a}{[2]}] \emph{Path notation for partial transformations}, to
+\item \label{bib37a} \emph{Path notation for partial transformations}, to
 appear.
 \end{enumerate}
 
 \item[] Lallement, G.
 \begin{enumerate}
-\item[\hypertarget{bib38}{[1]}] Semigroups and Combinatorial Applications, Wiley, New
+\item \label{bib38} Semigroups and Combinatorial Applications, Wiley, New
 York, 1979.
 
-\item[\hypertarget{bib38a}{[2]}] Letter dated January 9, 1991, unpublished.
+\item \label{bib38a} Letter dated January 9, 1991, unpublished.
 \end{enumerate}
 
 \item[] Lallement, G.\index{Lallement, G.} and M. Petrich
 \begin{enumerate}
-\item[\hypertarget{bib39}{[1]}] \emph{Extensions of a Brandt semigroup
+\item \label{bib39} \emph{Extensions of a Brandt semigroup
 by another}, Canad. J. Math. \textbf{22} (1970), 974--983.
 \end{enumerate}
 
 \item[] Levi, I.\index{Levi, I.}
 \begin{enumerate}
-\item[\hypertarget{bib40}{[1]}] \emph{Normal semigroups of one-to-one
+\item \label{bib40} \emph{Normal semigroups of one-to-one
 transformations}, Proc. Edinburgh Math. Soc. \textbf{34}
 (1991), 65--76.
 \end{enumerate}
 
 \item[] Levi, I. and W. Williams
 \begin{enumerate}
-\item[\hypertarget{bib41}{[1]}] \emph{Normal semigroups of partial one-to-one
+\item \label{bib41} \emph{Normal semigroups of partial one-to-one
 transformations} I, in Lattices, Semigroups, and Universal
 Algebra, Plenum Press, New York, 1990.
 
-\item[\hypertarget{bib41a}{[2]}] \emph{Normal semigroups of partial one-to-one
+\item \label{bib41a} \emph{Normal semigroups of partial one-to-one
 transformations} II, semigroup Forum \textbf{43} (1991),
 344--356.
 \end{enumerate}
 
 \item[] Liber, A. E.\index{Liber, A.E.}
 \begin{enumerate}
-\item[\hypertarget{bib42}{[1]}] \emph{On symmetric generalized groups}, Mat. Sb. \textbf{33}
+\item \label{bib42} \emph{On symmetric generalized groups}, Mat. Sb. \textbf{33}
 (1953), 531--544 (Russian)
 
-\item[\hypertarget{bib42a}{[2]}] \emph{On the theory of generalized groups}, Dokl.
+\item \label{bib42a} \emph{On the theory of generalized groups}, Dokl.
 Akad. Nauk SSSR \textbf{97} (1954), 25--38 (Russian).
 \end{enumerate}
 
 \item[] Lipscomb, S. L.
 \begin{enumerate}
-\item[\hypertarget{bib43}{[1]}] \emph{Cyclic subsemigroups of symmetric inverse
+\item \label{bib43} \emph{Cyclic subsemigroups of symmetric inverse
 semigroups}, Semigroup Forum \textbf{34} (1986), 243--248.
 
-\item[\hypertarget{bib43a}{[2]}] \emph{The structure of
+\item \label{bib43a} \emph{The structure of
 the centralizer of a permutation}, Semigroup Forum \textbf{37}
 (1988), 301--312.
 
-\item[\hypertarget{bib43b}{[3]}] \emph{The alternating semigroup: congruences and
+\item \label{bib43b} \emph{The alternating semigroup: congruences and
 generators}, Semigroup Forum \textbf{44} (1992), 96--106.
 
-\item[\hypertarget{bib43c}{[4]}] \emph{Centralizers in symmetric inverse semigroups:
+\item \label{bib43c} \emph{Centralizers in symmetric inverse semigroups:
 Structure and Order}, Semigroup Forum \textbf{44} (1992),
 347--355.
 
-\item[\hypertarget{bib43d}{[5]}] \emph{Problems and applications of finite inverse
+\item \label{bib43d} \emph{Problems and applications of finite inverse
 semigroups}, in Proc. Internat. Coll. Words, Languages,
 Comb., Editor M. Ito, World Scientific Publ., Hong Kong,
 1992, 337--352.
 
-\item[\hypertarget{bib43e}{[6]}] \emph{Presentations of alternating semigroups},
+\item \label{bib43e} \emph{Presentations of alternating semigroups},
 Semigroup Forum \textbf{45} (1992), 249--260.
 \end{enumerate}
 
 \item[] Lipscomb, S. L. and J. Konieczny
 \begin{enumerate}
-\item[\hypertarget{bib44}{[1]}] \emph{Classification of} $S_{n}-$\emph{normal
+\item \label{bib44} \emph{Classification of} $S_{n}-$\emph{normal
 semigroups}, Semigroup Forum \textbf{51} (1995), 73--86.
 
-\item[\hypertarget{bib44a}{[2]}] \emph{Centralizers of permutations in the partial
+\item \label{bib44a} \emph{Centralizers of permutations in the partial
 transformation semigroup}, to appear in Pure Math. Appl.
 \end{enumerate}
 
 \item[] Liu, C. L.\index{Liu, C.L.}
 \begin{enumerate}
-\item[\hypertarget{bib45}{[1]}] Introduction to Combinatorial Mathematics,
+\item \label{bib45} Introduction to Combinatorial Mathematics,
 McGraw-Hill, New York, 1968.
 \end{enumerate}
 
 \item[] Ljapin, E. S.\index{Ljapin, E.S.}
 \begin{enumerate}
-\item[\hypertarget{bib46}{[1]}] Semigroups, Amer. Math. Soc, Transl. Math.
+\item \label{bib46} Semigroups, Amer. Math. Soc., Transl. Math.
 Monographs, Providence, R. I., 1963.
 \end{enumerate}
 
 \item[] Lov\'{a}sz, L.\index{Lov\'{a}sz, L.}
 \begin{enumerate}
-\item[\hypertarget{bib47}{[1]}] Combinatorial Problems and Exercises, North Holland,
+\item \label{bib47} Combinatorial Problems and Exercises, North Holland,
 Amsterdam, 1979.
 \end{enumerate}
 
 \item[] Lyndon, R. C.\index{Lyndon, R.C.} and P. E. Schupp\index{Schupp P.E.}
 \begin{enumerate}
-\item[\hypertarget{bib48}{[1]}] Combinatorial Group Theory, Springer, Berlin, 1977.
+\item \label{bib48} Combinatorial Group Theory, Springer, Berlin, 1977.
 \end{enumerate}
 
 \item[] Malcev, A. I.\index{Malcev, A.I.}
 \begin{enumerate}
-\item[\hypertarget{bib49}{[1]}] \emph{Groupoids}, Mat. Sb. (N.S.) \textbf{31} (1952), 136--151
+\item \label{bib49} \emph{Groupoids}, Mat. Sb. (N.S.) \textbf{31} (1952), 136--151
 (Russian).
 \end{enumerate}
 
 \item[] Massey, W. S.\index{Massey, W.S.}
 \begin{enumerate}
-\item[\hypertarget{bib50}{[1]}] Algebraic Topology: An Introduction, Springer, New York,
+\item \label{bib50} Algebraic Topology: An Introduction, Springer, New York,
 1967.
 \end{enumerate}
 
 \item[] McKay, B. D.\index{McKay, B.D.}
 \begin{enumerate}
-\item[\hypertarget{bib51}{[1]}] \emph{Computer reconstruction of small graphs}, J.
+\item \label{bib51} \emph{Computer reconstruction of small graphs}, J.
 Graph Theory \textbf{1} (1977), 281--283.
 \end{enumerate}
 
 \item[] Mills, J. E.\index{Mills, J.E.}
 \begin{enumerate}
-\item[\hypertarget{bib52}{[1]}] \emph{The inverse semigroup of partial symmetries of a
+\item \label{bib52} \emph{The inverse semigroup of partial symmetries of a
 convex polygon}, Semigroup Forum \textbf{41} (1990),
 127--143.
 \end{enumerate}
 
 \item[] Moore, E. H.\index{Moore, E.H.}
 \begin{enumerate}
-\item[\hypertarget{bib53}{[1]}] \emph{Concerning the abstract groups of order} $k!$
+\item \label{bib53} \emph{Concerning the abstract groups of order} $k!$
 \emph{and} $\frac{1}{2}k!$ \emph{holohedrically isomorphic
 with the symmetric and the alternating substitutiongroups
 on k letters}, Proc. London Math. Soc. \textbf{28} (1897),
 357--366.
 
-\item[\hypertarget{bib53a}{[2]}] \emph{A definition of abstract groups}, Trans. Amer.
+\item \label{bib53a} \emph{A definition of abstract groups}, Trans. Amer.
 Math. Soc. \textbf{3} (1902), 485--492.
 \end{enumerate}
 
 \item[] Munn, W. D.\index{Munn, W.D.}
 \begin{enumerate}
-\item[\hypertarget{bib54}{[1]}] \emph{The characters of the symmetric inverse
+\item \label{bib54} \emph{The characters of the symmetric inverse
 semigroup}, Math. Proc. Cambridge Philos. Soc. \textbf{53}
 (1957), 13--18.
 \end{enumerate}
 
 \item[] Munn, W. D.\index{Munn, W.D.} and R. Penrose\index{Penrose R.}
 \begin{enumerate}
-\item[\hypertarget{bib55}{[1]}] \emph{A note on inverse semigroups}, Math. Proc.
+\item \label{bib55} \emph{A note on inverse semigroups}, Math. Proc.
 Cambridge Philos. Soc. \textbf{51} (1955), 396--399.
 \end{enumerate}
 
 \item[] Papert, D.\index{Papert, D.}
 \begin{enumerate}
-\item[\hypertarget{bib56}{[1]}] \emph{Congruence relations in semi-lattices}, J.
+\item \label{bib56} \emph{Congruence relations in semi-lattices}, J.
 London Math. Soc. \textbf{39} (1964), 723--729.
 \end{enumerate}
 
 \item[] Parks, A. D.\index{Parks, A.D.}
 \begin{enumerate}
-\item[\hypertarget{bib57}{[1]}] \emph{The Fermi and Bose congruences for free
+\item \label{bib57} \emph{The Fermi and Bose congruences for free
 semigroups on two generators}, J. Math. Physics,
 \textbf{33} (1992), 3649--3652.
 \end{enumerate}
 
 \item[] Pastijn, F.\index{Pastijn, F.} and M. Petrich\index{Petrich M.}
 \begin{enumerate}
-\item[\hypertarget{bib58}{[1]}] \emph{Congruences on regular semigroups}, Trans. Amer.
+\item \label{bib58} \emph{Congruences on regular semigroups}, Trans. Amer.
 Math. Soc. \textbf{295} (1986), 607--633.
 \end{enumerate}
 
 \item[] Paulos, J. A.
 \begin{enumerate}
-\item[\hypertarget{bib59}{[1]}] Beyond Numeracy, Vintage Books, New York, 1991.
+\item \label{bib59} Beyond Numeracy, Vintage Books, New York, 1991.
 \end{enumerate}
 
 \item[] Petrich, M.
 \begin{enumerate}
-\item[\hypertarget{bib60}{[1]}] Inverse Semigroups, Wiley, New York, 1984.
+\item \label{bib60} Inverse Semigroups, Wiley, New York, 1984.
 
-\item[\hypertarget{bib60a}{[2]}] \emph{Congruences on inverse semigroups}, J. Algebra
+\item \label{bib60a} \emph{Congruences on inverse semigroups}, J. Algebra
 \textbf{55} (1978), 231--256.
 
-\item[\hypertarget{bib60b}{[3]}] Introduction to Semigroups, Bell \& Howell, Columbus,
+\item \label{bib60b} Introduction to Semigroups, Bell \& Howell, Columbus,
 Ohio, 1973.
 \end{enumerate}
 
 \item[] Poole, A. R.\index{Poole, A.R.}
 \begin{enumerate}
-\item[\hypertarget{bib61}{[1]}] \emph{Finite ova}, Amer. J. Math. \textbf{59} (1937), 23--32.
+\item \label{bib61} \emph{Finite ova}, Amer. J. Math. \textbf{59} (1937), 23--32.
 \end{enumerate}
 
 \item[] Popova, L. M.\index{Popova, L.M.}
 \begin{enumerate}
-\item[\hypertarget{bib62}{[1]}] \emph{Defining relations of certain semigroups of
+\item \label{bib62} \emph{Defining relations of certain semigroups of
 partial transformations of a finite set}, Uchen. Zap.
 Leningrad. Gos. Ped. Inst. \textbf{218} (1961), 191--212
 (Russian).
@@ -9412,57 +9278,57 @@ Leningrad. Gos. Ped. Inst. \textbf{218} (1961), 191--212
 
 \item[] Preston, G. B.\index{Preston, G.B.}
 \begin{enumerate}
-\item[\hypertarget{bib63}{[1]}] \emph{Inverse semi-groups}, J. London Math. Soc. \textbf{29}
+\item \label{bib63} \emph{Inverse semi-groups}, J. London Math. Soc. \textbf{29}
 (1954), 396--403.
 
-\item[\hypertarget{bib63a}{[2]}] \emph{Representations of inverse semi-groups}, J.
+\item \label{bib63a} \emph{Representations of inverse semi-groups}, J.
 London Math. Soc. \textbf{29} (1954), 404--411.
 
-\item[\hypertarget{bib63b}{[3]}] \emph{A note on representations of inverse
+\item \label{bib63b} \emph{A note on representations of inverse
 semigroups}, Proc. Amer. Math. Soc. \textbf{8} (1957),
 1144--1147.
 \end{enumerate}
 
 \item[] Rees, D.\index{Rees, D.}
 \begin{enumerate}
-\item[\hypertarget{bib23}{[1]}] \emph{On semi-groups}, Math. Proc. Cambridge. Philos.
+\item \label{bib23} \emph{On semi-groups}, Math. Proc. Cambridge. Philos.
 Soc. \textbf{36} (1940), 387--400.
 \end{enumerate}
 
 \item[] Reilly, N. R.
 \begin{enumerate}
-\item[\hypertarget{bib64}{[1]}] \emph{Free inverse semigroups}, in Algebraic Theory of
+\item \label{bib64} \emph{Free inverse semigroups}, in Algebraic Theory of
 Semigroups, North Holland, Amsterdam (1976), 479--508
 (Proc. Conf. Szeged University 1976).
 
-\item[\hypertarget{bib64a}{[2]}] \emph{Completely regular semigroups as semigroups of
+\item \label{bib64a} \emph{Completely regular semigroups as semigroups of
 partial transformations}, Semigroup Forum \textbf{48}
 (1994), 50--62.
 \end{enumerate}
 
 \item[] Rotman, J. J.\index{Rotman, J.J.}
 \begin{enumerate}
-\item[\hypertarget{bib65}{[1]}] An Introduction to the Theory of Groups, Allyn and Bacon,
+\item \label{bib65} An Introduction to the Theory of Groups, Allyn and Bacon,
 Boston, third edition, 1984.
 \end{enumerate}
 
 \item[] Ruffini, P.\index{Ruffini, P.}
 \begin{enumerate}
-\item[\hypertarget{bib66}{[1]}] Teoria Generale Delle Equazioni, Nella Stamperia Di S.
+\item \label{bib66} Teoria Generale Delle Equazioni, Nella Stamperia Di S.
 Tommaso D'Aquino, Bologna, 1799.
 \end{enumerate}
 
 \item[] Saito, Tatsuhiko\index{Saito, T.}
 \begin{enumerate}
-\item[\hypertarget{bib67}{[1]}] \emph{Products of idempotents in finite full
+\item \label{bib67} \emph{Products of idempotents in finite full
 transformation semigroups}, Semigroup Forum \textbf{39}
 (1989), 295--309.
 
-\item[\hypertarget{bib67a}{[2]}] \emph{Products of four idempotents in finite full
+\item \label{bib67a} \emph{Products of four idempotents in finite full
 transformation semigroups}, Semigroup Forum \textbf{39}
 (1989), 179--193.
 
-\item[\hypertarget{bib67b}{[3]}] \emph{Conjugacy in finite symmetric inverse
+\item \label{bib67b} \emph{Conjugacy in finite symmetric inverse
 semigroups}, in Proc. Conf. Ordered Structures and Alg. of
 Computer Languages, World Scientific, Hong Kong, 1991,
 177--179.
@@ -9470,129 +9336,129 @@ Computer Languages, World Scientific, Hong Kong, 1991,
 
 \item[] Scheiblich, H. E.\index{Scheiblich, H.E.}
 \begin{enumerate}
-\item[\hypertarget{bib68}{[1]}] \emph{Concerning congruences on symmetric inverse
+\item \label{bib68} \emph{Concerning congruences on symmetric inverse
 semigroups}, Czech. Math. J. \textbf{23} (1973), 1--10.
 \end{enumerate}
 
 \item[] Schein, B. M.\index{Schein, B.M.}
 \begin{enumerate}
-\item[\hypertarget{bib69}{[1]}] \emph{Techniques of semigroup theory}, Semigroup Forum \textbf{44}
+\item \label{bib69} \emph{Techniques of semigroup theory}, Semigroup Forum \textbf{44}
 (1994), 397--402.
 
-\item[\hypertarget{bib69a}{[2]}] \emph{Products of idempotent order-preserving
+\item \label{bib69a} \emph{Products of idempotent order-preserving
 transformations of arbitrary chains}, Semigroup Forum
 \textbf{11} (1975,1976), 297--309.
 \end{enumerate}
 
 \item[] S\'{e}guier, J.-A. de\index{S\'{e}guier, J.-A. de}
 \begin{enumerate}
-\item[\hypertarget{bib70}{[1]}] El\'{e}ments de la Th\'{e}orie des Groupes Abstraits,
+\item \label{bib70} El\'{e}ments de la Th\'{e}orie des Groupes Abstraits,
 Gauthier-Villars, Paris, 1904.
 \end{enumerate}
 
 \item[] Stockmeyer, P. K.\index{Stockmeyer, P.K.}
 \begin{enumerate}
-\item[\hypertarget{bib71}{[1]}] \emph{The falsity of the reconstruction conjecture for
+\item \label{bib71} \emph{The falsity of the reconstruction conjecture for
 tournaments}, J. Graph Theory \textbf{1} (1977), 19--25.
 
-\item[\hypertarget{bib71a}{[2]}] \emph{Tilting at windmills or my quest for
+\item \label{bib71a} \emph{Tilting at windmills or my quest for
 non-reconstructable graphs}, Congress. Numer. \textbf{63}
 (1988).
 
-\item[\hypertarget{bib71b}{[3]}] \emph{A census of non-reconstructable digraphs I:
+\item \label{bib71b} \emph{A census of non-reconstructable digraphs I:
 Six related families}, J. Combin. Theory Ser. \textbf{B
 31} (1981), 232--239.
 
-\item[\hypertarget{bib71c}{[4]}] \emph{A census of non-reconstructable digraphs II: A
+\item \label{bib71c} \emph{A census of non-reconstructable digraphs II: A
 family of tournaments}, to appear.
 
-\item[\hypertarget{bib71d}{[5]}] \emph{The reconstruction conjecture for tournaments},
+\item \label{bib71d} \emph{The reconstruction conjecture for tournaments},
 Proc. 6th S-E Conf. Comb., Graph Theory, and Computing,
 Congress. Numer. \textbf{14} (1975), 561--566.
 
-\item[\hypertarget{bib71e}{[6]}] \emph{Which reconstruction results are significant}?, in
+\item \label{bib71e} \emph{Which reconstruction results are significant}?, in
 Theory Appl. of Graphs, Fourth Intern. Conf., Wiley, New
 York, 1981.
 \end{enumerate}
 
 \item[] Sullivan, R. P.\index{Sullivan, R.P.}
 \begin{enumerate}
-\item[\hypertarget{bib72}{[1]}] \emph{Semigroups generated by nilpotent
+\item \label{bib72} \emph{Semigroups generated by nilpotent
 transformations}, J. Algebra \textbf{110} (1987),
 324--343.
 
-\item[\hypertarget{bib72a}{[2]}] A Study in the Theory of Transformation Semigroups, Ph.
+\item \label{bib72a} A Study in the Theory of Transformation Semigroups, Ph.
 D. Thesis, Monash University, 1969.
 
-\item[\hypertarget{bib72b}{[3]}] \emph{Automorphisms of injective transformation
+\item \label{bib72b} \emph{Automorphisms of injective transformation
 semigroups}, Studia Sc. Math. Hung. \textbf{15} (1980),
 1--4.
 \end{enumerate}
 
 \item[] Suschkewitsch, A. K.\index{Suschkewitsch, A.K.}
 \begin{enumerate}
-\item[\hypertarget{bib73}{[1]}] \emph{\"{U}ber die endlichen Gruppen ohne das
+\item \label{bib73} \emph{\"{U}ber die endlichen Gruppen ohne das
 Gesetz der eindeutigen Umkehrbarkeit}, Math. Ann.
 \textbf{99} (1928), 30--50.
 
-\item[\hypertarget{bib73a}{[2]}] The Theory of Generalized Groups, Kharkow, 1937
+\item \label{bib73a} The Theory of Generalized Groups, Kharkow, 1937
 (Russian).
 
-\item[\hypertarget{bib73b}{[3]}] \emph{Untersuchungen \"{u}ber verallgemeinerte
+\item \label{bib73b} \emph{Untersuchungen \"{u}ber verallgemeinerte
 Substitutionen}, Atti Congr. Intern. Matem. Bologna
 (1928), 147--157.
 \end{enumerate}
 
 \item[] Suzuki, M.\index{Suzuki, M.}
 \begin{enumerate}
-\item[\hypertarget{bib74}{[1]}] Group Theory I, Springer, New York, 1982.
+\item \label{bib74} Group Theory I, Springer, New York, 1982.
 
-\item[\hypertarget{bib74a}{[2]}] Group Theory II, Springer, New York, 1986.
+\item \label{bib74a} Group Theory II, Springer, New York, 1986.
 \end{enumerate}
 
 \item[] Symons, J. S. V.\index{Symons, J.S.V.}
 \begin{enumerate}
-\item[\hypertarget{bib75}{[1]}] \emph{Normal transformation semigroups}, J. Austral.
+\item \label{bib75} \emph{Normal transformation semigroups}, J. Austral.
 Math. Soc, Ser. A \textbf{22} (1976), 385--390.
 \end{enumerate}
 
 \item[] Thierrin, G.\index{Thierrin, G.}
 \begin{enumerate}
-\item[\hypertarget{bib76}{[1]}] \emph{Sur une condition n\'{e}cessaire et suffisante
+\item \label{bib76} \emph{Sur une condition n\'{e}cessaire et suffisante
 pour qu'un semigroupe soit un groupe}, C. R. Acad. Sci.
 Paris \textbf{232} (1951), 376--378.
 \end{enumerate}
 
 \item[] von Neumann, J.\index{von Neumann, J.}
 \begin{enumerate}
-\item[\hypertarget{bib77}{[1]}] \emph{On regular rings}, Proc. Nat. Acad. Sci. U. S.
+\item \label{bib77} \emph{On regular rings}, Proc. Nat. Acad. Sci. U. S.
 A. \textbf{22} (1936), 707--713.
 \end{enumerate}
 
 \item[] Wagner, V. V.\index{Wagner, V.V.}
 \begin{enumerate}
-\item[\hypertarget{bib78}{[1]}] \emph{Generalized groups}, Doklady Akad. Nauk SSSR \textbf{84}
+\item \label{bib78} \emph{Generalized groups}, Doklady Akad. Nauk SSSR \textbf{84}
 (1952), 1119--1122 (Russian).
 \end{enumerate}
 
 \item[] Yongzhi, Y.\index{Yongzhi, Y.}
 \begin{enumerate}
-\item[\hypertarget{bib79}{[1]}] \emph{The reconstruction conjecture is true if all}
+\item \label{bib79} \emph{The reconstruction conjecture is true if all}
 2-\emph{connected graphs are reconstructible}, J. Graph
 Theory \textbf{12} (1988), 237--243.
 \end{enumerate}
 
 \item[] Zhang, L.\index{Zhang, L.}
 \begin{enumerate}
-\item[\hypertarget{bib80}{[1]}] \emph{On the conjugacy problem for one-relator monoids
+\item \label{bib80} \emph{On the conjugacy problem for one-relator monoids
 with elements of finite order}, Inter. J. Algebra and
 Comp. \textbf{2} (1992), 209--220.
 
-\item[\hypertarget{bib80a}{[2]}] \emph{Conjugacy in special monoids}, J. Algebra \textbf{143}
+\item \label{bib80a} \emph{Conjugacy in special monoids}, J. Algebra \textbf{143}
 (1991), 487--497.
 \end{enumerate}
 
-\end{enumerate}
+\end{thebibliography}
 
 \printindex
 
