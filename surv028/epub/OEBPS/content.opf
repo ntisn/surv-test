@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package version="3.0" unique-identifier="pub-identifier" xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:schema="http://schema.org/" xml:lang="en">
+  <metadata>
+    <dc:identifier id="pub-identifier">urn:doi:10.1090/surv/028</dc:identifier>
+    <meta id="meta-identifier" property="dcterms:identifier">urn:doi:10.1090/surv/028</meta>
+    <dc:title id="pub-title">Direct and Inverse Scattering on the Line</dc:title>
+    <meta id="meta-title" property="dcterms:title">Direct and Inverse Scattering on the Line</meta>
+    <dc:language id="pub-language">en</dc:language>
+    <meta id="meta-language" property="dcterms:language">en</meta>
+    <meta id="dcmodified" property="dcterms:modified">2025-09-25T05:33:25Z</meta>
+    <meta name="cover" content="Images/cover.jpg" />
+    <meta property="schema:accessMode">textual</meta>
+    <meta property="schema:accessMode">visual</meta>
+    <meta property="schema:accessibilityFeature">displayTransformability</meta>
+    <meta property="schema:accessibilityFeature">readingOrder</meta>
+    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    <meta property="schema:accessibilityFeature">alternativeText</meta>
+    <meta property="schema:accessibilityHazard">noFlashingHazard</meta>
+    <meta property="schema:accessibilityHazard">noSoundHazard</meta>
+    <meta property="schema:accessibilityHazard">noMotionSimulationHazard</meta>
+    <meta property="schema:accessModeSufficient">textual,visual</meta>
+    <meta property="schema:accessModeSufficient">textual</meta>
+    <meta property="schema:accessibilitySummary">Equations are provided as ARIA Tree Views using inline SVG with MathSpeak and Nemeth Braille descriptions. Other graphics are described by surrounding text content.</meta>
+    <meta property="schema:accessibilityAPI">ARIA</meta>
+    <meta property="dcterms:conformsTo" id="conf">EPUB Accessibility 1.1 - WCAG 2.1 Level AA</meta>
+    <meta property="a11y:certifiedBy" refines="#conf">American Mathematical Society</meta>
+  <dc:creator id="authors-0">Richard&#160;Beals</dc:creator>
+<meta scheme="marc:relators" property="role" refines="#authors-0">aut</meta>
+<dc:creator id="authors-1">Percy&#160;Deift</dc:creator>
+<meta scheme="marc:relators" property="role" refines="#authors-1">aut</meta>
+<dc:creator id="authors-2">Carlos&#160;Tomei</dc:creator>
+<meta scheme="marc:relators" property="role" refines="#authors-2">aut</meta>
+<dc:publisher id="publisher-0">American Mathematical Society</dc:publisher>
+<meta scheme="marc:relators" property="role" refines="#publisher-0">pbl</meta>
+</metadata>
+  <manifest>
+    <item id="index.xhtml" href="Text/index.xhtml" media-type="application/xhtml+xml" />
+    <item id="cip.xhtml" href="Text/cip.xhtml" media-type="application/xhtml+xml" />
+    <item id="toc01.xhtml" href="Text/toc01.xhtml" media-type="application/xhtml+xml" properties="nav svg" />
+    <item id="epub.css" href="Styles/epub.css" media-type="text/css" />
+    <item id="STIXTwoText" href="Styles/fonts/STIXTwoText-variable.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="STIXTwoText-Italic" href="Styles/fonts/STIXTwoText-Italic-variable.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="SourceSans3-Upright" href="Styles/fonts/SourceSans3VF-Upright.otf.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="SourceSans3-Italic" href="Styles/fonts/SourceSans3VF-Italic.otf.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="SourceCodePro-Upright" href="Styles/fonts/SourceCodeVF-Upright.otf.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="SourceCodePro-Italic" href="Styles/fonts/SourceCodeVF-Italic.otf.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="cover.jpg" href="Images/cover.jpg" media-type="image/jpeg" properties="cover-image" />
+    <item id="cover.xhtml" href="Text/cover.xhtml" media-type="application/xhtml+xml" />
+  <item media-type="application/xhtml+xml" href="Text/Part-0001.xhtml" id="AMSPart-0001.xhtml" />
+<item media-type="application/xhtml+xml" href="Text/Part-0003.xhtml" id="AMSPart-0003.xhtml" />
+<item media-type="application/xhtml+xml" href="Text/Part-0004.xhtml" id="AMSPart-0004.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0005.xhtml" id="AMSPart-0005.xhtml" />
+<item media-type="application/xhtml+xml" href="Text/Part-0006.xhtml" id="AMSPart-0006.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0007-0.xhtml" id="AMSPart-0007-0.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0007-1.xhtml" id="AMSPart-0007-1.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0007-2.xhtml" id="AMSPart-0007-2.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0007-3.xhtml" id="AMSPart-0007-3.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0007-4.xhtml" id="AMSPart-0007-4.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0007-5.xhtml" id="AMSPart-0007-5.xhtml" />
+<item media-type="application/xhtml+xml" href="Text/Part-0008.xhtml" id="AMSPart-0008.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0009-0.xhtml" id="AMSPart-0009-0.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0009-1.xhtml" id="AMSPart-0009-1.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0009-2.xhtml" id="AMSPart-0009-2.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0009-3.xhtml" id="AMSPart-0009-3.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0009-4.xhtml" id="AMSPart-0009-4.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0009-5.xhtml" id="AMSPart-0009-5.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0009-6.xhtml" id="AMSPart-0009-6.xhtml" />
+<item media-type="application/xhtml+xml" href="Text/Part-0010.xhtml" id="AMSPart-0010.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0011-0.xhtml" id="AMSPart-0011-0.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0011-1.xhtml" id="AMSPart-0011-1.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0011-2.xhtml" id="AMSPart-0011-2.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0011-3.xhtml" id="AMSPart-0011-3.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0012.xhtml" id="AMSPart-0012.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0013.xhtml" id="AMSPart-0013.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0014.xhtml" id="AMSPart-0014.xhtml" />
+<item media-type="image/png" href="Images/ams-logo.png" id="AMSams-logo.png" />
+<item media-type="image/png" href="Images/img06bf1f095d62fe326a157c719e6c0d38.png" id="AMSimg06bf1f095d62fe326a157c719e6c0d38.png" />
+<item media-type="image/png" href="Images/img296dcf0242b51ace0057694418a2449b.png" id="AMSimg296dcf0242b51ace0057694418a2449b.png" />
+<item media-type="image/png" href="Images/img3572c70a191a529ca575be427e82af43.png" id="AMSimg3572c70a191a529ca575be427e82af43.png" />
+<item media-type="image/png" href="Images/img394cb62440b02e4d9060fd6ff3ad79fe.png" id="AMSimg394cb62440b02e4d9060fd6ff3ad79fe.png" />
+<item media-type="image/png" href="Images/img422f9d17f3c5518137a34f9ac34e17c2.png" id="AMSimg422f9d17f3c5518137a34f9ac34e17c2.png" />
+<item media-type="image/png" href="Images/img4fbe83d6d6f2539e0f6eb867261d6067.png" id="AMSimg4fbe83d6d6f2539e0f6eb867261d6067.png" />
+<item media-type="image/png" href="Images/img50ee1853def5c0b035c738f90cbc8dbe.png" id="AMSimg50ee1853def5c0b035c738f90cbc8dbe.png" />
+<item media-type="image/png" href="Images/img51595326a10c979b783e9aa99288d2c3.png" id="AMSimg51595326a10c979b783e9aa99288d2c3.png" />
+<item media-type="image/png" href="Images/img5330364df43d7483c5337e722de55a7b.png" id="AMSimg5330364df43d7483c5337e722de55a7b.png" />
+<item media-type="image/png" href="Images/img748d43c8fcb54b8ce02f2a04332176a4.png" id="AMSimg748d43c8fcb54b8ce02f2a04332176a4.png" />
+<item media-type="image/png" href="Images/img75458efa0fc47bd0b716f9887f1e9c45.png" id="AMSimg75458efa0fc47bd0b716f9887f1e9c45.png" />
+<item media-type="image/png" href="Images/img7c697d6fca561943a9c8d0a31b614a55.png" id="AMSimg7c697d6fca561943a9c8d0a31b614a55.png" />
+<item media-type="image/png" href="Images/img7cf5e7ac78c9ae96cb0ed1df17829abf.png" id="AMSimg7cf5e7ac78c9ae96cb0ed1df17829abf.png" />
+<item media-type="image/png" href="Images/img81f4701404db32c2b6aa27e4f98722fb.png" id="AMSimg81f4701404db32c2b6aa27e4f98722fb.png" />
+<item media-type="image/png" href="Images/img82e93d7e1e0b7c02acdaea42ce25b206.png" id="AMSimg82e93d7e1e0b7c02acdaea42ce25b206.png" />
+<item media-type="image/png" href="Images/imga04b4937c2b1d3cce9a272837f0055c3.png" id="AMSimga04b4937c2b1d3cce9a272837f0055c3.png" />
+<item media-type="image/png" href="Images/imga3eb0413f4b58bcc92873351e8133b60.png" id="AMSimga3eb0413f4b58bcc92873351e8133b60.png" />
+<item media-type="image/png" href="Images/imga86994c19c549ba8a928c48b4adcc019.png" id="AMSimga86994c19c549ba8a928c48b4adcc019.png" />
+<item media-type="image/png" href="Images/imgacb8d3688124cff9626dc2c37aba9d95.png" id="AMSimgacb8d3688124cff9626dc2c37aba9d95.png" />
+<item media-type="image/png" href="Images/imgaef8f267cbb4e25ee5d3bb744ce093f1.png" id="AMSimgaef8f267cbb4e25ee5d3bb744ce093f1.png" />
+<item media-type="image/png" href="Images/imgc0d10a3992f90e115763d07fafde60bc.png" id="AMSimgc0d10a3992f90e115763d07fafde60bc.png" />
+<item media-type="image/png" href="Images/imgcbc338cd91c5d361f9f78a42f29da583.png" id="AMSimgcbc338cd91c5d361f9f78a42f29da583.png" />
+<item media-type="image/png" href="Images/imgd7c1c08c44c3f5b2089236be7dd426c1.png" id="AMSimgd7c1c08c44c3f5b2089236be7dd426c1.png" />
+<item media-type="image/png" href="Images/imgdea1409dca64ba7116290cf16560f03e.png" id="AMSimgdea1409dca64ba7116290cf16560f03e.png" />
+<item media-type="image/png" href="Images/imgef5e6e60d6c09de6e6a167233feb38dc.png" id="AMSimgef5e6e60d6c09de6e6a167233feb38dc.png" />
+<item media-type="image/png" href="Images/imgf78aed7a2bab0ed18a43836d1b669289.png" id="AMSimgf78aed7a2bab0ed18a43836d1b669289.png" />
+</manifest>
+  <spine>
+    <itemref idref="cover.xhtml" />
+    <itemref idref="index.xhtml" />
+    <itemref idref="cip.xhtml" />
+    <itemref idref="toc01.xhtml" />
+  <itemref idref="AMSPart-0001.xhtml" />
+<itemref idref="AMSPart-0003.xhtml" />
+<itemref idref="AMSPart-0004.xhtml" />
+<itemref idref="AMSPart-0005.xhtml" />
+<itemref idref="AMSPart-0006.xhtml" />
+<itemref idref="AMSPart-0007-0.xhtml" />
+<itemref idref="AMSPart-0007-1.xhtml" />
+<itemref idref="AMSPart-0007-2.xhtml" />
+<itemref idref="AMSPart-0007-3.xhtml" />
+<itemref idref="AMSPart-0007-4.xhtml" />
+<itemref idref="AMSPart-0007-5.xhtml" />
+<itemref idref="AMSPart-0008.xhtml" />
+<itemref idref="AMSPart-0009-0.xhtml" />
+<itemref idref="AMSPart-0009-1.xhtml" />
+<itemref idref="AMSPart-0009-2.xhtml" />
+<itemref idref="AMSPart-0009-3.xhtml" />
+<itemref idref="AMSPart-0009-4.xhtml" />
+<itemref idref="AMSPart-0009-5.xhtml" />
+<itemref idref="AMSPart-0009-6.xhtml" />
+<itemref idref="AMSPart-0010.xhtml" />
+<itemref idref="AMSPart-0011-0.xhtml" />
+<itemref idref="AMSPart-0011-1.xhtml" />
+<itemref idref="AMSPart-0011-2.xhtml" />
+<itemref idref="AMSPart-0011-3.xhtml" />
+<itemref idref="AMSPart-0012.xhtml" />
+<itemref idref="AMSPart-0013.xhtml" />
+<itemref idref="AMSPart-0014.xhtml" />
+</spine>
+  <guide>
+    <reference type="text" title="Start reading" href="Text/Part-0001.xhtml" />
+    <reference type="toc" title="Table of Contents" href="Text/toc01.xhtml" />
+    <reference type="cover" title="Cover" href="Text/cover.xhtml" />
+  </guide>
+</package>
+    

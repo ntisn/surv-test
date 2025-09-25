@@ -72,7 +72,7 @@
         <host>www.ams.org</host>
         <path>/surv/028</path>
     </uri>
-    <msc source="msn" schema="1991">
+    <msc source="msn" schema="1984">
         <primary>58F07</primary>
         <secondary>34A55</secondary>
         <secondary>34B25</secondary>
