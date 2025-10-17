@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package version="3.0" unique-identifier="pub-identifier" xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:schema="http://schema.org/" xml:lang="en">
+  <metadata>
+    <dc:identifier id="pub-identifier">urn:doi:10.1090/surv/065</dc:identifier>
+    <meta id="meta-identifier" property="dcterms:identifier">urn:doi:10.1090/surv/065</meta>
+    <dc:title id="pub-title">Rings and Things and a Fine Array of Twentieth Century Associative Algebra</dc:title>
+    <meta id="meta-title" property="dcterms:title">Rings and Things and a Fine Array of Twentieth Century Associative Algebra</meta>
+    <dc:language id="pub-language">en</dc:language>
+    <meta id="meta-language" property="dcterms:language">en</meta>
+    <meta id="dcmodified" property="dcterms:modified">2025-10-17T05:43:44Z</meta>
+    <meta name="cover" content="Images/cover.jpg" />
+    <meta property="schema:accessMode">textual</meta>
+    <meta property="schema:accessMode">visual</meta>
+    <meta property="schema:accessibilityFeature">displayTransformability</meta>
+    <meta property="schema:accessibilityFeature">readingOrder</meta>
+    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    <meta property="schema:accessibilityFeature">alternativeText</meta>
+    <meta property="schema:accessibilityHazard">noFlashingHazard</meta>
+    <meta property="schema:accessibilityHazard">noSoundHazard</meta>
+    <meta property="schema:accessibilityHazard">noMotionSimulationHazard</meta>
+    <meta property="schema:accessModeSufficient">textual,visual</meta>
+    <meta property="schema:accessModeSufficient">textual</meta>
+    <meta property="schema:accessibilitySummary">Equations are provided as ARIA Tree Views using inline SVG with MathSpeak and Nemeth Braille descriptions. Other graphics are described by surrounding text content.</meta>
+    <meta property="schema:accessibilityAPI">ARIA</meta>
+    <meta property="dcterms:conformsTo" id="conf">EPUB Accessibility 1.1 - WCAG 2.1 Level AA</meta>
+    <meta property="a11y:certifiedBy" refines="#conf">American Mathematical Society</meta>
+  <dc:creator id="authors-0">Carl&#160;Faith</dc:creator>
+<meta scheme="marc:relators" property="role" refines="#authors-0">aut</meta>
+<dc:publisher id="publisher-0">American Mathematical Society</dc:publisher>
+<meta scheme="marc:relators" property="role" refines="#publisher-0">pbl</meta>
+</metadata>
+  <manifest>
+    <item id="index.xhtml" href="Text/index.xhtml" media-type="application/xhtml+xml" />
+    <item id="cip.xhtml" href="Text/cip.xhtml" media-type="application/xhtml+xml" />
+    <item id="toc01.xhtml" href="Text/toc01.xhtml" media-type="application/xhtml+xml" properties="nav svg" />
+    <item id="epub.css" href="Styles/epub.css" media-type="text/css" />
+    <item id="STIXTwoText" href="Styles/fonts/STIXTwoText-variable.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="STIXTwoText-Italic" href="Styles/fonts/STIXTwoText-Italic-variable.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="SourceSans3-Upright" href="Styles/fonts/SourceSans3VF-Upright.otf.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="SourceSans3-Italic" href="Styles/fonts/SourceSans3VF-Italic.otf.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="SourceCodePro-Upright" href="Styles/fonts/SourceCodeVF-Upright.otf.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="SourceCodePro-Italic" href="Styles/fonts/SourceCodeVF-Italic.otf.woff2" media-type="application/vnd.ms-opentype" />
+    <item id="cover.jpg" href="Images/cover.jpg" media-type="image/jpeg" properties="cover-image" />
+    <item id="cover.xhtml" href="Text/cover.xhtml" media-type="application/xhtml+xml" />
+  <item media-type="application/xhtml+xml" href="Text/Part-0001.xhtml" id="AMSPart-0001.xhtml" />
+<item media-type="application/xhtml+xml" href="Text/Part-0003.xhtml" id="AMSPart-0003.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0004.xhtml" id="AMSPart-0004.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0005.xhtml" id="AMSPart-0005.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0006.xhtml" id="AMSPart-0006.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0007.xhtml" id="AMSPart-0007.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0008.xhtml" id="AMSPart-0008.xhtml" />
+<item media-type="application/xhtml+xml" href="Text/Part-0009.xhtml" id="AMSPart-0009.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0010.xhtml" id="AMSPart-0010.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0011-0.xhtml" id="AMSPart-0011-0.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0011-1.xhtml" id="AMSPart-0011-1.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0012-0.xhtml" id="AMSPart-0012-0.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0012-1.xhtml" id="AMSPart-0012-1.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0013.xhtml" id="AMSPart-0013.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0014.xhtml" id="AMSPart-0014.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0015.xhtml" id="AMSPart-0015.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0016.xhtml" id="AMSPart-0016.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0017.xhtml" id="AMSPart-0017.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0018.xhtml" id="AMSPart-0018.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0019.xhtml" id="AMSPart-0019.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0020.xhtml" id="AMSPart-0020.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0021.xhtml" id="AMSPart-0021.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0022.xhtml" id="AMSPart-0022.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0023.xhtml" id="AMSPart-0023.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0024.xhtml" id="AMSPart-0024.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0025.xhtml" id="AMSPart-0025.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0026.xhtml" id="AMSPart-0026.xhtml" />
+<item media-type="application/xhtml+xml" href="Text/Part-0027.xhtml" id="AMSPart-0027.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0028.xhtml" id="AMSPart-0028.xhtml" />
+<item properties="svg" media-type="application/xhtml+xml" href="Text/Part-0029.xhtml" id="AMSPart-0029.xhtml" />
+<item media-type="image/png" href="Images/ams-logo.png" id="AMSams-logo.png" />
+</manifest>
+  <spine>
+    <itemref idref="cover.xhtml" />
+    <itemref idref="index.xhtml" />
+    <itemref idref="cip.xhtml" />
+    <itemref idref="toc01.xhtml" />
+  <itemref idref="AMSPart-0001.xhtml" />
+<itemref idref="AMSPart-0003.xhtml" />
+<itemref idref="AMSPart-0004.xhtml" />
+<itemref idref="AMSPart-0005.xhtml" />
+<itemref idref="AMSPart-0006.xhtml" />
+<itemref idref="AMSPart-0007.xhtml" />
+<itemref idref="AMSPart-0008.xhtml" />
+<itemref idref="AMSPart-0009.xhtml" />
+<itemref idref="AMSPart-0010.xhtml" />
+<itemref idref="AMSPart-0011-0.xhtml" />
+<itemref idref="AMSPart-0011-1.xhtml" />
+<itemref idref="AMSPart-0012-0.xhtml" />
+<itemref idref="AMSPart-0012-1.xhtml" />
+<itemref idref="AMSPart-0013.xhtml" />
+<itemref idref="AMSPart-0014.xhtml" />
+<itemref idref="AMSPart-0015.xhtml" />
+<itemref idref="AMSPart-0016.xhtml" />
+<itemref idref="AMSPart-0017.xhtml" />
+<itemref idref="AMSPart-0018.xhtml" />
+<itemref idref="AMSPart-0019.xhtml" />
+<itemref idref="AMSPart-0020.xhtml" />
+<itemref idref="AMSPart-0021.xhtml" />
+<itemref idref="AMSPart-0022.xhtml" />
+<itemref idref="AMSPart-0023.xhtml" />
+<itemref idref="AMSPart-0024.xhtml" />
+<itemref idref="AMSPart-0025.xhtml" />
+<itemref idref="AMSPart-0026.xhtml" />
+<itemref idref="AMSPart-0027.xhtml" />
+<itemref idref="AMSPart-0028.xhtml" />
+<itemref idref="AMSPart-0029.xhtml" />
+</spine>
+  <guide>
+    <reference type="text" title="Start reading" href="Text/Part-0001.xhtml" />
+    <reference type="toc" title="Table of Contents" href="Text/toc01.xhtml" />
+    <reference type="cover" title="Cover" href="Text/cover.xhtml" />
+  </guide>
+</package>
+    
