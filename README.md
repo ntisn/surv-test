@@ -90,7 +90,7 @@ In the src column, R = rekeyed; O = original source files
 | surv   |     74 | stroock    |   R | 2000 |  |
 | surv   |     75 | hjorth     |   R | 2000 |  |
 | surv   |     76 | gardiner   |   R | 2000 |  |
-| surv   |     77 | new        |   R | 2000 |  |
+| surv   |     77 | old        |   R | 2000 |  |
 | surv   |     78 | kupershm   |   R | 2000 |  |
 | surv   |     79 | cima       |   R | 2000 |  |
 | surv   |     80 | childs     |   R | 2000 |  |
