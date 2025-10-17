@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE collection PUBLIC "-//AMS//DTD GENTAG 2.00//en" "gentag2.dtd">
+
+<collection>
+    <title>
+        <tex>Stochastic Partial Differential Equations: Six
+        Perspectives</tex>
+        <html>Stochastic Partial Differential Equations: Six
+        Perspectives</html>
+        <ascii>Stochastic Partial Differential Equations: Six
+        Perspectives</ascii>
+    </title>
+    <editor>
+        <name>
+            <surname>
+                <tex>Carmona</tex>
+                <html>Carmona</html>
+                <ascii>Carmona</ascii>
+            </surname>
+            <given>
+                <tex>Rene</tex>
+                <html>Rene</html>
+                <ascii>Rene</ascii>
+            </given>
+            <middle>
+                <tex>A.</tex>
+                <html>A.</html>
+                <ascii>A.</ascii>
+            </middle>
+        </name>
+        <affiliation>Princeton University, Princeton, NJ</affiliation>
+    </editor>
+    <editor>
+        <name>
+            <surname>
+                <tex>Rozovskii</tex>
+                <html>Rozovskii</html>
+                <ascii>Rozovskii</ascii>
+            </surname>
+            <given>
+                <tex>Boris</tex>
+                <html>Boris</html>
+                <ascii>Boris</ascii>
+            </given>
+        </name>
+        <affiliation>University of Southern California, Los Angeles,
+        CA</affiliation>
+    </editor>
+    <copyright bookvol_category="AMS">
+        <year>1998</year>
+        <owner>American Mathematical Society</owner>
+    </copyright>
+    <publication>
+        <publ_key>surv</publ_key>
+        <full_title>Mathematical Surveys and Monographs</full_title>
+        <abbrev_title>Math. Surveys Monogr.</abbrev_title>
+        <issn type="print">0076-5376</issn>
+        <issn type="electronic">2331-7159</issn>
+    </publication>
+    <publisher pcode="AMS">American Mathematical Society</publisher>
+    <volume_id>carmona</volume_id>
+    <itemcode>SURV/64.S</itemcode>
+    <numpages>352</numpages>
+    <isbn type="print">978-0-8218-2100-8</isbn>
+    <isbn type="electronic">978-1-4704-1291-3</isbn>
+    <lccn>98-38392</lccn>
+    <lccall/>
+    <doi>10.1090/surv/064</doi>
+    <uri scheme="https">
+        <host>www.ams.org</host>
+        <path>/surv/064</path>
+    </uri>
+    <msc source="msn" schema="1991">
+        <primary>60-06</primary>
+        <secondary>35-06</secondary>
+        <secondary>35R60</secondary>
+        <secondary>60H15</secondary>
+    </msc>
+    <mr>MR1661761</mr>
+    <volume>64</volume>
+    <pubdate>
+        <year>1999</year>
+        <month>November</month>
+        <day>4</day>
+    </pubdate>
+    <language>English</language>
+    <contents>
+        <unnumbered type="PT" manid="MR1661761">
+            <title>
+                <tex>Part 1. Stochastic models</tex>
+            </title>
+        </unnumbered>
+        <unnumbered type="paper" manid="01"/>
+        <unnumbered type="paper" manid="02"/>
+        <unnumbered type="paper" manid="03"/>
+        <unnumbered type="paper" manid="04"/>
+        <unnumbered type="PT" manid="MR1661761">
+            <title>
+                <tex>Part 2. Mathematical theory</tex>
+            </title>
+        </unnumbered>
+        <unnumbered type="paper" manid="05"/>
+        <unnumbered type="paper" manid="06"/>
+    </contents>
+</collection>
