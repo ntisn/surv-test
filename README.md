@@ -77,7 +77,7 @@ In the src column, R = rekeyed; O = original source files
 | surv   |     61 | everitt    |   R | 1999 |  |
 | surv   |     62 | bogachev   |   R | 1998 |  |
 | surv   |     63 | hovey      |   R | 1999 |  |
-| surv   |     64 | carmona    |   R | 1998 |  |
+| surv   | 64     | v64        | R   | 1998 | EPUB files added |
 | surv   |     65 | faith2     |   R | 2004 |  |
 | surv   |     66 | ilyashenk  |   R | 1999 |  |
 | surv   |     67 | borel      |   R | 2000 |  |

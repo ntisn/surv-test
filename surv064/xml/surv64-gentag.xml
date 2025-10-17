@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE collection PUBLIC "-//AMS//DTD GENTAG 2.00//en" "gentag2.dtd">
+<!DOCTYPE monograph PUBLIC "-//AMS//DTD GENTAG 2.00//en" "gentag2.dtd">
 
-<collection>
+<monograph>
     <title>
         <tex>Stochastic Partial Differential Equations: Six
         Perspectives</tex>
@@ -103,4 +103,4 @@
         <unnumbered type="paper" manid="05"/>
         <unnumbered type="paper" manid="06"/>
     </contents>
-</collection>
+</monograph>
