@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE monograph PUBLIC "-//AMS//DTD GENTAG 2.00//en" "gentag2.dtd">
+
+<monograph>
+    <title>
+        <tex>Consequences of the Axiom of Choice</tex>
+        <html>Consequences of the Axiom of Choice</html>
+        <ascii>Consequences of the Axiom of Choice</ascii>
+    </title>
+    <author>
+        <name>
+            <surname>
+                <tex>Howard</tex>
+                <html>Howard</html>
+                <ascii>Howard</ascii>
+            </surname>
+            <given>
+                <tex>Paul</tex>
+                <html>Paul</html>
+                <ascii>Paul</ascii>
+            </given>
+        </name>
+        <affiliation>Eastern Michigan University, Ypsilanti,
+        MI</affiliation>
+    </author>
+    <author>
+        <name>
+            <surname>
+                <tex>Rubin</tex>
+                <html>Rubin</html>
+                <ascii>Rubin</ascii>
+            </surname>
+            <given>
+                <tex>Jean</tex>
+                <html>Jean</html>
+                <ascii>Jean</ascii>
+            </given>
+            <middle>
+                <tex>E.</tex>
+                <html>E.</html>
+                <ascii>E.</ascii>
+            </middle>
+        </name>
+        <affiliation>Purdue University, West Lafayette, IN</affiliation>
+    </author>
+    <copyright bookvol_category="AMS">
+        <year>1998</year>
+        <owner>American Mathematical Society</owner>
+    </copyright>
+    <publication>
+        <publ_key>surv</publ_key>
+        <full_title>Mathematical Surveys and Monographs</full_title>
+        <abbrev_title>Math. Surveys Monogr.</abbrev_title>
+        <issn type="print">0076-5376</issn>
+        <issn type="electronic">2331-7159</issn>
+    </publication>
+    <publisher pcode="AMS">American Mathematical Society</publisher>
+    <volume_id>howard</volume_id>
+    <itemcode>SURV/59</itemcode>
+    <numpages>440</numpages>
+    <isbn type="print">978-0-8218-0977-8</isbn>
+    <isbn type="electronic">978-1-4704-1286-9</isbn>
+    <lccn>98-18622</lccn>
+    <lccall/>
+    <doi>10.1090/surv/059</doi>
+    <uri scheme="https">
+        <host>www.ams.org</host>
+        <path>/surv/059</path>
+    </uri>
+    <msc source="msn" schema="1991">
+        <primary>03E25</primary>
+        <secondary>03E35</secondary>
+        <secondary>04A25</secondary>
+    </msc>
+    <mr>MR1637107</mr>
+    <volume>59</volume>
+    <pubdate>
+        <year>1998</year>
+        <month>June</month>
+        <day>30</day>
+    </pubdate>
+    <language>English</language>
+    <contents>
+        <unnumbered type="chapter" manid="01"/>
+        <unnumbered type="chapter" manid="02"/>
+        <unnumbered type="chapter" manid="03"/>
+        <unnumbered type="chapter" manid="04"/>
+        <unnumbered type="chapter" manid="05"/>
+        <unnumbered type="chapter" manid="06"/>
+    </contents>
+</monograph>
