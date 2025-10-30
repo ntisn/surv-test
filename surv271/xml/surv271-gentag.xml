@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE monograph
+    PUBLIC "-//AMS//DTD GENTAG 2.04//en"
+    "gentag2_04.dtd">
+
+<monograph>
+    <title>
+        <tex>Categories and Representation Theory</tex>
+        <ascii>Categories and Representation Theory</ascii>
+    </title>
+    <subtitle>
+        <tex>With A Focus on 2-Categorical Covering Theory</tex>
+    </subtitle>
+    <author customer_code="ASHDXA" customer_id="147244">
+        <name>
+            <surname>
+                <tex>Asashiba</tex>
+                <ascii>Asashiba</ascii>
+            </surname>
+            <given>
+                <tex>Hideto</tex>
+                <ascii>Hideto</ascii>
+            </given>
+        </name>
+        <affiliation>Kyoto University, Sakyo-ku, Kyoto,
+        Japan</affiliation>
+        <affiliation>Osaka Central Advanced Mathematical Institute,
+        Sumiyoshi-ku, Osaka, Japan</affiliation>
+        <affiliation>Shizuoka University, Suruga-ku, Shizuoka,
+        Japan</affiliation>
+    </author>
+    <translator customer_code="ASHDXA" customer_id="147244">
+        <name>
+            <surname>
+                <tex>Asashiba</tex>
+                <ascii>Asashiba</ascii>
+            </surname>
+            <given>
+                <tex>Hideto</tex>
+                <ascii>Hideto</ascii>
+            </given>
+        </name>
+        <affiliation>Kyoto University, Sakyo-ku, Kyoto,
+        Japan</affiliation>
+        <affiliation>Osaka Central Advanced Mathematical Institute,
+        Sumiyoshi-ku, Osaka, Japan</affiliation>
+        <affiliation>Shizuoka University, Suruga-ku, Shizuoka,
+        Japan</affiliation>
+    </translator>
+    <copyright>
+        <year>2022</year>
+        <owner>American Mathematical Society</owner>
+    </copyright>
+    <publication>
+        <publ_key>surv</publ_key>
+        <full_title>Mathematical Surveys and Monographs</full_title>
+        <abbrev_title>Math. Surveys Monogr.</abbrev_title>
+        <issn type="print">0076-5376</issn>
+        <issn type="electronic">2331-7159</issn>
+    </publication>
+    <publisher pcode="AMS">American Mathematical Society</publisher>
+    <volume_id>asashiba</volume_id>
+    <itemcode>SURV/271</itemcode>
+    <isbn type="electronic">978-1-4704-7150-7</isbn>
+    <isbn type="print">978-1-4704-6484-4</isbn>
+    <lccn>2022021596</lccn>
+    <lccall/>
+    <doi>10.1090/surv/271</doi>
+    <uri scheme="https">
+        <host>www.ams.org</host>
+        <path>/surv/271</path>
+    </uri>
+    <volume>271</volume>
+    <pubdate>
+        <year>2022</year>
+        <month>September</month>
+        <day>30</day>
+    </pubdate>
+    <language>English</language>
+    <contents>
+        <unnumbered manid="01" type="chapter"/>
+        <unnumbered manid="02" type="chapter"/>
+        <unnumbered manid="03" type="chapter"/>
+        <unnumbered manid="04" type="chapter"/>
+        <unnumbered manid="05" type="chapter"/>
+        <unnumbered manid="06" type="chapter"/>
+        <unnumbered manid="07" type="chapter"/>
+        <unnumbered manid="08" type="chapter"/>
+        <unnumbered manid="09" type="chapter"/>
+        <unnumbered manid="10" type="chapter"/>
+    </contents>
+    <bibliography>
+        <title>
+            <tex>References</tex>
+        </title>
+        <prolog>
+            <tex>\begin{biblist}</tex>
+        </prolog>
+        <references>
+            <reference>
+                <mr>1245487</mr>
+                <doi>10.1007/978-1-4612-4418-9</doi>
+                <tex>\bib {GTM13}{book}{ author={Anderson, Frank W.},
+                author={Fuller, Kent R.}, title={Rings and categories of
+                modules}, series={Graduate Texts in Mathematics},
+                volume={13}, edition={2}, publisher={Springer-Verlag,
+                New York}, date={1992}, pages={x+376},
+                isbn={0-387-97845-3}, review={\MR {1245487}},
+                doi={10.1007/978-1-4612-4418-9}, }</tex>
+            </reference>
+            <reference>
+                <mr>1444505</mr>
+                <doi>10.1006/jabr.1997.6906</doi>
+                <tex>\bib {Asa97}{article}{ author={Asashiba, Hideto},
+                title={A covering technique for derived equivalence},
+                journal={J. Algebra}, volume={191}, date={1997},
+                number={1}, pages={382--415}, issn={0021-8693},
+                review={\MR {1444505}}, doi={10.1006/jabr.1997.6906},
+                }</tex>
+            </reference>
+            <reference>
+                <mr>1684880</mr>
+                <doi>10.1006/jabr.1998.7706</doi>
+                <tex>\bib {Asa99}{article}{ author={Asashiba, Hideto},
+                title={The derived equivalence classification of
+                representation-finite selfinjective algebras},
+                journal={J. Algebra}, volume={214}, date={1999},
+                number={1}, pages={182--221}, issn={0021-8693},
+                review={\MR {1684880}}, doi={10.1006/jabr.1998.7706},
+                }</tex>
+            </reference>
+            <reference>
+                <mr>1901163</mr>
+                <doi>10.1006/jabr.2001.9063</doi>
+                <tex>\bib {Asa02}{article}{ author={Asashiba, Hideto},
+                title={Derived and stable equivalence classification of
+                twisted multifold extensions of piecewise hereditary
+                algebras of tree type}, journal={J. Algebra},
+                volume={249}, date={2002}, number={2}, pages={345--376},
+                issn={0021-8693}, review={\MR {1901163}},
+                doi={10.1006/jabr.2001.9063}, }</tex>
+            </reference>
+            <reference>
+                <mr>2787656</mr>
+                <doi>10.1016/j.jalgebra.2011.03.002</doi>
+                <tex>\bib {Asa11}{article}{ author={Asashiba, Hideto},
+                title={A generalization of Gabriel's Galois covering
+                functors and derived equivalences}, journal={J.
+                Algebra}, volume={334}, date={2011}, pages={109--149},
+                issn={0021-8693}, review={\MR {2787656}},
+                doi={10.1016/j.jalgebra.2011.03.002}, }</tex>
+            </reference>
+            <reference>
+                <tex>\bibitem {Asa-lec} Hideto Asashiba, {\it
+                Representations of quivers}, Lecture Notes at Shizuoka
+                University, 2014, \url
+                {https://wwp.shizuoka.ac.jp/asashiba/hideto-asashibas-website/quiver3-1/}.</tex>
+            </reference>
+            <reference>
+                <mr>3638358</mr>
+                <doi>10.1007/s10485-015-9416-9</doi>
+                <tex>\bib {Asa12}{article}{ author={Asashiba, Hideto},
+                title={A generalization of Gabriel's Galois covering
+                functors II: 2-categorical Cohen-Montgomery duality},
+                journal={Appl. Categ. Structures}, volume={25},
+                date={2017}, number={2}, pages={155--186},
+                issn={0927-2852}, review={\MR {3638358}},
+                doi={10.1007/s10485-015-9416-9}, }</tex>
+            </reference>
+            <reference>
+                <mr>3127372</mr>
+                <doi>10.1007/s10485-012-9284-5</doi>
+                <tex>\bib {Asa-a}{article}{ author={Asashiba, Hideto},
+                title={Derived equivalences of actions of a category},
+                journal={Appl. Categ. Structures}, volume={21},
+                date={2013}, number={6}, pages={811--836},
+                issn={0927-2852}, review={\MR {3127372}},
+                doi={10.1007/s10485-012-9284-5}, }</tex>
+            </reference>
+            <reference>
+                <mr>3010054</mr>
+                <doi>10.1016/j.aim.2012.10.021</doi>
+                <tex>\bib {Asa-b}{article}{ author={Asashiba, Hideto},
+                title={Gluing derived equivalences together},
+                journal={Adv. Math.}, volume={235}, date={2013},
+                pages={134--160}, issn={0001-8708}, review={\MR
+                {3010054}}, doi={10.1016/j.aim.2012.10.021}, }</tex>
+            </reference>
+            <reference>
+                <mr>3169503</mr>
+                <doi>10.1080/00927872.2012.699572</doi>
+                <tex>\bib {Asa-Kim2}{article}{ author={Asashiba,
+                Hideto}, author={Kimura, Mayumi}, title={Presentations
+                of Grothendieck constructions}, journal={Comm. Algebra},
+                volume={41}, date={2013}, number={11},
+                pages={4009--4024}, issn={0092-7872}, review={\MR
+                {3169503}}, doi={10.1080/00927872.2012.699572}, }</tex>
+            </reference>
+            <reference>
+                <mr>3935367</mr>
+                <doi>10.1080/00927872.2018.1487562</doi>
+                <tex>\bib {Asa18}{article}{ author={Asashiba, Hideto},
+                title={Smash products of group weighted bound quivers
+                and Brauer graphs}, journal={Comm. Algebra},
+                volume={47}, date={2019}, number={2}, pages={585--610},
+                issn={0092-7872}, review={\MR {3935367}},
+                doi={10.1080/00927872.2018.1487562}, }</tex>
+            </reference>
+            <reference>
+                <tex>\bibitem {Asa19} Hideto Asashiba, {\it Categories
+                and representation theory (with a focus on
+                2-categoriacal covering theory)}, SGC library series
+                {\bf 155}, Saiensu-sha, 2019, in Japanese.</tex>
+            </reference>
+            <reference>
+                <mr>4249177</mr>
+                <doi>10.1007/s41980-020-00413-6</doi>
+                <tex>\bib {Asa20}{article}{ author={Asashiba, Hideto},
+                title={Cohen-Montgomery duality for pseudo-actions of a
+                group}, journal={Bull. Iranian Math. Soc.}, volume={47},
+                date={2021}, number={3}, pages={767--842},
+                issn={1017-060X}, review={\MR {4249177}},
+                doi={10.1007/s41980-020-00413-6}, }</tex>
+            </reference>
+            <reference>
+                <mr>2197389</mr>
+                <doi>10.1017/CBO9780511614309</doi>
+                <tex>\bib {ASS}{book}{ author={Assem, Ibrahim},
+                author={Simson, Daniel}, author={Skowro\'{n}ski,
+                Andrzej}, title={Elements of the representation theory
+                of associative algebras. Vol. 1}, series={London
+                Mathematical Society Student Texts}, volume={65},
+                note={Techniques of representation theory},
+                publisher={Cambridge University Press, Cambridge},
+                date={2006}, pages={x+458}, isbn={978-0-521-58423-4},
+                isbn={978-0-521-58631-3}, isbn={0-521-58631-3},
+                review={\MR {2197389}}, doi={10.1017/CBO9780511614309},
+                }</tex>
+            </reference>
+            <reference>
+                <mr>2249625</mr>
+                <doi>10.1016/j.aim.2005.06.003</doi>
+                <tex>\bib {BMRRT}{article}{ author={Buan, Aslak Bakke},
+                author={Marsh, Robert}, author={Reineke, Markus},
+                author={Reiten, Idun}, author={Todorov, Gordana},
+                title={Tilting theory and cluster combinatorics},
+                journal={Adv. Math.}, volume={204}, date={2006},
+                number={2}, pages={572--618}, issn={0001-8708},
+                review={\MR {2249625}}, doi={10.1016/j.aim.2005.06.003},
+                }</tex>
+            </reference>
+            <reference>
+                <mr>643558</mr>
+                <doi>10.1007/BF01396624</doi>
+                <tex>\bib {Bo-Ga}{article}{ author={Bongartz, K.},
+                author={Gabriel, P.}, title={Covering spaces in
+                representation-theory}, journal={Invent. Math.},
+                volume={65}, date={1981/82}, number={3},
+                pages={331--378}, issn={0020-9910}, review={\MR
+                {643558}}, doi={10.1007/BF01396624}, }</tex>
+            </reference>
+            <reference>
+                <mr>1315049</mr>
+                <tex>\bib {Bor}{book}{ author={Borceux, Francis},
+                title={Handbook of categorical algebra. 3},
+                series={Encyclopedia of Mathematics and its
+                Applications}, volume={52}, note={Categories of
+                sheaves}, publisher={Cambridge University Press,
+                Cambridge}, date={1994}, pages={xviii+522},
+                isbn={0-521-44180-3}, review={\MR {1315049}}, }</tex>
+            </reference>
+            <reference>
+                <mr>4245628</mr>
+                <tex>\bib {CCR}{article}{ author={Chen, Jianmin},
+                author={Chen, Xiao-Wu}, author={Ruan, Shiquan},
+                title={The dual actions, equivariant autoequivalences
+                and stable tilting objects}, language={English, with
+                English and French summaries}, journal={Ann. Inst.
+                Fourier (Grenoble)}, volume={70}, date={2020},
+                number={6}, pages={2677--2736}, issn={0373-0956},
+                review={\MR {4245628}}, }</tex>
+            </reference>
+            <reference>
+                <mr>2170541</mr>
+                <doi>10.1090/S0002-9939-05-07955-4</doi>
+                <tex>\bib {C-M}{article}{ author={Cibils, Claude},
+                author={Marcos, Eduardo N.}, title={Skew category,
+                Galois covering and smash product of a $k$-category},
+                journal={Proc. Amer. Math. Soc.}, volume={134},
+                date={2006}, number={1}, pages={39--50},
+                issn={0002-9939}, review={\MR {2170541}},
+                doi={10.1090/S0002-9939-05-07955-4}, }</tex>
+            </reference>
+            <reference>
+                <mr>728711</mr>
+                <doi>10.2307/1999586</doi>
+                <tex>\bib {Co-Mo}{article}{ author={Cohen, M.},
+                author={Montgomery, S.}, title={Group-graded rings,
+                smash products, and group actions}, journal={Trans.
+                Amer. Math. Soc.}, volume={282}, date={1984},
+                number={1}, pages={237--258}, issn={0002-9947},
+                review={\MR {728711}}, doi={10.2307/1999586}, }</tex>
+            </reference>
+            <reference>
+                <mr>1437497</mr>
+                <doi>10.1007/s002220050138</doi>
+                <tex>\bib {Del}{article}{ author={Deligne, P.},
+                title={Action du groupe des tresses sur une
+                cat\'{e}gorie}, language={French, with English summary},
+                journal={Invent. Math.}, volume={128}, date={1997},
+                number={1}, pages={159--175}, issn={0020-9910},
+                review={\MR {1437497}}, doi={10.1007/s002220050138},
+                }</tex>
+            </reference>
+            <reference>
+                <mr>2609644</mr>
+                <doi>10.1007/s00029-010-0017-z</doi>
+                <tex>\bib {DGNO}{article}{ author={Drinfeld, Vladimir},
+                author={Gelaki, Shlomo}, author={Nikshych, Dmitri},
+                author={Ostrik, Victor}, title={On braided fusion
+                categories. I}, journal={Selecta Math. (N.S.)},
+                volume={16}, date={2010}, number={1}, pages={1--119},
+                issn={1022-1824}, review={\MR {2609644}},
+                doi={10.1007/s00029-010-0017-z}, }</tex>
+            </reference>
+            <reference>
+                <mr>654725</mr>
+                <tex>\bib {Ga}{article}{ author={Gabriel, P.},
+                title={The universal cover of a representation-finite
+                algebra}, conference={ title={Representations of
+                algebras}, address={Puebla}, date={1980}, }, book={
+                series={Lecture Notes in Math.}, volume={903},
+                publisher={Springer, Berlin-New York}, }, date={1981},
+                pages={68--105}, review={\MR {654725}}, }</tex>
+            </reference>
+            <reference>
+                <mr>1239447</mr>
+                <tex>\bib {G-R}{article}{ author={Gabriel, P.},
+                author={Ro\u {\i }ter, A. V.}, title={Representations of
+                finite-dimensional algebras}, note={With a chapter by B.
+                Keller}, conference={ title={Algebra, VIII}, }, book={
+                series={Encyclopaedia Math. Sci.}, volume={73},
+                publisher={Springer, Berlin}, }, date={1992},
+                pages={1--177}, review={\MR {1239447}}, }</tex>
+            </reference>
+            <reference>
+                <mr>1261589</mr>
+                <doi>10.1090/memo/0558</doi>
+                <tex>\bib {GPS95}{article}{ author={Gordon, R.},
+                author={Power, A. J.}, author={Street, Ross},
+                title={Coherence for tricategories}, journal={Mem. Amer.
+                Math. Soc.}, volume={117}, date={1995}, number={558},
+                pages={vi+81}, issn={0065-9266}, review={\MR {1261589}},
+                doi={10.1090/memo/0558}, }</tex>
+            </reference>
+            <reference>
+                <mr>704617</mr>
+                <doi>10.2307/1999386</doi>
+                <tex>\bib {Gr}{article}{ author={Green, Edward L.},
+                title={Graphs with relations, coverings and group-graded
+                algebras}, journal={Trans. Amer. Math. Soc.},
+                volume={279}, date={1983}, number={1}, pages={297--310},
+                issn={0002-9947}, review={\MR {704617}},
+                doi={10.2307/1999386}, }</tex>
+            </reference>
+            <reference>
+                <mr>0217087</mr>
+                <tex>\bib {Groth}{book}{ author={Grothendieck,
+                Alexander}, title={Rev\^{e}tements \'{e}tales et groupe
+                fondamental. Fasc. I: Expos\'{e}s 1 \`a 5},
+                note={Troisi\`eme \'{e}dition, corrig\'{e}e;
+                S\'{e}minaire de G\'{e}om\'{e}trie Alg\'{e}brique,
+                1960/61}, publisher={Institut des Hautes \'{E}tudes
+                Scientifiques, Paris}, date={1963}, pages={iv+143 pp.
+                (not consecutively paged) (loose errata)}, review={\MR
+                {0217087}}, }</tex>
+            </reference>
+            <reference>
+                <mr>1791342</mr>
+                <tex>\bib {HKT}{book}{ author={Harel, David},
+                author={Kozen, Dexter}, author={Tiuryn, Jerzy},
+                title={Dynamic logic}, series={Foundations of Computing
+                Series}, publisher={MIT Press, Cambridge, MA},
+                date={2000}, pages={xvi+459}, isbn={0-262-08289-6},
+                review={\MR {1791342}}, }</tex>
+            </reference>
+            <reference>
+                <mr>1455373</mr>
+                <tex>\bib {Ho95}{book}{ author={Howie, John M.},
+                title={Fundamentals of semigroup theory}, series={London
+                Mathematical Society Monographs. New Series},
+                volume={12}, note={Oxford Science Publications},
+                publisher={The Clarendon Press, Oxford University Press,
+                New York}, date={1995}, pages={x+351},
+                isbn={0-19-851194-9}, review={\MR {1455373}}, }</tex>
+            </reference>
+            <reference>
+                <mr>693045</mr>
+                <doi>10.1112/plms/s3-46.2.347</doi>
+                <tex>\bib {HW}{article}{ author={Hughes, David},
+                author={Waschb\"{u}sch, Josef}, title={Trivial
+                extensions of tilted algebras}, journal={Proc. London
+                Math. Soc. (3)}, volume={46}, date={1983}, number={2},
+                pages={347--364}, issn={0024-6115}, review={\MR
+                {693045}}, doi={10.1112/plms/s3-46.2.347}, }</tex>
+            </reference>
+            <reference>
+                <mr>0357542</mr>
+                <tex>\bib {Ke-St}{article}{ author={Kelly, G. M.},
+                author={Street, Ross}, title={Review of the elements of
+                $2$-categories}, conference={ title={Category Seminar},
+                address={Proc. Sem., Sydney}, date={1972/1973}, },
+                book={ publisher={Springer, Berlin}, }, date={1974},
+                pages={75--103. Lecture Notes in Math., Vol. 420},
+                review={\MR {0357542}}, }</tex>
+            </reference>
+            <reference>
+                <mr>3307165</mr>
+                <doi>10.1017/CBO9781107360068</doi>
+                <tex>\bib {Lei}{book}{ author={Leinster, Tom},
+                title={Basic category theory}, series={Cambridge Studies
+                in Advanced Mathematics}, volume={143},
+                publisher={Cambridge University Press, Cambridge},
+                date={2014}, pages={viii+183}, isbn={978-1-107-04424-1},
+                review={\MR {3307165}}, doi={10.1017/CBO9781107360068},
+                }</tex>
+            </reference>
+            <reference>
+                <tex>\bibitem {Le18} P. B. Levy, {\em Formulating
+                categorical concepts using classes}, \arXiv
+                {1801.08528}.</tex>
+            </reference>
+            <reference>
+                <mr>0354798</mr>
+                <tex>\bib {Mac}{book}{ author={MacLane, Saunders},
+                title={Categories for the working mathematician},
+                series={Graduate Texts in Mathematics, Vol. 5},
+                publisher={Springer-Verlag, New York-Berlin},
+                date={1971}, pages={ix+262}, review={\MR {0354798}},
+                }</tex>
+            </reference>
+            <reference>
+                <tex>\bibitem {Ma14} D. Marsden, {\em Category theory
+                using string diagrams}, \arXiv {1401.7220v2}
+                [math.CT].</tex>
+            </reference>
+            <reference>
+                <mr>724038</mr>
+                <doi>10.1016/0022-4049(83)90062-2</doi>
+                <tex>\bib {M-P83}{article}{ author={Mart\'{\i
+                }nez-Villa, R.}, author={de la Pe\~{n}a, J. A.},
+                title={The universal cover of a quiver with relations},
+                journal={J. Pure Appl. Algebra}, volume={30},
+                date={1983}, number={3}, pages={277--292},
+                issn={0022-4049}, review={\MR {724038}},
+                doi={10.1016/0022-4049(83)90062-2}, }</tex>
+            </reference>
+            <reference>
+                <tex>\bibitem {Mur} D. Murfet, {\it Foundations for
+                category theory}, Available at {\tt therisingsea.org},
+                (2006).</tex>
+            </reference>
+            <reference>
+                <tex>\bibitem {Nak} H. Nakaoka, {\em Techniques for
+                category theory} (Homological algebra in abelian and
+                triangulated categories), Nihon Hyoronsha, (2015).</tex>
+            </reference>
+            <reference>
+                <mr>3235585</mr>
+                <tex><![CDATA[\bib {Ol}{book}{ author={von Eye,
+                Alexander}, author={Mun, Eun-Young}, title={Log-linear
+                modeling}, note={Concepts, interpretation, and
+                application}, publisher={John Wiley \& Sons, Inc.,
+                Hoboken, NJ}, date={2013}, pages={xvi+450},
+                isbn={978-1-118-14640-8}, review={\MR {3235585}},
+                }]]></tex>
+            </reference>
+            <reference>
+                <mr>772481</mr>
+                <doi>10.1016/0021-8693(85)90156-5</doi>
+                <tex>\bib {RR}{article}{ author={Reiten, Idun},
+                author={Riedtmann, Christine}, title={Skew group
+                algebras in the representation theory of Artin
+                algebras}, journal={J. Algebra}, volume={92},
+                date={1985}, number={1}, pages={224--282},
+                issn={0021-8693}, review={\MR {772481}},
+                doi={10.1016/0021-8693(85)90156-5}, }</tex>
+            </reference>
+            <reference>
+                <mr>576602</mr>
+                <doi>10.1007/BF02566682</doi>
+                <tex>\bib {RieCov}{article}{ author={Riedtmann, C.},
+                title={Algebren, Darstellungsk\"{o}cher,
+                \"{U}berlagerungen und zur\"{u}ck}, language={German},
+                journal={Comment. Math. Helv.}, volume={55},
+                date={1980}, number={2}, pages={199--224},
+                issn={0010-2571}, review={\MR {576602}},
+                doi={10.1007/BF02566682}, }</tex>
+            </reference>
+            <reference>
+                <mr>607169</mr>
+                <tex>\bib {RieClassA}{article}{ author={Riedtmann,
+                Christine}, title={Representation-finite self-injective
+                algebras of class $A_{n}$}, conference={
+                title={Representation theory, II}, address={Proc. Second
+                Internat. Conf., Carleton Univ., Ottawa, Ont.},
+                date={1979}, }, book={ series={Lecture Notes in Math.},
+                volume={832}, publisher={Springer, Berlin}, },
+                date={1980}, pages={449--520}, review={\MR {607169}},
+                }</tex>
+            </reference>
+            <reference>
+                <mr>704393</mr>
+                <tex>\bib {RieClassD}{article}{ author={Riedtmann,
+                Christine}, title={Representation-finite self-injective
+                algebras of class $D_{n}$}, journal={Compositio Math.},
+                volume={49}, date={1983}, number={2}, pages={231--282},
+                issn={0010-437X}, review={\MR {704393}}, }</tex>
+            </reference>
+            <reference>
+                <tex>\bibitem {Ta} A. Tarski, {\it \"{U}ber
+                unerreichbare Kardinalzahlen}, Fundamenta Mathematicae,
+                {\bf 30} (1938), 68--89.</tex>
+            </reference>
+            <reference>
+                <tex>\bibitem {TC07} TheCasters: {\em String diagrams, 1
+                -- 4}, YouTube videos, \url
+                {https://www.youtube.com/watch?v=USYRDDZ9yEc}.</tex>
+            </reference>
+            <reference>
+                <mr>654721</mr>
+                <tex>\bib {Wa81}{article}{ author={Waschb\"{u}sch,
+                Josef}, title={Universal coverings of self-injective
+                algebras}, conference={ title={Representations of
+                algebras}, address={Puebla}, date={1980}, }, book={
+                series={Lecture Notes in Math.}, volume={903},
+                publisher={Springer, Berlin-New York}, }, date={1981},
+                pages={331--349}, review={\MR {654721}}, }</tex>
+            </reference>
+        </references>
+        <epilog>
+            <tex>\end{biblist}</tex>
+        </epilog>
+    </bibliography>
+</monograph>
