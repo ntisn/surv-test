@@ -72,7 +72,7 @@ In the src column, R = rekeyed; O = original source files
 | surv   |     56 | soibelman  |   R | 1998 | EPUB files added |
 | surv   |     57 | levine     |   R | 1998 |  |
 | surv   |     58 | etingof    |   R | 1998 |  |
-| surv   |     59 | howard     |   R | 1998 |  |
+| surv   | 59     | howard     | R   | 1998 | EPUB files added |
 | surv   |     60 | raeburn    |   R | 1998 |  |
 | surv   |     61 | everitt    |   R | 1999 |  |
 | surv   |     62 | bogachev   |   R | 1998 |  |
